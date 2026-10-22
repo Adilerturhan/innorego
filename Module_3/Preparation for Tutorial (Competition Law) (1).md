@@ -1,0 +1,12 @@
+Preparation for Tutorial
+Please read before Tutorial (25 September) on Competition Law. We will discuss these cases during the tutorial.
+Case 1: Commission vs. Microsoft 
+The majority of the computers used by businesses/corporate offices in the EU are compatible with Microsoft and therefore the majority of the corporate offices in the EU purchase work computers with pre-installed Microsoft. Seeing this advantage, Microsoft introduces a new version of Windows specifically designed for the corporate offices that only fully supports its own Office software while not allowing the performance and compatibility software of competitors such as Google Docs, and Libre Office. Google reports this to the Commission and the Commission initiates an investigation into a possible infringement of EU competition law. Analyze whether Microsoft's actions constitute an abuse of dominance under competition law principles, considering the potential anticompetitive effects and the possible justifications Microsoft might offer.
+Case 2: Apple/Netflix 
+On 10 May 2024, the European Commission receives a notification about Apple’s proposed acquisition of 55% shares of Netflix. Apple is known for its extensive ecosystem of hardware products and services, including the App Store and Apple TV+, and Netflix, renowned for its vast library of streaming content and original productions, argue that their merger will lead to significant efficiencies and innovation benefits in the digital entertainment market.  The Commission now has to decide on this notification. What will it do and what could the justifications of these two companies be? 
+Case 3: Commission v META/TikTok
+As a junior data analyst at Meta, you were recently invited to sit in on a high-level meeting between Meta’s executives and those from TikTok. The meeting, initially framed as a general discussion on industry trends, quickly took a concerning turn. You observe as the executives began sharing detailed information about the algorithms, user engagement strategies, and advertising pricing models. You hear sentences like ‘’two giants coming together to make more profit’’. Two days later, the Commission initiates an investigation into both companies. 
+-	What would the Commission assess? 
+-	What can META and TikTok argue?
+-	During the interview conducted by the Commission, you indicate that you were merely an observer and you did not participate in the discussions. Would this change the position you are in?  
+

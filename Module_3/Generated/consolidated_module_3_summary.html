@@ -1,0 +1,1308 @@
+<!DOCTYPE html><html><head>
+      <title>consolidated_module_3_summary</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\20232788\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:///c:\Users\20232788\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\mermaid\mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="module-3-competition-law--consolidated-summary">Module 3: Competition Law – Consolidated Summary </h1>
+<p><strong>Module Title:</strong> Data and Regulation of Competition<br>
+<strong>Instructor:</strong> Merve Oner Kabadayi, PhD Researcher at TILT/Tilburg Law School<br>
+<strong>Date:</strong> 23 September 2025</p>
+<p>This consolidated document synthesizes the essential concepts from Module 3, integrating the core lecture materials with comprehensive additional readings on competition law, with particular emphasis on <strong>Articles 101 and 102 of the Treaty on the Functioning of the European Union (TFEU)</strong> and their application in the digital economy and data-driven markets.</p>
+<hr>
+<h2 id="table-of-contents">Table of Contents </h2>
+<ol>
+<li><a href="#introduction">Introduction: Competition Law in Context</a></li>
+<li><a href="#objectives">Objectives and Foundations of EU Competition Law</a></li>
+<li><a href="#articles-101-102">Articles 101 and 102 TFEU: Core Provisions</a></li>
+<li><a href="#article-101">Article 101 TFEU: Anti-Competitive Behaviour (Cartel Prohibition)</a></li>
+<li><a href="#article-102">Article 102 TFEU: Abuse of Dominant Position</a></li>
+<li><a href="#merger-control">Merger Control Under the EUMR</a></li>
+<li><a href="#data-competition">Data and Competition Law: Emerging Challenges</a></li>
+<li><a href="#case-studies">Case Studies and Practical Application</a></li>
+<li><a href="#eu-vs-us">EU vs. US Competition Law</a></li>
+<li><a href="#conclusions">Key Takeaways</a></li>
+</ol>
+<hr>
+<h2 id="introduction">Introduction: Competition Law in Context </h2>
+<h3 id="historical-background">Historical Background </h3>
+<p>Competition law emerged in the late 19th and early 20th centuries in response to the concentration of economic power. The <strong>Sherman Act</strong> (1890) in the United States first established that "every contract, combination in the form of trust or otherwise, or conspiracy, in restraint of trade or commerce among the several States" is illegal. This foundational principle aimed to protect competitive markets from being dominated by powerful monopolies controlled by the "Robber Barons" such as John D. Rockefeller, Cornelius Vanderbilt, Andrew Carnegie, and J. P. Morgan.</p>
+<p>The European Union later developed its own competition framework, enshrining competition principles in the Treaties and establishing competition as a fundamental component of the internal market project.</p>
+<h3 id="why-competition-law-matters-today">Why Competition Law Matters Today </h3>
+<p>The digital economy presents unprecedented challenges to traditional competition law frameworks. The shift from the <strong>Oil &amp; Gas Era</strong> (where 2005 market leaders like Exxon and GE dominated) to the <strong>Big Tech Era</strong> (where 2024 market leaders include Microsoft, Apple, Amazon, Alphabet, and Meta) illustrates the transformation of value creation from tangible assets to intangible data and digital platforms.</p>
+<p><strong>Key Transformations:</strong></p>
+<ul>
+<li>Data is now considered the "new oil" and the world's most valuable resource</li>
+<li>Data generation: ~2.5 quintillion bytes daily (Forbes)</li>
+<li>Data is the new currency of the digital economy</li>
+<li>Tech giants accumulate overwhelming advantages through data accumulation</li>
+</ul>
+<p><strong>The Central Question:</strong> Can &amp; should EU competition law address the dominant positions of tech giants built primarily through data accumulation?</p>
+<h3 id="competition-laws-scope">Competition Law's Scope </h3>
+<p>Competition law concerns itself with five critical parameters:</p>
+<ol>
+<li><strong>Price</strong> – Advertisement-dependent "free" services where data is the main currency</li>
+<li><strong>Quality</strong> – Privacy concerns elevated as competition concerns</li>
+<li><strong>Output</strong> – Data as an asset; monopolization of data</li>
+<li><strong>Choice</strong> – Availability of alternative providers</li>
+<li><strong>Innovation</strong> – Does competition law facilitate or hinder innovation?</li>
+</ol>
+<hr>
+<h2 id="objectives">Objectives and Foundations of EU Competition Law </h2>
+<h3 id="legal-basis">Legal Basis </h3>
+<p>EU competition law rests on:</p>
+<ul>
+<li><strong>Treaty on the Functioning of the European Union (TFEU):</strong> Articles 101–109 define rules applying to undertakings</li>
+<li><strong>Protocol No. 27 on the Internal Market and Competition:</strong> Clarifies that competition protection is integral to the internal market</li>
+<li><strong>Article 3 TEU:</strong> Establishes that the EU shall work for a "highly competitive social market economy"</li>
+</ul>
+<p>The founding principle is Margrethe Vestager's observation: "There would be <strong>no genuine integration without a Single Market</strong> – and <strong>no functioning Single Market without a strong competition policy enforced by a central competition authority</strong>."</p>
+<h3 id="primary-objectives-of-eu-competition-law">Primary Objectives of EU Competition Law </h3>
+<p><strong>1. Facilitation and Safeguarding of the Internal Market</strong></p>
+<p>The internal market is "an area without internal frontiers in which the free movement of goods, persons, services and capital is ensured." A functioning competitive process is essential to this goal. Competition rules protect "not only the immediate interests of individual competitors or consumers but also the structure of the market and thus competition as such" (<em>C-8/08 T-Mobile Netherlands BV</em>).</p>
+<p><strong>2. Protection of Consumer Welfare</strong></p>
+<p>"Our aim is simple: to protect competition in the market as a means of <strong>enhancing consumer welfare</strong> and ensuring an <strong>efficient allocation of resources</strong>" – former Commissioner Neelie Kroes (2005). Consumer welfare encompasses:</p>
+<ul>
+<li>Access to goods and services at competitive prices</li>
+<li>Choice among market alternatives</li>
+<li>Quality and innovation incentives</li>
+</ul>
+<p><strong>3. Economic Efficiency</strong></p>
+<p>Competition law promotes three forms of economic efficiency:</p>
+<ul>
+<li><strong>Allocative Efficiency:</strong> Resources directed to their most valued uses</li>
+<li><strong>Cost Efficiency:</strong> Companies minimizing production costs</li>
+<li><strong>Dynamic (Innovative) Efficiency:</strong> Incentives for continuous innovation and long-term economic growth</li>
+</ul>
+<p><strong>4. Protection of the Competitive Process</strong></p>
+<p>Competition as a discovery procedure (Friedrich A. von Hayek) allows markets to allocate resources dynamically through autonomous decisions by market participants rather than through central planning or dominant player control.</p>
+<div class="mermaid">graph TB
+    A["OBJECTIVES OF EU&lt;br/&gt;COMPETITION LAW"]
+    A --&gt; B["Internal Market&lt;br/&gt;Facilitation"]
+    A --&gt; C["Consumer&lt;br/&gt;Welfare"]
+    A --&gt; D["Economic&lt;br/&gt;Efficiency"]
+    A --&gt; E["Competitive&lt;br/&gt;Process"]
+    B --&gt; F["Free movement of&lt;br/&gt;goods, services,&lt;br/&gt;capital, persons"]
+    C --&gt; G["Choice, Price,&lt;br/&gt;Quality, Innovation"]
+    D --&gt; H["Allocative,&lt;br/&gt;Cost, Dynamic&lt;br/&gt;Efficiency"]
+    E --&gt; I["Decentralized resource&lt;br/&gt;allocation vs.&lt;br/&gt;monopoly control"]
+    
+    style A fill:#003d99,color:#fff
+    style B fill:#1e88e5,color:#fff
+    style C fill:#1e88e5,color:#fff
+    style D fill:#1e88e5,color:#fff
+    style E fill:#1e88e5,color:#fff
+</div><hr>
+<h2 id="articles-101-102">Articles 101 and 102 TFEU: Core Provisions </h2>
+<h3 id="overview-of-the-two-pillars">Overview of the Two Pillars </h3>
+<p>EU competition law rests on two fundamental prohibitions that form the backbone of antitrust enforcement:</p>
+<table>
+<thead>
+<tr>
+<th>Provision</th>
+<th>Focus</th>
+<th>Type of Violation</th>
+<th>Legal Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Article 101 TFEU</strong></td>
+<td>Anti-competitive agreements, decisions, concerted practices</td>
+<td>Horizontal/vertical collusion, cartels</td>
+<td>Between undertakings + effect on trade + effect on competition</td>
+</tr>
+<tr>
+<td><strong>Article 102 TFEU</strong></td>
+<td>Abuse of dominant position</td>
+<td>Monopoly abuse, exploitative/exclusionary conduct</td>
+<td>Dominant position + abuse + effect on trade</td>
+</tr>
+</tbody>
+</table>
+<p>Both provisions are essential tools:</p>
+<ul>
+<li><strong>Article 101</strong> prevents companies from colluding to reduce competition</li>
+<li><strong>Article 102</strong> prevents dominant companies from using their power to further restrict competition</li>
+</ul>
+<hr>
+<h2 id="article-101">Article 101 TFEU: Anti-Competitive Behaviour </h2>
+<h3 id="the-provision">The Provision </h3>
+<p><strong>Article 101 TFEU</strong> (ex Article 81 TEC):</p>
+<blockquote>
+<p>The following shall be prohibited as incompatible with the internal market: all <strong>agreements</strong> between <strong>undertakings</strong>, <strong>decisions by associations of undertakings</strong> and <strong>concerted practices</strong> which may <strong>affect trade between Member States</strong> and which have as their <strong>object or effect</strong> the <strong>prevention, restriction or distortion of competition</strong> within the internal market, and in particular those which:</p>
+<p>(a) directly or indirectly fix purchase or selling prices or any other trading conditions;<br>
+(b) limit or control production, markets, technical development, or investment;<br>
+(c) share markets or sources of supply;<br>
+(d) apply dissimilar conditions to equivalent transactions with other trading parties, thereby placing them at a competitive disadvantage;<br>
+(e) make the conclusion of contracts subject to acceptance by the other parties of supplementary obligations which, by their nature or according to commercial usage, have no connection with the subject of such contracts.</p>
+</blockquote>
+<p>This article applies to all conduct that restricts competition through coordination between independent market participants.</p>
+<h3 id="legal-test-for-article-101-tfeu-violation">Legal Test for Article 101 TFEU Violation </h3>
+<p>A violation of Article 101(1) requires establishing five elements:</p>
+<h4 id="1-between-undertakings">1) Between Undertakings </h4>
+<p>An <strong>undertaking</strong> is any entity engaged in economic or commercial activities, regardless of:</p>
+<ul>
+<li>Whether activities are carried out for profit</li>
+<li>Legal form (company, partnership, individual trader, public body engaged in commercial activity)</li>
+<li>Sector (manufacturing, services, public utilities)</li>
+</ul>
+<p><strong>Examples:</strong> Microsoft, Facebook, Google, telecommunications providers, hospitals offering paid services.</p>
+<p><strong>Exclusion:</strong> Purely personal or household activities do not constitute economic activities.</p>
+<h4 id="2-agreements-or-concerted-practices">2) Agreements or Concerted Practices </h4>
+<p>Article 101 captures two distinct forms of coordination:</p>
+<h5 id="a-agreements">a) <strong>Agreements</strong> </h5>
+<p>An agreement is any arrangement where parties determine how they will behave on the market. Key characteristics:</p>
+<ul>
+<li><strong>No formal document required:</strong> Oral agreements suffice (phone calls, emails, "handshake deals")</li>
+<li><strong>Intent immaterial:</strong> Parties need not intend to restrict competition; effect is what matters</li>
+<li><strong>No meeting necessary:</strong> Communication can occur indirectly or through intermediaries</li>
+</ul>
+<p><strong>Types of Agreements:</strong></p>
+<p><strong>Horizontal Agreements (Between Competitors at Same Supply Level)</strong></p>
+<ul>
+<li>Price fixing (most serious: "hard-core cartel")</li>
+<li>Market sharing</li>
+<li>Bid rigging</li>
+<li>Information exchange at competitors' level</li>
+<li>Production quotas</li>
+<li>Technology pools</li>
+</ul>
+<p><em>Example:</em> Spotify and Apple Music agreeing to charge the same subscription price to consumers.</p>
+<p><strong>Vertical Agreements (Between Undertakings at Different Supply Levels)</strong></p>
+<ul>
+<li>Resale price maintenance (fixing retail prices)</li>
+<li>Exclusive distribution arrangements</li>
+<li>Territorial restrictions</li>
+<li>Selective distribution systems</li>
+<li>Tied selling (tying one product to purchase of another)</li>
+</ul>
+<p><em>Example:</em> A manufacturer fixing the retail price at which a distributor may sell its products.</p>
+<p><strong>The Principle:</strong> "Competitors know each other so well, even a wink and a nod between them could lead to anti-competitive behaviour."</p>
+<h5 id="b-concerted-practices">b) <strong>Concerted Practices</strong> </h5>
+<p>A concerted practice is informal coordination where undertakings:</p>
+<ul>
+<li>Knowingly coordinate their behavior</li>
+<li>Substitute practical cooperation for the risks of competition</li>
+<li>Do NOT have a formal agreement or decision</li>
+</ul>
+<p><strong>Key Distinction:</strong> Evidence of direct agreement is not required. It suffices that parties reveal their strategies to each other such that each knows the other's intended conduct.</p>
+<p><strong>Test (from CJEU Case Law):</strong></p>
+<ul>
+<li>Parties coordinate behavior</li>
+<li>Each party is aware of the other's conduct</li>
+<li>This conduct influences each party's own behavior</li>
+<li>Practical cooperation is substituted for independent competition</li>
+</ul>
+<p><em>Example:</em> Two airlines independently adjusting prices in parallel based on competitor's price signals transmitted through reservation systems.</p>
+<h4 id="3-effect-on-trade-between-member-states">3) Effect on Trade Between Member States </h4>
+<p>The agreement/practice must <strong>affect trade between at least two Member States</strong>. The threshold is low:</p>
+<ul>
+<li>Effect can be <strong>direct or indirect</strong></li>
+<li>Effect can be <strong>actual or potential</strong></li>
+<li>Effect can be <strong>minimal</strong> in absolute terms</li>
+</ul>
+<p><strong>NOT Required:</strong></p>
+<ul>
+<li>Trade must cross borders</li>
+<li>Effect must increase trade volumes</li>
+<li>Parties must be in different Member States</li>
+</ul>
+<p><strong>Standard:</strong> If the pattern of trade between at least two Member States is likely to be impacted (even modestly), the requirement is met.</p>
+<p><strong>Presumption:</strong> If an agreement covers several EU Member States or a substantial part of one Member State, effect on inter-state trade is presumed.</p>
+<h4 id="4-effect-on-competition-by-object-or-by-effect">4) Effect on Competition: "By Object" or "By Effect" </h4>
+<p>The restriction must affect competition through one of two pathways:</p>
+<h5 id="a-restriction-by-object">a) <strong>Restriction By Object</strong> </h5>
+<p>Certain conduct is <strong>inherently restrictive</strong> of competition and requires no analysis of actual effects. These are known as <strong>"hard-core cartels"</strong>:</p>
+<p><strong>Per Se Violations (No Effects Analysis Required):</strong></p>
+<ol>
+<li><strong>Price Fixing</strong> – Directly or indirectly fixing prices</li>
+<li><strong>Market Sharing</strong> – Allocating customers, territories, or markets</li>
+<li><strong>Bid Rigging</strong> – Collusion in tender processes</li>
+<li><strong>Production/Sales Limiting</strong> – Quotas or output restrictions</li>
+</ol>
+<p>For these practices, competition authorities need not prove actual harm; the conduct's object itself reveals anticompetitive intent.</p>
+<p><strong>Legal Presumption:</strong> If an agreement's object is to restrict competition, it is presumed to have that effect. The burden shifts to parties to prove otherwise.</p>
+<h5 id="b-restriction-by-effect">b) <strong>Restriction By Effect</strong> </h5>
+<p>Conduct is evaluated based on its <strong>actual or likely competitive impact</strong>. This analysis requires:</p>
+<ul>
+<li>Economic analysis of market conditions</li>
+<li>Counterfactual reasoning (what would happen without the agreement?)</li>
+<li>Evaluation of whether agreement prevents, restricts, or distorts competition</li>
+</ul>
+<p><strong>Competitive Harm Indicators:</strong></p>
+<ul>
+<li>Price increases or price stabilization at higher levels</li>
+<li>Output reduction</li>
+<li>Reduction in innovation</li>
+<li>Reduction in product variety or quality</li>
+<li>Decreased consumer choice</li>
+</ul>
+<p><strong>De Minimis Rule:</strong> If an agreement's effect on competition is insignificant, Article 101(1) does not apply. The Commission Regulation defines thresholds:</p>
+<ul>
+<li>Horizontal agreements: Combined market share &lt; 10%</li>
+<li>Vertical agreements: Market share &lt; 30%</li>
+</ul>
+<p><strong>When Effect is NOT Insignificant:</strong></p>
+<ul>
+<li>Information exchange among competitors has clear negative effects if frequent, current, and individualised</li>
+</ul>
+<h4 id="5-no-objective-justification-under-article-1013-tfeu">5) No Objective Justification Under Article 101(3) TFEU </h4>
+<p><strong>Article 101(3) Exemption:</strong></p>
+<p>Even if an agreement violates Article 101(1), it may be exempted if it satisfies all four conditions:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>An agreement which restricts competition may be declared compatible if:
+
+1) It contributes to improving the production or distribution of goods or 
+   technical or economic progress;
+
+2) It allows consumers a fair share of the resulting benefits;
+
+3) It does not impose restrictions beyond those indispensable to achieve 
+   these objectives; AND
+
+4) It does not eliminate competition for a substantial part of the products 
+   concerned.
+</code></pre><p><strong>Key Points:</strong></p>
+<ul>
+<li><strong>All four conditions must be satisfied.</strong> Failure in any one element means no exemption.</li>
+<li><strong>Burden of Proof:</strong> Parties claiming exemption bear the burden of proving all four conditions.</li>
+<li><strong>No Automatic Exemption:</strong> Exemptions were historically granted on a case-by-case basis, but now typically covered by <strong>Block Exemption Regulations</strong> for certain agreement categories (e.g., vertical agreements, technology transfer agreements, horizontal cooperation agreements).</li>
+</ul>
+<p><strong>Balancing Test:</strong><br>
+The exemption performs a <strong>balancing test</strong>: Do the efficiency benefits to consumers outweigh the competitive restrictions? If yes, the agreement serves pro-competitive purposes and merits exemption.</p>
+<h3 id="horizontal-block-exemption-regulations">Horizontal Block Exemption Regulations </h3>
+<p>The Commission has issued <strong>Block Exemption Regulations</strong> for categories of agreements presumed to satisfy Article 101(3):</p>
+<ol>
+<li><strong>Horizontal Cooperation Agreements:</strong> R&amp;D agreements, production agreements, purchasing agreements, marketing agreements, standardization agreements</li>
+<li><strong>Vertical Agreements:</strong> Distribution agreements, exclusive distribution, selective distribution (max 30% market share threshold)</li>
+<li><strong>Technology Transfer Agreements:</strong> Patent licenses, know-how licenses, software licenses (max 30% market share threshold)</li>
+</ol>
+<h3 id="enforcement-fines-and-remedies">Enforcement: Fines and Remedies </h3>
+<p><strong>Administrative Penalties (Article 23 TFEU):</strong></p>
+<ul>
+<li><strong>Up to 10% of annual worldwide turnover</strong> of the company</li>
+<li>Applied to both participating companies in an agreement</li>
+<li>Can exceed €1 billion for major cartels</li>
+</ul>
+<p><strong>Example Fines:</strong></p>
+<ul>
+<li><strong>Google (2018):</strong> €4.342 billion for abusing dominant position in search</li>
+<li><strong>Truck Cartel (2016):</strong> €3.8 billion</li>
+<li><strong>Google (2025):</strong> €2.95 billion</li>
+<li><strong>Google Shopping (2017):</strong> €2.42 billion</li>
+</ul>
+<p><strong>Private Enforcement:</strong></p>
+<ul>
+<li>Injured parties may sue for damages in national courts</li>
+<li><strong>Directive 2014/104/EU (Actions for Damages Directive)</strong> facilitates private claims</li>
+<li>Court can award lost profits, price overcharges, and costs</li>
+</ul>
+<hr>
+<h2 id="article-102">Article 102 TFEU: Abuse of Dominant Position </h2>
+<h3 id="the-provision-1">The Provision </h3>
+<p><strong>Article 102 TFEU</strong> (ex Article 82 TEC):</p>
+<blockquote>
+<p>Any <strong>abuse</strong> by one or more <strong>undertakings of a dominant position</strong> within the <strong>internal market or in a substantial part of it</strong> shall be prohibited as incompatible with the internal market in so far as it may <strong>affect trade between Member States</strong>.</p>
+<p>Such abuse may, in particular, consist in:</p>
+<p>(a) directly or indirectly imposing unfair purchase or selling prices or other unfair trading conditions;<br>
+(b) limiting production, markets or technical development to the prejudice of consumers;<br>
+(c) applying dissimilar conditions to equivalent transactions with other trading parties, thereby placing them at a competitive disadvantage;<br>
+(d) making the conclusion of contracts subject to acceptance by the other parties of supplementary obligations which, by their nature or according to commercial usage, have no connection with the subject of such contracts.</p>
+</blockquote>
+<p>Unlike Article 101, which prohibits <strong>coordination between undertakings</strong>, Article 102 addresses <strong>unilateral conduct by a single dominant firm</strong> or joint dominance by multiple firms.</p>
+<h3 id="legal-test-for-article-102-tfeu-violation">Legal Test for Article 102 TFEU Violation </h3>
+<p>A violation of Article 102 requires establishing five elements:</p>
+<h4 id="1-undertaking">1) Undertaking </h4>
+<p>Same definition as Article 101: any entity engaged in economic/commercial activities.</p>
+<h4 id="2-dominant-position">2) Dominant Position </h4>
+<p><strong>Definition (CJEU):</strong></p>
+<blockquote>
+<p>A position of economic strength enjoyed by an undertaking which enables it to <strong>prevent effective competition being maintained on the relevant market</strong> by giving it the power to behave to an <strong>appreciable extent independently of its competitors, customers and ultimately of its consumers</strong>.</p>
+</blockquote>
+<p><strong>Key Elements:</strong></p>
+<ul>
+<li><strong>Economic strength:</strong> The undertaking has substantial market power</li>
+<li><strong>Independence:</strong> Ability to act without regard to competitors' reactions</li>
+<li><strong>Prevention of effective competition:</strong> Power to maintain supracompetitive prices, reduce output, or limit innovation</li>
+</ul>
+<p><strong>Assessment:</strong></p>
+<ul>
+<li>Dominance is evaluated in relation to the <strong>internal market as a whole or a substantial part of it</strong></li>
+<li><strong>Single Member State suffices:</strong> Dominance in one EU Member State is sufficient for Article 102 to apply</li>
+<li>Market definition is critical (using SSNIP test – Small but Significant Non-transitory Increase in Price)</li>
+</ul>
+<p><strong>Market Share as Indicator:</strong></p>
+<ul>
+<li>
+<blockquote>
+<p>50% market share: Generally indicates dominance (rebuttable presumption)</p>
+</blockquote>
+</li>
+<li>40-50% market share: May indicate dominance depending on context</li>
+<li>&lt; 40% market share: Rarely indicates dominance unless other factors present</li>
+</ul>
+<p><strong>Other Factors:</strong></p>
+<ul>
+<li>Barriers to entry and expansion</li>
+<li>Financial resources and technological lead</li>
+<li>Vertical integration</li>
+<li>Access to supply and distribution channels</li>
+<li>Network effects and switching costs</li>
+<li>Customer loyalty</li>
+</ul>
+<h4 id="3-abuse">3) Abuse </h4>
+<p><strong>Definition:</strong> No single definition exists, but abuse is the improper use of dominant position that distorts or restricts competition. Articles 102(a)-(d) provide <strong>non-exhaustive examples</strong> of abusive conduct.</p>
+<p><strong>Distinction:</strong> A dominant position itself is <strong>not illegal</strong>. The TFEU specifically provides that dominance confers upon the undertaking a <strong>special responsibility not to allow its conduct to impair genuine undistorted competition</strong> (<em>Guidance on Article 82 Enforcement Priorities</em>, 2009).</p>
+<p><strong>Categories of Abusive Conduct:</strong></p>
+<h5 id="a-exploitative-abuse">a) <strong>Exploitative Abuse</strong> </h5>
+<p>Conduct that exploits customers or trading partners by imposing <strong>unfair prices or trading conditions</strong>:</p>
+<p><strong>Excessive Pricing (Article 102(a)):</strong></p>
+<ul>
+<li>Imposing prices that have no reasonable relationship to the economic value provided</li>
+<li><em>Example:</em> Charging excessive pharmaceutical prices for life-saving drugs with no close substitutes</li>
+</ul>
+<p><strong>Unfair Trading Conditions (Article 102(a), (d)):</strong></p>
+<ul>
+<li>Imposing payment terms, delivery conditions, or other terms that are grossly disadvantageous</li>
+<li>Bundling products in ways that exploit consumers</li>
+<li><em>Example:</em> Forcing retailers to stock slow-moving products to access fast-moving products</li>
+</ul>
+<p><strong>Price Discrimination (Article 102(c)):</strong></p>
+<ul>
+<li>Applying dissimilar conditions to equivalent transactions with different trading parties</li>
+<li><em>Requirement:</em> Transactions must be <strong>equivalent</strong> (similar products, similar volumes, similar timing)</li>
+<li><em>Exception:</em> Objective justification (e.g., cost differences, market conditions)</li>
+<li><em>Example:</em> Charging the same supplier different prices for identical products based solely on buyer identity</li>
+</ul>
+<h5 id="b-exclusionary-abuse">b) <strong>Exclusionary Abuse</strong> </h5>
+<p>Conduct that forecloses market access for <strong>competitors</strong> or prevents their competition:</p>
+<p><strong>Predatory Pricing:</strong></p>
+<ul>
+<li>Setting prices below costs to eliminate or discipline competitors</li>
+<li><em>Condition:</em> Reasonable expectation of recouping losses through supracompetitive pricing post-exit</li>
+<li><em>Example:</em> Microsoft pricing its browser below cost to eliminate Netscape</li>
+</ul>
+<p><strong>Refusal to Deal:</strong></p>
+<ul>
+<li>Refusing to supply an essential input to competitors</li>
+<li><em>Requirements</em> ("Exceptional Circumstances Test" from <em>Magill</em> and <em>IMS Health</em>):
+<ol>
+<li>The input is <strong>indispensable</strong> for downstream competition (no substitute)</li>
+<li>Refusal <strong>excludes all effective competition</strong> on the downstream market</li>
+<li>Refusal <strong>prevents emergence of a new product</strong> for which consumer demand exists</li>
+<li>Refusal is <strong>objectively unjustified</strong></li>
+</ol>
+</li>
+<li><em>Example:</em> <strong>Microsoft</strong> refusing to disclose interface information to competitors wanting to develop interoperable software</li>
+</ul>
+<p><strong>Predatory Exclusion:</strong></p>
+<ul>
+<li>Pricing strategies, exclusive dealing, or other conduct designed to foreclose competitors</li>
+<li><em>Analysis:</em> Would an equally efficient competitor be able to compete?</li>
+<li><em>Standard:</em> "As Efficient Competitor Test" – would a competitor as efficient as the dominant firm be forced to exit or unable to enter?</li>
+<li><em>Example:</em> Tying or bundling to foreclose access to markets</li>
+</ul>
+<p><strong>Exclusive Dealing:</strong></p>
+<ul>
+<li>Requiring customers to purchase exclusively from the dominant firm</li>
+<li>Preventing customers from dealing with competitors</li>
+<li><em>Example:</em> Long-term exclusive contracts foreclosing alternatives</li>
+<li><em>Countervailing Factors:</em> Efficiency gains, pro-competitive justifications</li>
+</ul>
+<p><strong>Tying and Bundling:</strong></p>
+<ul>
+<li>Conditioning sale of one product (the "tying product") on purchase of another product (the "tied product")</li>
+<li>Particularly problematic if leveraging dominance from one market to another</li>
+<li><em>Example:</em> Conditioning Windows licensing on acceptance of Internet Explorer browser</li>
+<li><em>Requirements:</em> Two separate products, dominant position in tying product, coercion, foreclosure effect</li>
+</ul>
+<p><strong>Margin Squeeze:</strong></p>
+<ul>
+<li>Narrowing the gap between upstream wholesale prices and downstream retail prices</li>
+<li>Forecloses downstream competitors unable to operate profitably at resulting margins</li>
+<li><em>Example:</em> Vertically integrated telecom incumbent raising interconnection charges while reducing retail prices</li>
+</ul>
+<h4 id="4-effect-on-trade-between-member-states">4) Effect on Trade Between Member States </h4>
+<p>Same standard as Article 101: trade between at least two Member States must be <strong>potentially or actually</strong> affected. Low threshold, typically presumed for companies with multi-Member State operations.</p>
+<h4 id="5-no-objective-justification">5) No Objective Justification </h4>
+<p>Dominant conduct may escape Article 102 liability if objectively justified:</p>
+<p><strong>Possible Justifications:</strong></p>
+<ol>
+<li><strong>Efficiency gains:</strong> Conduct generates substantial offsetting pro-competitive benefits</li>
+<li><strong>Consumer benefits:</strong> Conduct benefits consumers overall despite competitive restrictions</li>
+<li><strong>Safety/health:</strong> Conduct necessary for safety, health, or consumer protection</li>
+<li><strong>Technical feasibility:</strong> Conduct necessary due to technical requirements</li>
+<li><strong>Competition on merits:</strong> Conduct results from superior performance, not anticompetitive tactics</li>
+</ol>
+<p><strong>Burden:</strong> Dominant firm must prove justification. Efficiency claims must be substantiated with concrete evidence.</p>
+<h3 id="special-responsibility-of-dominant-undertakings">Special Responsibility of Dominant Undertakings </h3>
+<p>A critical principle undergirds Article 102: <strong>Dominant undertakings have a special responsibility to ensure their conduct does not distort competition.</strong></p>
+<p>This means:</p>
+<ul>
+<li>Conduct lawful for non-dominant firms may be abusive for dominant firms</li>
+<li>Higher behavioral standards apply</li>
+<li>Stricter scrutiny of contractual arrangements and pricing practices</li>
+</ul>
+<h3 id="digital-markets-act-complementary-framework">Digital Markets Act: Complementary Framework </h3>
+<p>The <strong>Digital Markets Act (DMA)</strong>, which became operative in 2024, supplements Article 102 by imposing <strong>ex-ante (preventive) obligations</strong> on designated "gatekeeper" online platforms. Unlike Article 102 (which requires proving abuse after the fact), the DMA prohibits specified conduct prospectively for platforms meeting designation criteria (size, control of digital services, strategic importance).</p>
+<hr>
+<h2 id="merger-control">Merger Control Under the EUMR </h2>
+<h3 id="legal-framework">Legal Framework </h3>
+<p><strong>Regulation (EC) No 139/2004 on the Control of Concentrations (EUMR)</strong> provides a separate competition tool: <strong>preventive merger control</strong>. Unlike Articles 101-102, which apply to post-merger conduct, merger control assesses concentration <strong>before it occurs</strong>.</p>
+<h3 id="rationale-for-merger-control">Rationale for Merger Control </h3>
+<p>Mergers can reduce competition in several ways:</p>
+<ul>
+<li><strong>Horizontal mergers:</strong> Eliminate a competitor, reduce market participants</li>
+<li><strong>Vertical mergers:</strong> Create foreclosure opportunities (access denial)</li>
+<li><strong>Conglomerate mergers:</strong> Enable leveraging of dominance across markets</li>
+</ul>
+<p>Merger control is a <strong>prophylactic tool</strong>: problems are prevented rather than remedied after harm occurs.</p>
+<h3 id="legal-test-for-incompatible-merger">Legal Test for Incompatible Merger </h3>
+<p><strong>Article 2(3) EUMR:</strong></p>
+<blockquote>
+<p>A concentration which would <strong>significantly impede effective competition</strong> (SIEC) in the <strong>common market</strong> or in a <strong>substantial part</strong> of it, in particular as a result of the creation or strengthening of a dominant position, shall be declared <strong>incompatible with the common market</strong>.</p>
+</blockquote>
+<h3 id="elements-of-the-siec-test">Elements of the SIEC Test </h3>
+<h4 id="1-concentration">1) Concentration </h4>
+<p>A <strong>concentration</strong> occurs when:</p>
+<p><strong>a) Merger:</strong> Two previously independent undertakings become one</p>
+<ul>
+<li><em>Example:</em> Facebook acquires WhatsApp, combining two independent social media platforms</li>
+</ul>
+<p><strong>b) Acquisition of Control:</strong> One undertaking gains control over another</p>
+<ul>
+<li><em>Example:</em> Microsoft acquires 55% of Netflix shares</li>
+<li><strong>Control:</strong> Power to exercise decisive influence on an undertaking's operations</li>
+</ul>
+<p><strong>NOT a Concentration:</strong></p>
+<ul>
+<li>Temporary shareholding for investment purposes only</li>
+<li>Transactions between companies already under common control (e.g., parent company reorganizations)</li>
+</ul>
+<h4 id="2-eu-dimension">2) EU Dimension </h4>
+<p>The merger must meet jurisdictional thresholds. <strong>Primary Thresholds (Article 1(2)):</strong></p>
+<p><strong>General Thresholds:</strong></p>
+<ul>
+<li><strong>Combined worldwide turnover &gt; €5,000 million</strong> AND</li>
+<li><strong>EU-wide turnover of at least two undertakings &gt; €250 million each</strong></li>
+</ul>
+<p><strong>Alternative Threshold:</strong></p>
+<ul>
+<li><strong>EU-wide turnover of at least three undertakings &gt; €100 million each</strong> AND</li>
+<li><strong>At least two of these with turnover &gt; €30 million in same Member State</strong> AND</li>
+<li><strong>Each of at least two undertakings &gt; €25 million worldwide</strong></li>
+</ul>
+<p><strong>German Amendment (§ 35 (1a) ARC, 2017):</strong></p>
+<ul>
+<li><strong>Transaction value &gt; €400 million</strong> (even if turnover thresholds not met)</li>
+<li>Responds to concerns about free services (zero turnover but high value)</li>
+</ul>
+<p><strong>Referral Rules:</strong></p>
+<ul>
+<li>Concentration can be referred from Member States to Commission if competent</li>
+<li>Commission can refer back to Member States (Article 4(5), Article 9)</li>
+</ul>
+<h4 id="3-significantly-impede-effective-competition-siec-test">3) Significantly Impede Effective Competition (SIEC Test) </h4>
+<p>The merger must be assessed as likely to <strong>significantly impede competition</strong> (standard: lower than outright prohibition, higher than trivial effect).</p>
+<p><strong>Analysis Methods:</strong></p>
+<p><strong>a) Non-Coordinated Effects:</strong></p>
+<ul>
+<li>Risk of <strong>unilateral price increases</strong> due to loss of competitive constraint</li>
+<li>Merger creates incentive and ability to raise prices post-merger</li>
+<li>Competitors cannot compensate for lost competitor</li>
+<li><em>Example:</em> Removal of significant price competitor → remaining firms raise prices</li>
+</ul>
+<p><strong>b) Coordinated Effects:</strong></p>
+<ul>
+<li>Merger makes <strong>coordination easier</strong> among remaining competitors</li>
+<li>Post-merger market structure facilitates collusion (fewer, more symmetric players)</li>
+<li><em>Example:</em> Merger of two of five competitors → remaining three can more easily coordinate prices</li>
+</ul>
+<p><strong>c) Foreclosure Effects (Vertical/Conglomerate Mergers):</strong></p>
+<ul>
+<li>Merged firm can deny competitors access to essential inputs</li>
+<li><em>Example:</em> Upstream firm acquired by downstream rival → input unavailable to other downstream competitors</li>
+</ul>
+<p><strong>d) Conglomerate Merger Leverage:</strong></p>
+<ul>
+<li>Dominant position in one market leveraged to adjacent market</li>
+<li><em>Example:</em> Dominant software company acquiring hardware distributor → leverages software dominance to hardware sales</li>
+</ul>
+<h4 id="4-substantial-part-of-the-internal-market">4) Substantial Part of the Internal Market </h4>
+<p><strong>Geographic Market Definition:</strong></p>
+<ul>
+<li>Merger must affect EU internal market as a whole or a "substantial part"</li>
+<li><strong>One Member State suffices</strong> to meet threshold</li>
+<li>Market definition uses SSNIP test (similar to antitrust cases)</li>
+</ul>
+<h4 id="5-prior-notification">5) Prior Notification </h4>
+<p><strong>Procedural Requirement:</strong></p>
+<ul>
+<li>Parties must notify merger <strong>before closing the transaction</strong></li>
+<li>Failure to notify can result in dissolution orders and fines</li>
+</ul>
+<h3 id="data-in-merger-control">Data in Merger Control </h3>
+<p>Data mergers present novel challenges because:</p>
+<p><strong>Quantification Issues:</strong></p>
+<ul>
+<li>Turnover thresholds become irrelevant for data-dependent companies (Facebook/WhatsApp: $19 billion paid for company with minimal revenue)</li>
+<li>Valuation of data assets difficult</li>
+<li>Market share calculation problematic for "free" services</li>
+</ul>
+<p><strong>Data Concentration Concerns:</strong></p>
+<ul>
+<li>Merger may combine datasets, reducing market access for competitors</li>
+<li>Lock-in effects increase when data becomes more comprehensive</li>
+<li>Network effects amplified by combined datasets</li>
+</ul>
+<h3 id="key-merger-cases-involving-data">Key Merger Cases Involving Data </h3>
+<h4 id="microsoftskype-2011">Microsoft/Skype (2011) </h4>
+<p><strong>Facts:</strong> Microsoft acquired Skype (video calling service) for €7.5 billion.</p>
+<p><strong>Commission Concerns:</strong></p>
+<ul>
+<li>Combined market position in consumer communications</li>
+<li>Potential to integrate Skype with Outlook/Windows ecosystem</li>
+<li>Network effects could create tipping</li>
+</ul>
+<p><strong>Resolution:</strong> Cleared without conditions.</p>
+<p><strong>Reasoning:</strong></p>
+<ul>
+<li>High price sensitivity (services free – customers switch if charged)</li>
+<li>Low market barriers (easy entry for new communication services)</li>
+<li>Dynamic sector with short innovation cycles</li>
+<li>High market share (90% in video calls) not determinative due to market dynamism</li>
+</ul>
+<p><strong>Lesson:</strong> Commission discounts static market share analysis in dynamic digital markets.</p>
+<h4 id="facebookwhatsapp-2014">Facebook/WhatsApp (2014) </h4>
+<p><strong>Facts:</strong> Facebook acquired WhatsApp for <strong>$19 billion</strong> – extraordinary price for company with minimal revenue.</p>
+<p><strong>Jurisdictional Challenge:</strong></p>
+<ul>
+<li>Traditional turnover thresholds not met</li>
+<li>Invoked <strong>Article 4(5) EUMR</strong>: referral by three Member States</li>
+<li>Exceptional procedure to establish jurisdiction</li>
+</ul>
+<p><strong>Commission Concerns:</strong></p>
+<ul>
+<li><strong>Data concentration:</strong> Combining Facebook's and WhatsApp's user data</li>
+<li>Facebook's extensive user profiling + WhatsApp's communication data</li>
+<li>Enhanced advertising targeting capability</li>
+</ul>
+<p><strong>Resolution:</strong> Cleared without conditions.</p>
+<p><strong>Reasoning:</strong></p>
+<ul>
+<li>WhatsApp collected minimal personal data at time of merger</li>
+<li>Large amount of competing ad-targeting data available outside Facebook</li>
+<li>Data portability rights under future GDPR would enable switching</li>
+<li>Privacy concerns fall within <strong>GDPR jurisdiction, not competition law</strong></li>
+</ul>
+<p><strong>Post-Merger Enforcement:</strong></p>
+<ul>
+<li>Commission fined Facebook €110 million (2017) for <strong>misleading information</strong> in merger notification</li>
+<li>Facebook had claimed user matching between platforms was "impossible or unreliable"</li>
+<li>Actually, integration was easily feasible</li>
+</ul>
+<p><strong>Lessons:</strong></p>
+<ul>
+<li>Data concentration itself not automatically problematic under traditional test</li>
+<li>Novel issue of data valuation in M&amp;A pricing unresolved</li>
+<li>Privacy/GDPR considerations distinct from competition concerns (though now recognized as interconnected)</li>
+</ul>
+<h4 id="microsoftlinkedin-2016">Microsoft/LinkedIn (2016) </h4>
+<p><strong>Facts:</strong> Microsoft acquired LinkedIn for <strong>$26 billion</strong> (largest tech acquisition by price).</p>
+<p><strong>Jurisdictional Issue:</strong></p>
+<ul>
+<li>More easily met traditional thresholds given Microsoft's size</li>
+<li>Turnover-based jurisdiction less problematic for Microsoft</li>
+</ul>
+<p><strong>Commission Concerns:</strong></p>
+<p><strong>1. Professional Social Network Market:</strong></p>
+<ul>
+<li>LinkedIn dominant in professional networking</li>
+<li>Microsoft could leverage Windows/Office integration</li>
+<li>Pre-installation on Windows and integration with Outlook</li>
+<li>Network effects could tip market</li>
+</ul>
+<p><strong>2. CRM Software Market:</strong></p>
+<ul>
+<li>LinkedIn data valuable for machine learning in CRM tools</li>
+<li>Microsoft could deny competitors access to full LinkedIn dataset</li>
+<li>Competitors could be hampered in developing competing CRM solutions</li>
+</ul>
+<p><strong>3. Online Advertising Market:</strong></p>
+<ul>
+<li>Combined Microsoft-LinkedIn data valuable for ad targeting</li>
+<li>Microsoft could increase advertising market power</li>
+</ul>
+<p>**Commission Decision: <strong>Cleared with Commitments</strong> (Article 8(2) EUMR)</p>
+<p><strong>Imposed Commitments:</strong></p>
+<ol>
+<li>No pre-installation of LinkedIn on Windows PCs</li>
+<li>Maintain API interoperability with Microsoft Office</li>
+<li>Continued access to LinkedIn data for third-party CRM competitors</li>
+<li>Interoperability commitments for Outlook calendar/contact data</li>
+</ol>
+<p><strong>Lesson:</strong> Commitments can resolve data-driven merger concerns; not all data mergers prohibited.</p>
+<h4 id="googlefitbit-2020">Google/Fitbit (2020) </h4>
+<p><strong>Facts:</strong> Google acquired Fitbit (wearable health data company) for ~$2.1 billion.</p>
+<p><strong>Concerns:</strong></p>
+<ul>
+<li>Health/fitness data concentration with Google</li>
+<li>Google's vast user profiling + health data integration</li>
+<li>Potential for health insurance discrimination, targeted advertising</li>
+</ul>
+<p><strong>Resolution:</strong> Cleared with commitment to data silo.</p>
+<p><strong>Key Commitment:</strong></p>
+<ul>
+<li>Google committed to <strong>data silo</strong>: health data from Fitbit will not be combined with Google's advertising profile data</li>
+<li>Separation enforced through technical and organizational measures</li>
+<li>Monitoring provisions</li>
+</ul>
+<p><strong>Lesson:</strong> Data silos can address competition concerns in health/sensitive data contexts.</p>
+<h3 id="state-aid">State Aid </h3>
+<p><strong>Article 107-109 TFEU</strong> address <strong>State aid</strong> (subsidies to undertakings). State aid distorts competition by enabling undertakings to compete using public funds rather than merit.</p>
+<p><strong>General Prohibition (Article 107(1)):</strong><br>
+Aid granted by Member States that distorts or threatens to distort competition and affects inter-state trade is prohibited.</p>
+<p><strong>Exceptions:</strong> Certain aid may be justified for public interest purposes (regional development, environmental protection, etc.).</p>
+<hr>
+<h2 id="data-competition">Data and Competition Law: Emerging Challenges </h2>
+<h3 id="why-data-is-a-topic-for-competition-law">Why Data Is a Topic for Competition Law </h3>
+<p>Data has become a critical asset affecting market power and competitive dynamics. Competition authorities must account for data as they assess:</p>
+<ul>
+<li><strong>Market power:</strong> Does control of data create market dominance?</li>
+<li><strong>Market foreclosure:</strong> Can dominant firms deny competitors access to essential data?</li>
+<li><strong>Merger effects:</strong> Does combination of datasets significantly impede competition?</li>
+<li><strong>Innovation:</strong> Do data-driven network effects reduce incentives for competitive innovation?</li>
+</ul>
+<h3 id="microsoft-case-data-as-essential-facility">Microsoft Case: Data as Essential Facility </h3>
+<p><strong>Microsoft (COMP/C-3/37.792, 2004)</strong> remains foundational for data in competition law.</p>
+<p><strong>Facts:</strong></p>
+<ul>
+<li>Microsoft dominant in computer operating systems (Windows)</li>
+<li>Competitors wanting to develop interoperable software needed <strong>interface information</strong> (data about how Windows operates)</li>
+<li>Microsoft withheld this data or discriminated through pricing</li>
+<li>Competitors unable to offer products compatible with Windows</li>
+</ul>
+<p><strong>Commission Finding:</strong></p>
+<ul>
+<li>Interface information was <strong>essential facility</strong> for secondary software market competition</li>
+<li>Refusal to disclose constituted <strong>abuse of dominant position</strong> (Article 102)</li>
+<li>Dominance in OS market leveraged to block competition in software market</li>
+</ul>
+<p><strong>Significance for Data:</strong></p>
+<ul>
+<li>Established that <strong>refusal to disclose data</strong> can constitute Article 102 abuse</li>
+<li>Demonstrated data's importance as competitive input</li>
+<li>Set standards for when access obligations arise ("exceptional circumstances")</li>
+</ul>
+<p><strong>Remedy:</strong></p>
+<ul>
+<li>Microsoft ordered to disclose interface information</li>
+<li>License on <strong>RAND terms</strong> (Reasonable And Non-Discriminatory)</li>
+<li>Fine of €497 million</li>
+</ul>
+<h3 id="paradigm-shifts-in-digital-economy">Paradigm Shifts in Digital Economy </h3>
+<p>Data challenges traditional competition law concepts in fundamental ways:</p>
+<h4 id="1-quantification-issues">1) Quantification Issues </h4>
+<p><strong>Problem:</strong> Competition law depends on precise quantification (prices, market shares, turnovers) but data value resists quantification.</p>
+<p><strong>SSNIP Test Failure:</strong></p>
+<ul>
+<li>Test asks: Would customers switch from Product A to Product B if price increased 5-10%?</li>
+<li>For free services (Google Search, Facebook): <strong>What is the price?</strong></li>
+<li>How to measure effect of price increase on zero-priced service?</li>
+</ul>
+<p><strong>Market Share Issues:</strong></p>
+<ul>
+<li>Market share calculated on sales basis</li>
+<li>Free services have zero revenue (data collected in exchange)</li>
+<li>How to calculate market share of "free" service?</li>
+</ul>
+<p><strong>Transaction Value Problem:</strong></p>
+<ul>
+<li>Facebook paid $19 billion for WhatsApp with minimal revenue</li>
+<li>Price reflects data value, not current sales</li>
+<li>Traditional turnover thresholds miss high-value acquisitions</li>
+</ul>
+<p><strong>German Response (2017):</strong></p>
+<ul>
+<li>Amended merger control thresholds to include transaction value ($400 million) even if turnover not met</li>
+<li>Directly addresses free service valuations</li>
+</ul>
+<h4 id="2-multi-sided-markets-and-network-effects">2) Multi-Sided Markets and Network Effects </h4>
+<p><strong>Definition:</strong> Platforms matching supply and demand across multiple "sides" (e.g., Uber: drivers + riders, Facebook: users + advertisers).</p>
+<p><strong>Network Effects:</strong></p>
+<ul>
+<li><strong>Direct network effects:</strong> More users of platform = more valuable for all users (WhatsApp)</li>
+<li><strong>Indirect network effects:</strong> More users on one side = more valuable for other side (Airbnb)</li>
+</ul>
+<p><strong>Tipping:</strong></p>
+<ul>
+<li>Network effects can cause markets to "tip" toward single winner</li>
+<li>Once one platform dominates, competitors cannot attract users ("the winner takes it all")</li>
+<li>Peter Thiel: "Competition is for losers" – reflects Silicon Valley strategy to monopolize markets</li>
+</ul>
+<p><strong>Competitive Implications:</strong></p>
+<ul>
+<li>Once market tips, effective competition ceases</li>
+<li>Locked-in users generate switching costs</li>
+<li>Data accumulation feeds network effects (more data = better recommendations = more valuable platform)</li>
+</ul>
+<p><strong>Countervailing Factors:</strong></p>
+<ul>
+<li><strong>Multi-homing:</strong> Users can maintain profiles on multiple platforms (dating apps)</li>
+<li><strong>Data portability:</strong> GDPR Article 20 enables users to transfer personal data to competitors</li>
+<li><strong>Interoperability:</strong> Platform access for third-party developers</li>
+</ul>
+<h4 id="3-loss-of-customer-interface">3) Loss of Customer Interface </h4>
+<p><strong>Problem:</strong> Traditional markets connect supplier directly with customer. In digital markets, platforms control access.</p>
+<p><strong>Gatekeeping:</strong></p>
+<ul>
+<li>Platform operator sits between supplier and customer</li>
+<li>Controls terms of access, data visibility, pricing visibility</li>
+<li>Can exclude suppliers or discriminate among them</li>
+</ul>
+<p><strong>Implications:</strong></p>
+<ul>
+<li>Suppliers lose direct market access</li>
+<li>Coordination process disrupted</li>
+<li>Platform has informational advantage (sees all suppliers and customers)</li>
+<li>Market power concentrated at platform layer</li>
+</ul>
+<p><strong>Example:</strong> Amazon Marketplace – sellers dependent on Amazon for access to customers.</p>
+<h4 id="4-algorithms-and-ai">4) Algorithms and AI </h4>
+<p><strong>Problem:</strong> As machines increasingly make pricing and supply decisions through algorithms, traditional cartel enforcement becomes difficult.</p>
+<p><strong>Scenario - Algorithmic Collusion:</strong></p>
+<ul>
+<li>Two retailers program pricing algorithms to optimize profit</li>
+<li>Algorithms, given prices of competitor, autonomously determine best price response</li>
+<li>Result: Prices stabilize at high levels (cartel-like outcome)</li>
+<li>But no agreement between retailers; merely independent algorithm optimization</li>
+<li>Detection difficult (no email trails, meetings, or communications)</li>
+</ul>
+<p><strong>Legal Issues:</strong></p>
+<ul>
+<li>Does Article 101 require <strong>intent to restrict competition</strong>?</li>
+<li>Can machines violate Article 101 without human decision?</li>
+<li>How to prove "meeting of minds" if algorithms autonomously coordinate?</li>
+</ul>
+<p><strong>Regulatory Response:</strong></p>
+<ul>
+<li>Commissioner Vestager's "antitrust compliance by design"</li>
+<li>May require software design that prevents algorithmic collusion</li>
+<li>Emerging focus on <strong>technological approach</strong> to competition enforcement</li>
+</ul>
+<h4 id="5-market-dynamics-and-disruption">5) Market Dynamics and Disruption </h4>
+<p><strong>Debate:</strong> Are digital markets self-regulating, or do they require intervention?</p>
+<p><strong>"Disruption" Thesis:</strong></p>
+<ul>
+<li>Markets supposedly dynamic and contestable ("just one click away")</li>
+<li>Yahoo, Myspace, Nokia, Netscape seemed invincible but declined</li>
+<li>New entrants (initially: Google, Facebook, Amazon) disrupted incumbents</li>
+<li>Regulatory intervention may undermine innovation incentives</li>
+</ul>
+<p><strong>"Lock-In" Counter-thesis:</strong></p>
+<ul>
+<li>GAFAM companies (Google, Apple, Facebook, Amazon, Microsoft) dominated &gt;10 years</li>
+<li>Not replaced by new entrants despite apparent contestability</li>
+<li>Network effects and switching costs create durable positions</li>
+</ul>
+<p><strong>Market-Making Strategies:</strong></p>
+<ul>
+<li>Acquisition of nascent competitors (e.g., Facebook acquiring Instagram, Snapchat competitors)</li>
+<li>Copy competing features (e.g., Snapchat Stories → Instagram Stories)</li>
+<li>Financial advantages enabling buy-outs of potential disruptors</li>
+<li>Wealth accumulated through past dominance protects future dominance</li>
+</ul>
+<p><strong>Competition Law Implication:</strong></p>
+<ul>
+<li>Traditional tools (Articles 101-102, Merger Control) may be necessary to maintain contestability</li>
+<li>Market does not "self-correct" if barriers to entry/competition high</li>
+<li>Intervention justified to preserve competitive process, not to micromanage markets</li>
+</ul>
+<hr>
+<h2 id="case-studies">Case Studies and Practical Application </h2>
+<h3 id="case-1-commission-v-microsoft-data-exclusion">Case 1: Commission v Microsoft (Data Exclusion) </h3>
+<p><strong>Scenario:</strong> Microsoft dominates corporate PC operating systems. Introduces new Windows version supporting only its Office software, degrading performance of Google Docs and LibreOffice.</p>
+<p><strong>Analysis Under Article 102:</strong></p>
+<p><strong>Element 1 - Undertaking:</strong> ✓ Microsoft is undertaking engaged in commercial activities.</p>
+<p><strong>Element 2 - Dominant Position:</strong> ✓ Microsoft has &gt;90% market share in corporate PC OS market. Can act independently of competitors.</p>
+<p><strong>Element 3 - Abuse:</strong></p>
+<ul>
+<li>Exclusionary abuse: Excludes Google Docs and LibreOffice from corporate market</li>
+<li>Leverages dominance in OS to restrict competition in office software market</li>
+<li>Network effects reinforce exclusion (if locked into Office, harder to switch)</li>
+</ul>
+<p><strong>Element 4 - Effect on Trade:</strong> ✓ Affects multiple Member States.</p>
+<p><strong>Element 5 - No Justification:</strong></p>
+<ul>
+<li>Microsoft claims: Architectural decisions for better performance/security</li>
+<li>Counterargument: Could achieve goals without excluding competitors</li>
+<li>Microsoft could maintain interoperability with competitors</li>
+<li>Exclusion appears designed to strengthen Office market position, not efficiency</li>
+</ul>
+<p><strong>Likely Outcome:</strong> <strong>Violation of Article 102 TFEU</strong></p>
+<ul>
+<li>Abuse of dominant position through exclusionary conduct</li>
+<li>Remedy: Requirement to maintain interoperability, possible fine (up to 10% worldwide turnover)</li>
+</ul>
+<p><strong>Legal Precedent:</strong> Similar to actual Microsoft case (COMP/C-3/37.792) addressing refusal to disclose interface information.</p>
+<h3 id="case-2-applenetflix-merger">Case 2: Apple/Netflix Merger </h3>
+<p><strong>Scenario:</strong> Apple proposes acquiring 55% of Netflix. Apple controls App Store, Apple TV+, hardware. Netflix has vast content library.</p>
+<p><strong>Merger Control Analysis Under EUMR:</strong></p>
+<p><strong>Element 1 - Concentration:</strong> ✓ Acquisition of control (55% shares).</p>
+<p><strong>Element 2 - EU Dimension:</strong> ✓ Both companies have combined worldwide turnover &gt;&gt;€5 billion, EU-wide revenue &gt;&gt;€250 million.</p>
+<p><strong>Element 3 - SIEC Test:</strong></p>
+<p><strong>Horizontal Effects (Digital Entertainment/Streaming):</strong></p>
+<ul>
+<li>Both active in video streaming</li>
+<li>Combined market share in streaming substantial</li>
+<li>Combined Netflix content + Apple ecosystem powerful</li>
+<li>Could raise prices or degrade service quality</li>
+</ul>
+<p><strong>Vertical Effects (Hardware-Software Integration):</strong></p>
+<ul>
+<li>Apple could pre-install Netflix on hardware</li>
+<li>Could integrate Netflix with Apple ecosystem (Siri, recommendations)</li>
+<li>Competitors (Disney+, Amazon Prime) disadvantaged</li>
+</ul>
+<p><strong>Conglomerate Effects (Leveraging):</strong></p>
+<ul>
+<li>Apple could leverage hardware dominance (iPhones, iPads) to Netflix advantage</li>
+<li>Preferential treatment in App Store</li>
+</ul>
+<p><strong>Element 4 - Substantial Part:</strong> ✓ Affects EU-wide digital entertainment market.</p>
+<p>**Likely Outcome (if notified today): <strong>Likely Approved with Conditions</strong></p>
+<ul>
+<li>Conditional clearance most probable (similar to Microsoft/LinkedIn)</li>
+<li><strong>Potential Commitments:</strong>
+<ul>
+<li>No pre-installation of Netflix on Apple devices</li>
+<li>Continued access to App Store with neutral terms</li>
+<li>Maintained interoperability with other streaming services</li>
+<li>No preferential treatment in Siri recommendations</li>
+<li>Data silo: Netflix data not integrated with Apple user profiling</li>
+</ul>
+</li>
+</ul>
+<p><strong>Alternative:</strong> Outright prohibition if competitive concerns too severe, or unconditional clearance if efficiencies substantial.</p>
+<h3 id="case-3-metatiktok-concerted-practice">Case 3: Meta/TikTok Concerted Practice </h3>
+<p><strong>Scenario:</strong> Meta executives meet with TikTok executives. They discuss algorithms, user engagement strategies, and advertising pricing models. Later: "Two giants coming together to make more profit."</p>
+<p><strong>Analysis Under Article 101:</strong></p>
+<p><strong>Element 1 - Between Undertakings:</strong> ✓ Meta and TikTok are separate undertakings engaged in commercial activities.</p>
+<p><strong>Element 2 - Agreement or Concerted Practice:</strong></p>
+<ul>
+<li>Explicit agreement unclear (no formal contract signed)</li>
+<li><strong>Concerted Practice</strong> likely established:
+<ul>
+<li>Parties revealed competitive strategies to each other</li>
+<li>Each now aware of other's intended pricing and algorithm approaches</li>
+<li>Practical cooperation substituted for competitive risk</li>
+<li>Statements ("two giants making more profit") suggest coordination</li>
+</ul>
+</li>
+</ul>
+<p><strong>Element 3 - Effect on Trade:</strong> ✓ Affects social media/advertising markets across multiple Member States.</p>
+<p><strong>Element 4 - Effect on Competition By Object:</strong></p>
+<ul>
+<li>If discussing price coordination in advertising: <strong>Hard-core cartel (by object)</strong></li>
+<li>If discussing user engagement strategies: May be by object if intent to allocate customers</li>
+<li><strong>By effect analysis:</strong> Likely coordinated pricing → higher advertising rates, reduced choice, less innovation</li>
+</ul>
+<p><strong>Element 5 - No Justification:</strong> None apparent. Coordination to increase profit is not efficiency-promoting.</p>
+<p>**Likely Outcome: <strong>Violation of Article 101 TFEU</strong></p>
+<p><strong>Liability:</strong></p>
+<ul>
+<li>Both Meta and TikTok liable as participants in concerted practice</li>
+<li>Each faces fine up to 10% worldwide turnover</li>
+<li>Meta: ~<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>116</mn><mi>b</mi><mi>i</mi><mi>l</mi><mi>l</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>a</mi><mi>n</mi><mi>n</mi><mi>u</mi><mi>a</mi><mi>l</mi><mi>r</mi><mi>e</mi><mi>v</mi><mi>e</mi><mi>n</mi><mi>u</mi><mi>e</mi><mo>→</mo><mi>f</mi><mi>i</mi><mi>n</mi><mi>e</mi><mi>u</mi><mi>p</mi><mi>t</mi><mi>o</mi></mrow><annotation encoding="application/x-tex">116 billion annual revenue → fine up to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">116</span><span class="mord mathnormal">bi</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">nann</span><span class="mord mathnormal">u</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">re</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">u</span><span class="mord mathnormal">e</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">in</span><span class="mord mathnormal">e</span><span class="mord mathnormal">u</span><span class="mord mathnormal">pt</span><span class="mord mathnormal">o</span></span></span></span>11.6 billion</li>
+<li>TikTok: ~<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mi>b</mi><mi>i</mi><mi>l</mi><mi>l</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>a</mi><mi>n</mi><mi>n</mi><mi>u</mi><mi>a</mi><mi>l</mi><mi>r</mi><mi>e</mi><mi>v</mi><mi>e</mi><mi>n</mi><mi>u</mi><mi>e</mi><mo>→</mo><mi>f</mi><mi>i</mi><mi>n</mi><mi>e</mi><mi>u</mi><mi>p</mi><mi>t</mi><mi>o</mi></mrow><annotation encoding="application/x-tex">15 billion annual revenue → fine up to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">15</span><span class="mord mathnormal">bi</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">nann</span><span class="mord mathnormal">u</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">re</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">u</span><span class="mord mathnormal">e</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">in</span><span class="mord mathnormal">e</span><span class="mord mathnormal">u</span><span class="mord mathnormal">pt</span><span class="mord mathnormal">o</span></span></span></span>1.5 billion</li>
+</ul>
+<p><strong>Individual Liability - Junior Data Analyst Observer:</strong></p>
+<p><strong>Commission Question:</strong> Would mere observation change liability?</p>
+<p><strong>Legal Analysis:</strong></p>
+<ul>
+<li><strong>As observer only:</strong> If analyst truly did not participate, not liable</li>
+<li><strong>BUT:</strong> Analyst's presence may constitute evidence of meeting</li>
+<li><strong>Potential liability triggers:</strong>
+<ol>
+<li>If analyst participated in discussions (voiced support, contributed to strategy)</li>
+<li>If analyst's role was to document/report on coordination</li>
+<li>If analyst failed to distance themselves publicly from unlawful conduct</li>
+<li>If analyst reported back to superiors with knowledge of coordination</li>
+</ol>
+</li>
+</ul>
+<p><strong>CJEU Precedent (Eturas Case C-74/14):</strong></p>
+<ul>
+<li>Mere awareness of competitors' conduct insufficient for liability</li>
+<li>Must demonstrate <strong>active participation</strong> or <strong>failure to distance oneself</strong></li>
+<li>Presumption of innocence requires clear evidence of complicity</li>
+</ul>
+<p><strong>Conclusion:</strong> Analyst likely <strong>not liable</strong> if true observer and no active participation. However, if pressed in Commission interview, analyst should carefully document:</p>
+<ul>
+<li>Exact role at meeting</li>
+<li>Whether any statements made</li>
+<li>Timing of awareness</li>
+<li>Whether raised concerns about legality</li>
+</ul>
+<hr>
+<h2 id="eu-vs-us">EU vs. US Competition Law </h2>
+<h3 id="comparative-framework">Comparative Framework </h3>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>EU</th>
+<th>US</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Main Objective</strong></td>
+<td>Internal Market integration + Consumer welfare</td>
+<td>Consumer Welfare (strictly economic approach)</td>
+</tr>
+<tr>
+<td><strong>Enforcement Mechanism</strong></td>
+<td>Administrative system (Commission decides)</td>
+<td>Criminal law + civil enforcement</td>
+</tr>
+<tr>
+<td><strong>Enforcement Actors</strong></td>
+<td>European Commission (DG Competition) + National Competition Authorities</td>
+<td>Department of Justice (DOJ) + Federal Trade Commission (FTC)</td>
+</tr>
+<tr>
+<td><strong>Penalties (Antitrust)</strong></td>
+<td>Up to 10% of annual worldwide turnover</td>
+<td>Up to $100 million USD per violation or higher based on damages</td>
+</tr>
+<tr>
+<td><strong>Legal Standard (Cartels)</strong></td>
+<td>Automatic prohibition (with narrow exemption)</td>
+<td>Rule of reason (requires effects analysis)</td>
+</tr>
+<tr>
+<td><strong>Legal Standard (Dominance)</strong></td>
+<td>Abuse must be shown (dominance itself legal)</td>
+<td>Monopoly + anticompetitive conduct</td>
+</tr>
+<tr>
+<td><strong>Merger Thresholds</strong></td>
+<td>Turnover-based (+ transaction value in Germany)</td>
+<td>Turnover-based + Hart-Scott-Rodino review</td>
+</tr>
+<tr>
+<td><strong>Economic Approach</strong></td>
+<td>More economic approach (post-2000); consumer welfare focus</td>
+<td>Chicago School (per se rules for hardcore cartels); evolving</td>
+</tr>
+</tbody>
+</table>
+<h3 id="philosophical-differences">Philosophical Differences </h3>
+<p><strong>EU Approach: Internal Market + Structural Protection</strong></p>
+<ul>
+<li>Competition law serves broader goal of market integration</li>
+<li>Concern for market structure itself (not just price effects)</li>
+<li>Structural remedies acceptable (divestiture, interoperability requirements)</li>
+<li>More interventionist in principle</li>
+</ul>
+<p><strong>US Approach: Consumer Welfare + Chicago School</strong></p>
+<ul>
+<li>Efficiency and consumer welfare paramount</li>
+<li>Less concern for market structure if consumer welfare advanced</li>
+<li>Behavioral remedies preferred; structural remedies disfavored</li>
+<li>Less interventionist; market generally self-correcting</li>
+</ul>
+<h3 id="application-google-shopping-case">Application: Google Shopping Case </h3>
+<p><strong>EU (Commission 2017):</strong></p>
+<ul>
+<li><strong>Violation Found:</strong> Article 102 TFEU abuse of dominance</li>
+<li><strong>Rationale:</strong> Leveraging search dominance (&gt;90% market share) to Google Shopping market</li>
+<li>Preferential placement of Google Shopping results</li>
+<li>Demotion of competing comparison shopping services</li>
+<li><strong>Remedies:</strong> Conduct remedies (listing requirements, non-discrimination), fine €2.42 billion</li>
+<li><strong>Duration:</strong> Investigation 7 years</li>
+</ul>
+<p><strong>US (Similar Conduct, Different Outcome):</strong></p>
+<ul>
+<li><strong>2020:</strong> DOJ filed antitrust suit against Google for search/advertising practices</li>
+<li><strong>2023:</strong> Case still pending; no final decision</li>
+<li><strong>Likelihood:</strong> Case may succeed on search market concerns, but shopping service integration harder to challenge</li>
+<li><strong>US judges more skeptical:</strong> Integration of services may constitute lawful innovation</li>
+<li><strong>Efficiency argument stronger:</strong> Vertical integration of shopping into search arguably benefits consumers (better results)</li>
+</ul>
+<h3 id="cooperation-eu-us-coordination">Cooperation: EU-US Coordination </h3>
+<p>Despite differences, EU and US authorities cooperate on multi-jurisdictional cases:</p>
+<p><strong>Cooperation Agreements:</strong></p>
+<ul>
+<li>Bilateral Cooperation Agreement (1991)</li>
+<li>Positive Comity Agreement (1998)</li>
+<li>Best Practices Document (2011)</li>
+</ul>
+<p><strong>Mechanism:</strong></p>
+<ul>
+<li>Authorities share confidential information (within limits)</li>
+<li>Coordinate investigation timing</li>
+<li>Coordinate remedies where possible</li>
+<li>May reach different conclusions on same facts if focusing on different markets</li>
+</ul>
+<p><strong>Divergence Examples:</strong></p>
+<ul>
+<li><strong>Facebook/WhatsApp:</strong> EU cleared after long review; FTC separately addressed antitrust concerns through separate privacy action</li>
+<li><strong>Microsoft/LinkedIn:</strong> EU approved with commitments; US authorities did not challenge</li>
+<li><strong>Google Search:</strong> EU fined for abuse; US cases progress slowly</li>
+</ul>
+<hr>
+<h2 id="conclusions">Key Takeaways </h2>
+<h3 id="article-101-tfeu-anti-competitive-behaviour">Article 101 TFEU: Anti-Competitive Behaviour </h3>
+<ol>
+<li>
+<p><strong>Scope:</strong> Prohibits agreements, decisions, and concerted practices between independent undertakings that restrict competition and affect inter-state trade.</p>
+</li>
+<li>
+<p><strong>Hard-Core Cartels:</strong> Price fixing, market sharing, bid rigging are per se violations (by object) requiring no effects analysis.</p>
+</li>
+<li>
+<p><strong>Legal Test:</strong></p>
+<ul>
+<li>Between undertakings</li>
+<li>Agreement/concerted practice</li>
+<li>Effect on trade between Member States</li>
+<li>Effect on competition (by object or effect)</li>
+<li>No valid Article 101(3) exemption</li>
+</ul>
+</li>
+<li>
+<p><strong>Enforcement:</strong> Fines up to 10% worldwide turnover; private damages actions possible.</p>
+</li>
+<li>
+<p><strong>Digital Economy Challenges:</strong></p>
+<ul>
+<li>Algorithmic coordination difficult to detect</li>
+<li>Information exchange among competitors increasingly scrutinized</li>
+<li>Data pools may facilitate collusion or pro-competitive cooperation</li>
+</ul>
+</li>
+</ol>
+<h3 id="article-102-tfeu-abuse-of-dominant-position">Article 102 TFEU: Abuse of Dominant Position </h3>
+<ol>
+<li>
+<p><strong>Scope:</strong> Prohibits unilateral conduct by dominant undertakings that abuses their power.</p>
+</li>
+<li>
+<p><strong>Special Responsibility:</strong> Dominant firms held to higher behavioral standards; conduct lawful for non-dominant competitors may be abusive.</p>
+</li>
+<li>
+<p><strong>Legal Test:</strong></p>
+<ul>
+<li>Undertaking</li>
+<li>Dominant position (economic strength enabling independent behavior)</li>
+<li>Abuse (exclusionary or exploitative conduct)</li>
+<li>Effect on trade between Member States</li>
+<li>No objective justification</li>
+</ul>
+</li>
+<li>
+<p><strong>Categories of Abuse:</strong></p>
+<ul>
+<li><strong>Exploitative:</strong> Excessive prices, unfair terms, discrimination</li>
+<li><strong>Exclusionary:</strong> Refusal to deal, predatory pricing, tying, leveraging</li>
+</ul>
+</li>
+<li>
+<p><strong>Data-Specific Applications:</strong></p>
+<ul>
+<li>Refusal to disclose essential data (Microsoft interface information)</li>
+<li>Denial of data access to foreclosure competitors</li>
+<li>Leveraging data dominance across markets</li>
+</ul>
+</li>
+</ol>
+<h3 id="merger-control">Merger Control </h3>
+<ol>
+<li>
+<p><strong>Tool:</strong> Preventive assessment of proposed concentrations before closing.</p>
+</li>
+<li>
+<p><strong>Test:</strong> Significantly impede effective competition (SIEC) through creation/strengthening of dominant position.</p>
+</li>
+<li>
+<p><strong>Data Issues:</strong></p>
+<ul>
+<li>Quantification challenges for free services</li>
+<li>Transaction value thresholds needed (Germany: €400 million)</li>
+<li>Data concentration may trigger concerns even without price effects</li>
+<li>Commitments can address competitive concerns (interoperability, data silos)</li>
+</ul>
+</li>
+</ol>
+<h3 id="data-as-competition-concern">Data as Competition Concern </h3>
+<ol>
+<li>
+<p><strong>Why Data Matters:</strong> Data is critical competitive input; control of data creates market power; data accumulation feeds network effects.</p>
+</li>
+<li>
+<p><strong>Essential Facility Doctrine:</strong> Dominant firm cannot refuse access to essential data indispensable for downstream competition (Microsoft precedent).</p>
+</li>
+<li>
+<p><strong>Multi-Sided Markets:</strong> Network effects from data combinations may create tipping; data portability and interoperability become competitive tools.</p>
+</li>
+<li>
+<p><strong>Emerging Framework:</strong></p>
+<ul>
+<li>Traditional tools (Articles 101-102, Merger Control) applied with adaptations</li>
+<li>Digital Markets Act adds ex-ante obligations for gatekeepers</li>
+<li>GDPR intersects with competition (privacy as competitive concern)</li>
+<li>European Commission emphasizing "more technological approach"</li>
+</ul>
+</li>
+</ol>
+<h3 id="practical-enforcement">Practical Enforcement </h3>
+<ol>
+<li>
+<p><strong>Commission Enforcement:</strong></p>
+<ul>
+<li>Investigatory powers: Inspections, document requests, interviews</li>
+<li>Decisions imposing fines, conduct remedies, structural remedies</li>
+<li>Appeals to General Court and Court of Justice</li>
+</ul>
+</li>
+<li>
+<p><strong>National Authorities:</strong></p>
+<ul>
+<li>Apply EU and national competition law</li>
+<li>Coordinate through European Competition Network</li>
+<li>Handle smaller cases, local enforcement</li>
+</ul>
+</li>
+<li>
+<p><strong>Private Enforcement:</strong></p>
+<ul>
+<li>Injured parties sue in national courts for damages</li>
+<li>Facilitated by Directive 2014/104/EU</li>
+<li>Growing use for follow-on actions after Commission decisions</li>
+</ul>
+</li>
+</ol>
+<h3 id="looking-forward">Looking Forward </h3>
+<ol>
+<li>
+<p><strong>Digital Market Act:</strong> Complements Articles 101-102 with ex-ante regulation of gatekeepers (non-discrimination, interoperability obligations, data access rights).</p>
+</li>
+<li>
+<p><strong>Data Access Rights:</strong> Emerging principle that competitors may have right to access essential data, balanced against legitimate data protection and IP interests.</p>
+</li>
+<li>
+<p><strong>Algorithmic Accountability:</strong> Focus on preventing algorithms from facilitating collusion; "antitrust compliance by design" principle.</p>
+</li>
+<li>
+<p><strong>Cross-Jurisdictional Coordination:</strong> EU and US increasingly interact; differences in approach require companies to satisfy stricter standard (EU).</p>
+</li>
+</ol>
+<hr>
+<h2 id="conclusion">Conclusion </h2>
+<p>Competition law remains fundamental to the functioning of the EU's internal market and protection of consumer welfare. As the digital economy transforms business models and competitive dynamics, Articles 101 and 102 TFEU continue to provide the core legal framework for enforcement, with important adaptations emerging to address data-driven markets, network effects, algorithmic decision-making, and platform gatekeeping.</p>
+<p>The tension between <strong>protecting competition as a process</strong> (enabling contestable markets and dynamic innovation) and <strong>intervening to prevent foreclosure/dominance abuses</strong> (protecting consumers from supracompetitive prices and limited choice) remains central to competition law policy. The Digital Markets Act and evolving case law suggest a trajectory toward stronger intervention in digital markets, recognizing that unfettered network effects and data accumulation may require regulatory guardrails to maintain competitive markets.</p>
+<p>For businesses, the key takeaway is that competition law applies rigorously to digital platforms and data-driven business models. Companies must:</p>
+<ul>
+<li>Avoid agreements with competitors regarding pricing, output, or market allocation</li>
+<li>Exercise special care with dominant market positions, ensuring conduct does not foreclose competition</li>
+<li>Obtain clearance for significant mergers before closing</li>
+<li>Consider data access and interoperability obligations</li>
+<li>Design compliance programs recognizing algorithmic risks to competition</li>
+</ul>
+<hr>
+<h2 id="references">References </h2>
+<h3 id="primary-sources">Primary Sources </h3>
+<ul>
+<li>Treaty on the Functioning of the European Union (TFEU), Articles 101-109</li>
+<li>Regulation (EC) No 139/2004 (EC Merger Regulation)</li>
+<li>Digital Markets Act (Regulation (EU) 2022/1925)</li>
+<li>General Data Protection Regulation (GDPR)</li>
+</ul>
+<h3 id="case-law">Case Law </h3>
+<ul>
+<li><em>Microsoft Corp. v. Commission</em> (COMP/C-3/37.792, 2004)</li>
+<li><em>Case C-238/05 Asnef-Equifax</em> [2006] ECLI:EU:C:2006:734</li>
+<li><em>Microsoft/Skype</em> (Case M.6281)</li>
+<li><em>Facebook/WhatsApp</em> (Case M.7217)</li>
+<li><em>Microsoft/LinkedIn</em> (Case M.8124)</li>
+<li><em>Google Shopping</em> (Case AT.39.740)</li>
+<li><em>Case C-74/14 Eturas</em> [2016] ECLI:EU:C:2016:42</li>
+</ul>
+<h3 id="secondary-sources">Secondary Sources </h3>
+<ul>
+<li>Podszun, R. &amp; Kreifels, S. "Data and Competition Law" in <em>Research Handbook in Data Science and Law</em></li>
+<li>European Parliament Factsheet on Competition Policy (2024)</li>
+<li>Lecture Materials: "Data and Regulation of Competition" (Merve Oner Kabadayi, TILT, 2025)</li>
+<li>European Commission Guidance on Article 82 Enforcement Priorities (2009)</li>
+<li>European Commission Merger Guidelines</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>

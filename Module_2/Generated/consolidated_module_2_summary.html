@@ -1,0 +1,880 @@
+<!DOCTYPE html><html><head>
+      <title>consolidated_module_2_summary</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\20232788\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="module-2-health-data-sharing--consolidated-summary">Module 2: Health Data Sharing – Consolidated Summary </h1>
+<p><strong>Module Title:</strong> The (EU) Regulation of Health Data Sharing<br>
+<strong>Instructor:</strong> Tjaša Petročnik, TILT, Tilburg Law School<br>
+<strong>Date:</strong> 2025</p>
+<p>This consolidated document synthesizes the essential concepts from Module 2, integrating foundational regulatory frameworks (GDPR, DGA, Data Act) with comprehensive coverage of the European Health Data Space (EHDS) Regulation and its implications for health data governance across the EU. The document combines depth from extensive lecture materials with detailed analysis of the newly enacted EHDS Regulation.</p>
+<hr>
+<h2 id="table-of-contents">Table of Contents </h2>
+<ol>
+<li><a href="#introduction">Introduction: Health Data as Critical Infrastructure</a></li>
+<li><a href="#economics">Foundational Economic Principles</a></li>
+<li><a href="#sensitivity">Data Sensitivity and Multi-Framework Governance</a></li>
+<li><a href="#gdpr">General Data Protection Regulation (GDPR) Framework</a></li>
+<li><a href="#dga">Data Governance Act (DGA)</a></li>
+<li><a href="#data-act">Data Act (DA)</a></li>
+<li><a href="#ehds">European Health Data Space (EHDS) Regulation</a></li>
+<li><a href="#ehds-primary">EHDS: Primary Use of Health Data</a></li>
+<li><a href="#ehds-secondary">EHDS: Secondary Use of Health Data</a></li>
+<li><a href="#implementation">Implementation Roadmap and Timeline</a></li>
+<li><a href="#challenges">Critical Perspectives and Challenges</a></li>
+<li><a href="#conclusions">Key Takeaways</a></li>
+</ol>
+<hr>
+<h2 id="introduction">1. Introduction: Health Data as Critical Infrastructure </h2>
+<h3 id="the-data-sharing-imperative">The Data Sharing Imperative </h3>
+<p>Health data represents one of the most valuable and sensitive resource categories in the EU. The COVID-19 pandemic starkly demonstrated why rapid, secure health data exchange has become essential for modern healthcare and public health systems.</p>
+<p>The ability to share health data effectively enables disease surveillance and response capabilities that allow authorities to respond to epidemiological threats in real time. When patients can access and share their health data across borders, diagnosis and treatment continuity improve significantly. Aggregated health datasets accelerate research and innovation, facilitating the development of new diagnostics, therapeutics, and medical devices that might otherwise take years to emerge. Finally, evidence-based health policymaking depends fundamentally on access to reliable, comprehensive health data. Without coordinated data sharing, policymakers lack the information necessary to design effective health interventions.</p>
+<h3 id="why-regulate-health-data-sharing">Why Regulate Health Data Sharing? </h3>
+<p>Three primary justifications underpin the need for regulatory intervention. First, fundamental rights protection is paramount. Health data are inherently sensitive personal data that reveal information about physical, mental, genetic, and behavioral characteristics. EU law recognizes that natural persons possess fundamental rights to privacy, data protection, and human dignity that must be actively protected.</p>
+<p>Second, market failures necessitate intervention. Without regulatory coordination, health data remains fragmented across disconnected national systems, providers, and repositories. Voluntary sharing mechanisms have proven insufficient to overcome technical and organizational fragmentation, lack of standardization and interoperability, competing economic interests among data holders, and information asymmetries between stakeholders. These barriers prevent the emergence of integrated health data ecosystems that would benefit all participants.</p>
+<p>Third, strategic coordination can unlock significant innovation and public value. Beyond what individual actors could achieve in isolation, coordinated health data sharing generates societal benefits that justify regulatory investment. These benefits include improved healthcare efficiency, accelerated medical innovation, strengthened public health capabilities, and more effective health policy development.</p>
+<hr>
+<h2 id="economics">2. Foundational Economic Principles </h2>
+<h3 id="non-ordinary-characteristics-of-data">Non-Ordinary Characteristics of Data </h3>
+<p>Health data exhibits distinctive economic characteristics that fundamentally differentiate it from traditional goods. First, data is non-rivalrous—unlike physical assets, multiple parties can use the same data simultaneously without diminishing its value for any individual user. Once collected, the marginal reproduction cost approaches zero, enabling unlimited replication at minimal expense. Second, without legal frameworks in place, data becomes non-excludable; once it enters the public domain, it becomes difficult to exclude competitors from accessing it, creating classic public goods problems. Third, after initial collection, providing data to additional users incurs negligible costs. These characteristics enable powerful economies of scope and scale in health data ecosystems.</p>
+<h3 id="economic-efficiencies-in-data-sharing">Economic Efficiencies in Data Sharing </h3>
+<p>Several mechanisms drive the economic case for coordinated health data sharing. Economies of scope emerge because once a healthcare provider has invested in data collection for clinical purposes, the same data can be reused for secondary purposes such as research, public health, and policy development at minimal additional cost. Economies of scale operate through data aggregation—combining data from multiple sources dramatically increases statistical power and analytical capacity. Rare disease epidemiology, for instance, requires population-level datasets from multiple Member States; pharmacovigilance benefits from large numbers of adverse event reports; and health technology assessment is strengthened by comparative effectiveness data from diverse populations that might otherwise remain isolated.</p>
+<p>Network effects further strengthen the case for coordinated ecosystems. The value of health data systems increases as more participants contribute data and more potential users can access it. Standardized data exchange formats create positive externalities for all ecosystem participants, making the system increasingly valuable as it scales. These three mechanisms—scope, scale, and network effects—combine to create strong economic justification for regulatory coordination of health data sharing.</p>
+<h3 id="primary-vs-secondary-use-economics">Primary vs. Secondary Use Economics </h3>
+<p>The EHDS framework recognizes that health data creates value through two fundamentally different mechanisms, requiring distinct governance approaches. Primary use—healthcare delivery to individual patients—is primarily driven by economies of scope. By enabling data portability and reducing lock-in to individual providers, primary use improves competition among healthcare providers through information transparency, which in turn facilitates informed patient choice and more efficient healthcare markets.</p>
+<p>Secondary use—research, policy, and innovation activities—operates according to different economic principles. These purposes are driven by economies of scale and aggregation benefits, requiring large, representative datasets to generate meaningful insights. However, benefits from aggregation follow the law of diminishing returns: as datasets grow, each additional record contributes progressively less analytical value until further expansion provides minimal benefit. This economic reality has important implications for governance; secondary use requires fundamentally different regulatory structures than primary use, including mechanisms to manage access, prevent misuse, and balance individual privacy protection against public benefit.</p>
+<hr>
+<h2 id="sensitivity">3. Data Sensitivity and Multi-Framework Governance </h2>
+<h3 id="conceptualizing-health-data-sensitivity">Conceptualizing Health Data Sensitivity </h3>
+<p>Health data sensitivity operates along two critical dimensions that interact in complex ways. The first dimension concerns intrinsic sensitiveness—certain categories of data inherently reveal personal characteristics of particular importance to individuals. Genetic information can identify biological ancestry and disease predispositions; mental health data reveals psychological conditions and vulnerabilities; sexual health data discloses intimate aspects of personal life; and substance use data indicates addiction or dependency. These data carry heightened sensitivity because they relate to core aspects of personal identity and autonomy.</p>
+<p>The second dimension, computational distance, describes the extent to which personal inferences can be drawn from apparently non-health data. The sensitivity framework identifies three layers. Layer 1 data consists of explicitly health-relevant information such as diagnoses, treatments, and medications—data that is inherently sensitive. Layer 2 data comprises contextually health-relevant information such as behavioral data from fitness applications or location data reflecting mobility patterns. While not explicitly health-related, Layer 2 data is indirectly sensitive because it can be analyzed for health insights. Layer 3 data includes potentially health-relevant information such as social media activity or purchasing patterns that carry low intrinsic sensitivity but can reveal health information as an unintended by-product. Understanding these distinctions is crucial for designing appropriate governance frameworks that protect privacy while enabling beneficial data use.</p>
+<h3 id="five-legal-frameworks-governing-health-data-use">Five Legal Frameworks Governing Health Data Use </h3>
+<p>Health data on the internet remains subject to five distinct legal and ethical frameworks, even when publicly accessible. Understanding how these frameworks interact is essential for lawful data processing.</p>
+<p><strong>Copyright law</strong> protects publicly visible content. Users can see Disney+ images, but copyright protection remains active. Using copyrighted materials—logos, databases, text, images, videos, software, graphics—for training AI systems without authorization constitutes infringement regardless of public visibility.</p>
+<p><strong>Data protection law</strong>, comprising both the General Data Protection Regulation (EU), applicable in 27 Member States, and Convention 108+ (Council of Europe), applicable in 55 countries, protects personal data of living persons. Critical to understanding this framework is that public availability does not waive data protection rights. Names, email addresses, and photos on social media remain protected even when publicly visible.</p>
+<p><strong>Web scraping laws</strong>, established through the Directive on Copyright and Related Rights in the Digital Single Market (Directive (EU) 2019/790), provide limited exceptions for text and data mining from copyright restrictions. However, a critical limitation constrains commercial applications: the exception does not apply to commercial AI training. Rights holders can assert restrictions through machine-readable formats such as robots.txt and HTML meta tags, creating legally enforceable limitations on automated data collection.</p>
+<p><strong>Contract law</strong> operates through website terms of service, which constitute binding contracts. Automated data collection that violates contractual terms creates legal liability. The landmark case of LinkedIn Corp. v. hiQ Labs Inc. demonstrated that contractual restrictions can constrain data access even when data is technically public.</p>
+<p><strong>Ethics</strong>, codified in international frameworks including EU AI High-Level Expert Group Guidelines, UNESCO Recommendation on AI Ethics, and OECD AI Principles, establishes binding ethical principles including respect for human autonomy, prevention of harm, and fairness and transparency. Using data without consent, information, or for potentially harmful purposes violates these principles and fundamental human dignity.</p>
+<hr>
+<h2 id="gdpr">4. General Data Protection Regulation (GDPR) Framework </h2>
+<h3 id="legal-hierarchy-and-fundamental-rights">Legal Hierarchy and Fundamental Rights </h3>
+<p>The GDPR operates within a hierarchical legal system:</p>
+<ol>
+<li><strong>International Conventions and Treaties</strong> (European Convention on Human Rights, Convention 108+)</li>
+<li><strong>EU Primary Law</strong> (EU Treaties, Charter of Fundamental Rights)</li>
+<li><strong>EU Secondary Law</strong> (GDPR, Directives)</li>
+<li><strong>National Constitutions and Laws</strong></li>
+<li><strong>Administrative Regulations</strong></li>
+</ol>
+<p>When conflicts arise, higher-ranking instruments prevail. The GDPR must be interpreted in light of the <strong>Charter of Fundamental Rights</strong>, particularly Articles on privacy (Article 7) and personal data protection (Article 8).</p>
+<h3 id="scope-of-gdpr-application">Scope of GDPR Application </h3>
+<p>The GDPR applies in three principal circumstances. First, when a data controller or processor is established in the EU, the regulation applies regardless of where processing actually occurs. Second, where processing activities target subjects located in the EU, the GDPR applies even if the controller operates outside EU territory. Third, when competent authorities process data for non-law-enforcement purposes, the regulation provides applicable rules.</p>
+<p>A crucial point for practical application: a data subject's nationality is irrelevant to GDPR's scope. What matters is whether they are located in the EU or targeted by services. This territorial approach ensures broad protection for individuals in EU jurisdictions.</p>
+<p>Conversely, the GDPR does not apply in certain circumstances. Personal or household activities—such as personal photographs on private devices—fall outside the regulation's scope, reflecting the principle that purely private, non-commercial data use requires no regulatory compliance. Law enforcement processing for criminal purposes is excluded because a separate directive, the Law Enforcement Directive, establishes tailored rules for that context. Similarly, activities of EU institutions themselves are covered by separate legislation, Regulation 2018/1725, rather than the GDPR.</p>
+<h3 id="core-definitions-for-health-data">Core Definitions for Health Data </h3>
+<h4 id="personal-data-article-41">Personal Data (Article 4(1)) </h4>
+<p>"Personal data" means any information relating to an identified or identifiable natural person. For health data, this definition encompasses far more than traditional medical records. Biometric data including photographs, fingerprints, video recordings, and facial recognition information qualify as personal data. Genetic data such as DNA sequences, genetic markers, and genomic profiles fall within the definition. Health-related inferences drawn through profiling techniques—health habit profiles, disease risk profiles, wellness scores—constitute personal data. Identifiers such as patient ID numbers, medical record numbers, and even nicknames indicating health status are covered. Location data including home addresses and patterns of hospital visits constitute personal data. Even data about medical beliefs such as religious or philosophical objections to treatments qualify for protection. Data about feelings and mental states, emotional states, burnout information, and mental health status are protected. Financial information related to health, including insurance claims and out-of-pocket healthcare spending, also qualifies.</p>
+<p>A critical point emerging from this broad definition: personal data can exist in any format, not only text documents. Mathematical representations—embeddings and vectors used in machine learning models for clinical prediction—constitute personal data under the regulation. This means that AI systems trained on health information process personal data from their inception, triggering GDPR obligations at the earliest stages of model development.</p>
+<h4 id="processing-article-42">Processing (Article 4(2)) </h4>
+<p>The GDPR defines processing expansively to encompass virtually any action taken with personal data. Processing includes traditional activities such as collection, recording, organization, storage, modification, analysis, structuring, and deletion or erasure. Critically, the definition extends to less obvious activities: reading or consulting data constitutes processing, as does data sharing and dissemination through transmission to other parties. For health AI systems, this broad definition has significant implications: training a machine learning model on health data constitutes processing, meaning GDPR obligations arise from the moment data gathering begins, not only when the model is deployed.</p>
+<h3 id="seven-gdpr-principles-article-5">Seven GDPR Principles (Article 5) </h3>
+<h4 id="1-lawfulness-fairness-and-transparency-article-51a">1. Lawfulness, Fairness, and Transparency (Article 5(1)(a)) </h4>
+<p>Processing must satisfy three requirements working together. First, it must be lawful—supported by a valid legal basis that will be examined below. Second, it must be fair to the data subject, avoiding deceptive or exploitative practices. Third, it must be transparent, with data subjects fully informed about how their data is used. For health data processing, these requirements demand that organizations ensure they have proper authorization to use the data, respect applicable licenses and intellectual property restrictions, provide data subjects with accessible and understandable privacy notices, and avoid misleading individuals about data handling practices.</p>
+<h4 id="2-purpose-limitation-article-51b">2. Purpose Limitation (Article 5(1)(b)) </h4>
+<p>A critical principle underlying GDPR is that data must be collected for specified, explicit, and legitimate purposes. Organizations cannot collect data "just in case" or for purposes not yet determined. Using data for different, incompatible purposes than those for which it was collected is prohibited without establishing an additional legal basis for the secondary purpose. This principle becomes particularly important in health data contexts. Patient data collected for direct clinical care cannot automatically be used for AI training without either demonstrating that the secondary purpose is compatible with the original clinical purpose, or establishing a new legal basis for the research use. For instance, if data was collected from patients with explicit understanding it would be used only for their individual care, repurposing that data for population-level AI model training may require either patient consent or application of research exemptions under Article 89 of the regulation.</p>
+<h4 id="3-data-minimization-article-51c">3. Data Minimization (Article 5(1)(c)) </h4>
+<p>The data minimization principle requires that only data strictly necessary for each specific purpose be collected. Organizations must actively resist over-collection and eliminate unnecessary attributes. For health AI development, this means including only those attributes truly essential for the model's stated purpose. If the objective is predicting diabetes risk, the patient's name may be unnecessary after data anonymization. Applying data minimization rigorously protects individuals by limiting exposure of sensitive information to data holders and reducing the potential for mission creep where data originally collected for narrow purposes expands to broader uses.</p>
+<h4 id="4-accuracy-article-51d">4. Accuracy (Article 5(1)(d)) </h4>
+<p>Personal data must be maintained in correct and accurate form. When demonstrable errors are discovered, they must be rectified or the inaccurate data erased. This principle reflects the practical reality that inaccurate data propagates errors through downstream processes. For health data systems, accuracy becomes particularly critical because inaccurate training data propagates errors through machine learning models, potentially affecting clinical decision-support systems or research conclusions. Health data governance frameworks must establish mechanisms to identify and correct data quality issues before inaccurate information causes harm.</p>
+<h4 id="5-storage-limitation-article-51e">5. Storage Limitation (Article 5(1)(e)) </h4>
+<p>Personal data must be retained in identifiable form only for as long as necessary to fulfill the purposes for which it was collected. Once clinical purposes are fulfilled, original records should be securely deleted or anonymized where legally possible. This principle acknowledges that indefinite retention of identifiable data creates ongoing privacy risks even when the data is no longer needed. For health data systems, this means establishing clear retention policies that balance the competing obligations of clinical governance—which may require retention of original records for specified periods—with privacy protection principles requiring eventual deletion or anonymization of historical data.</p>
+<h4 id="6-integrity-and-confidentiality-article-51f">6. Integrity and Confidentiality (Article 5(1)(f)) </h4>
+<p>Data must be processed with appropriate security measures that provide protection against unauthorized or unlawful processing as well as accidental loss, destruction, or damage. Implementing integrity and confidentiality requires deploying both technical and organizational measures. Technical measures include encryption of data both in transit and at rest, implementation of access controls limiting data access to authorized personnel, and deployment of intrusion detection systems to identify attempted unauthorized access. Organizational measures include comprehensive staff training on data security procedures, establishment of security policies, and development of incident response procedures for addressing breaches when they occur. Personnel security measures, including background checks for staff with data access, form a critical component of this principle.</p>
+<h4 id="7-accountability-article-52">7. Accountability (Article 5(2)) </h4>
+<p>Data controllers bear the fundamental responsibility for demonstrating compliance with all seven principles. This accountability principle shifts the burden of proof; organizations cannot simply claim they are compliant but must affirmatively demonstrate compliance through maintained documentation. Accountability requires maintaining detailed Records of Processing Activities documenting all processing operations. When required by risk assessment, organizations must conduct Data Protection Impact Assessments to systematically evaluate privacy risks. Compliance must be monitored through regular audits and reviews. When data breaches occur, organizations must document incidents and report them to supervisory authorities as specified in Article 33. This principle emphasizes that good faith intentions are insufficient; compliance requires systematic documentation and governance mechanisms demonstrating adherence to all other principles.</p>
+<h3 id="legal-basis-for-processing-article-6">Legal Basis for Processing (Article 6) </h3>
+<p>Processing is only lawful when a valid legal basis exists. The GDPR provides six alternative bases, and organizations must identify at least one applicable basis before processing can commence. Understanding these bases is essential because the presence of data does not create the legal right to use it; permission depends on satisfying one of these six categories.</p>
+<p><strong>Consent (Article 6(1)(a))</strong> requires that the data subject has freely given, specific, informed, and unambiguous consent to processing. For special categories of data including health information, consent must be explicitly given—merely informed consent is insufficient. A critical protection is that consent can be withdrawn at any time. However, consent becomes invalid if there is an imbalance of power between the data subject and controller, or if consent is presented as a precondition for accessing unrelated services.</p>
+<p><strong>Contract (Article 6(1)(b))</strong> permits processing when necessary to perform a contract to which the data subject is a party or to prepare to enter into a contract. This basis has limited applicability in healthcare contexts because healthcare delivery is typically governed by legal obligations rather than commercial contracts.</p>
+<p><strong>Legal Obligation (Article 6(1)(c))</strong> permits processing when EU or national law requires it. This basis is most commonly used for health data in healthcare delivery contexts. Medical record retention requirements imposed by law are prime examples of processing justified by legal obligation.</p>
+<p><strong>Vital Interests (Article 6(1)(d))</strong> permits processing when necessary to protect the vital interests—life or health—of the data subject or another person. This basis is rarely invoked in health research contexts but might apply in emergency situations where immediate processing is necessary to save lives.</p>
+<p><strong>Public Task (Article 6(1)(e))</strong> permits processing when necessary for a task carried out in the public interest or when performing an official authority function. This basis is commonly used by public health authorities establishing disease registries or conducting surveillance. It requires explicit legal authorization for the specific public task.</p>
+<p><strong>Legitimate Interest (Article 6(1)(f))</strong> permits processing when necessary for legitimate interests pursued by the controller or a third party, except where such interests are overridden by the data subject's rights and freedoms. This basis requires conducting a Legitimate Interest Assessment balancing the controller's legitimate interests, the data subject's reasonable expectations, potential impacts on data subjects, and available safeguards.</p>
+<p>For health AI development in particular, both Legitimate Interest and Consent commonly serve as legal bases for training on health datasets, though the analysis differs depending on context and safeguards available.</p>
+<h3 id="special-categories-of-personal-data-article-9">Special Categories of Personal Data (Article 9) </h3>
+<h4 id="prohibited-categories">Prohibited Categories </h4>
+<p>Article 9(1) establishes heightened protection for eight special categories of personal data: racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data for identification purposes, health data, and sex life or sexual orientation data. These categories receive heightened protection because they are particularly sensitive and carry high potential for discrimination. Health data, most relevant for healthcare organizations and researchers, comprises one of these eight protected categories.</p>
+<h4 id="lawful-exceptions-article-92">Lawful Exceptions (Article 9(2)) </h4>
+<p>Processing special categories is generally prohibited, but the regulation provides specific exceptions where processing becomes lawful. Explicit consent by the data subject constitutes one exception, though it differs from the standard consent requirement by requiring explicit rather than merely informed agreement. Employment and social security law obligations may permit processing without consent when required by law. If a data subject manifestly makes their special category data public, processing that publicly declared information becomes lawful. Health and occupational medicine represent important exceptions for healthcare contexts. Organizations can process special category health data when purposes involve health and occupational medicine under appropriate safeguards. Processing is permitted where protecting health interests or managing health and safety at work is the objective. Scientists can process special category data for scientific research purposes "subject to suitable safeguards," creating flexibility for research institutions. Public interest reasons can justify processing when based on EU or national law and accompanied by appropriate safeguards for fundamental rights. The research exception under Article 9(2)(j) is particularly important for health data, allowing relaxation of purpose and storage limitation principles where necessary for research aims while permitting derogations from certain data subject rights where necessary to preserve research validity.</p>
+<hr>
+<h2 id="dga">5. Data Governance Act (DGA) </h2>
+<p><strong>Regulation (EU) 2022/868</strong> establishes governance rules for European data spaces and incentivizes data sharing while protecting data subjects.</p>
+<h3 id="scope-and-objectives">Scope and Objectives </h3>
+<p>The DGA serves three primary functions relevant to health data:</p>
+<ol>
+<li><strong>Facilitate reuse of public sector data</strong> (Chapter 2)</li>
+<li><strong>Establish rules for data intermediation services</strong> (Chapter 3)</li>
+<li><strong>Create framework for data altruism</strong> (Chapter 4)</li>
+</ol>
+<h3 id="chapter-2-reuse-of-public-sector-data">Chapter 2: Reuse of Public Sector Data </h3>
+<h4 id="types-of-data-subject-to-reuse-article-3">Types of Data Subject to Reuse (Article 3) </h4>
+<p>Designated categories of public sector data that must be made available for reuse:</p>
+<ul>
+<li>High-value datasets (health surveillance data, mortality registries)</li>
+<li>Documents held by public bodies</li>
+<li>Exception: Data excluded for public interest, confidentiality, or third-party rights</li>
+</ul>
+<h4 id="important-limitation-article-12">Important Limitation (Article 1(2)) </h4>
+<p><strong>No obligation on public sector bodies to allow reuse of data</strong>. Member States decide which datasets to make available, but where they do, must follow DGA rules.</p>
+<h4 id="conditions-for-reuse-article-5">Conditions for Reuse (Article 5) </h4>
+<ul>
+<li><strong>Non-discriminatory</strong>: Equal treatment of different users</li>
+<li><strong>Fair pricing</strong>: Fees limited to marginal cost of data provision</li>
+<li><strong>Transparent</strong>: Clear information on terms and conditions</li>
+<li><strong>Machine-readable format</strong>: Data provided in open, structured formats</li>
+</ul>
+<h3 id="chapter-3-data-intermediation-services">Chapter 3: Data Intermediation Services </h3>
+<h4 id="definition-article-11">Definition (Article 11) </h4>
+<p>"Data intermediation service" means a service establishing <strong>commercial relationships for data sharing</strong> between:</p>
+<ul>
+<li>Undetermined number of data subjects and data holders, AND</li>
+<li>Data users</li>
+</ul>
+<p>Through technical, legal, or other means, including enabling exercise of data subject rights.</p>
+<h4 id="scope-in-healthcare">Scope in Healthcare </h4>
+<p>Data intermediaries can facilitate:</p>
+<ul>
+<li>Health data holders (hospitals, clinics) sharing data with researchers</li>
+<li>Individual patients exercising portability rights through intermediary platforms</li>
+<li>Aggregation of dispersed health datasets</li>
+</ul>
+<hr>
+<h2 id="data-act">6. Data Act (DA) </h2>
+<p><strong>Regulation (EU) 2023/2854</strong> establishes rules for fair access to and use of data, particularly IoT and machine-generated data.</p>
+<h3 id="applicability-to-health-data">Applicability to Health Data </h3>
+<h3 id="applicability-to-health-data-1">Applicability to Health Data </h3>
+<p>While the Data Act focuses primarily on business-to-consumer and business-to-business data sharing from connected products and Internet of Things devices, its foundational principles have significantly influenced the design of the EHDS framework. Understanding these principles helps contextualize the governance model adopted for health data.</p>
+<p>The Data Act establishes that users of connected products have a <strong>right to access their data</strong>. Connected products must enable users to easily, securely, and comprehensively access their data directly in machine-readable formats, free of charge, and without undue barriers. Beyond mere access, the regulation imposes <strong>transparency obligations</strong> requiring data holders to make data readily available with relevant metadata enabling proper interpretation and use of that data. Responses must come with no undue delay.</p>
+<p>When users request third-party access to their data, the Data Act requires making data available to third parties upon request. These requirements include safeguards preventing gatekeeper abuse and restrictions preventing data holders from using their data control to develop competing products using insights from their position. The regulation also establishes principles for <strong>fair compensation</strong>, requiring fair, reasonable, and non-discriminatory arrangements where compensation is provided and ensuring that data holders receive compensation proportionate to costs incurred.</p>
+<p>The Data Act's Chapter 5 extends these principles to business-to-government contexts, permitting public sector bodies to request data from private data holders during <strong>exceptional circumstances</strong>, including public health emergencies. This mechanism differs from the EHDS secondary use framework, which does not impose an "exceptional need" limitation on research and policy uses of health data. Instead, EHDS creates a more permissive environment for secondary uses by establishing systematic access mechanisms rather than requiring emergency justifications.</p>
+<hr>
+<h2 id="ehds">7. European Health Data Space (EHDS) Regulation </h2>
+<p><strong>Regulation (EU) 2025/327</strong> (adopted 11 February 2025, published 5 March 2025) establishes harmonized rules for health data access and use across the EU. This is the flagship regulation for health data governance.</p>
+<h3 id="fundamental-objectives">Fundamental Objectives </h3>
+<p>The EHDS pursues four interconnected fundamental objectives outlined in Article 1 and elaborated in the regulation's preamble. First, the regulation aims to improve natural persons' access to and control over their personal electronic health data within healthcare contexts. This objective reflects fundamental rights principles by empowering individuals as data subjects rather than treating them as passive data holders. Second, EHDS seeks to better enable purposes that benefit society through health data use, encompassing research and innovation, policy-making and education, health threat preparedness and response including pandemic prevention, patient safety enhancements, personalized medicine development, official statistics generation, and regulatory activities. These broadly articulated purposes reflect recognition that health data creates value far beyond individual clinical care.</p>
+<p>The third objective addresses internal market functioning by establishing uniform legal and technical frameworks for electronic health record systems across Member States. By creating harmonized standards and interoperability requirements, EHDS removes technical and regulatory barriers that fragmented national systems create. This harmonization enables cross-border data flows, supporting healthcare provider mobility and patient portability while reducing implementation costs for organizations operating across multiple jurisdictions. Finally, EHDS serves as a key element of a strong, resilient European Health Union, reflecting recognition that health security and health system performance are matters of strategic EU importance requiring coordinated action across Member States rather than isolated national responses.</p>
+<h3 id="key-definitions">Key Definitions </h3>
+<h4 id="electronic-health-data-recital-6">Electronic Health Data (Recital 6) </h4>
+<p>The regulation defines electronic health data expansively to encompass multiple categories. It includes personal data related to the physical or mental health of natural persons and data on the provision of healthcare services. Genetic information—inherited or acquired genetic characteristics—comprises part of electronic health data. The definition captures data on health determinants including behavioral factors, environmental and physical influences, medical care elements, and social and educational factors affecting health. Significantly, electronic health data encompasses data initially collected for research, statistical, health threat assessment, policy-making, or regulatory purposes, not merely data collected for individual clinical care. This broad scope means that research datasets, public health surveillance systems, and regulatory data systems all constitute electronic health data subject to EHDS rules. The definition includes inferred and derived data such as diagnostics, tests, and medical examinations—data generated through processing or analysis rather than directly observed. Finally, data observed and recorded by automated means—such as continuous glucose monitors, fitness tracking devices, or telemedicine systems—qualify as electronic health data.</p>
+<h4 id="electronic-health-records-ehr-recital-7">Electronic Health Records (EHR) (Recital 7) </h4>
+<p>Electronic health records typically contain comprehensive patient information including medical history, diagnoses, and treatment records. They document medications, allergies, and vaccination status. Radiology images, laboratory results, and other diagnostic materials form components of typical EHRs. Importantly, EHRs frequently contain medical data spread across multiple healthcare system actors—general practitioners, hospitals, pharmacies, and care services—rather than consolidated in single systems. This distributed nature reflects how modern healthcare actually operates, with patients receiving care from multiple providers who maintain separate records.</p>
+<h3 id="gdpr-relationship-recital-5-article-15">GDPR Relationship (Recital 5, Article 1(5)) </h3>
+<p>The EHDS does not operate in isolation from existing data protection frameworks but rather exists within the broader GDPR ecosystem. The General Data Protection Regulation applies fully to all processing activities governed by EHDS, providing a foundational layer of protection. EHDS complements and extends GDPR rights where appropriate for the health sector context, creating additional protections beyond what GDPR provides. Critically, EHDS does not reduce GDPR protections—it only adds health-sector-specific rights and governance mechanisms. This means organizations implementing EHDS must comply with both frameworks simultaneously, using GDPR's principles and requirements as a baseline and adding EHDS-specific requirements on top.</p>
+<hr>
+<h2 id="ehds-primary">8. EHDS: Primary Use of Health Data </h2>
+<p>Primary use refers to <strong>processing of health data for provision of healthcare to individuals</strong> (Article 2(2)(d)).</p>
+<h3 id="patient-rights-for-primary-use">Patient Rights for Primary Use </h3>
+<p>The EHDS establishes several complementary rights beyond GDPR, tailored to health context:</p>
+<h4 id="right-to-immediate-access-article-9-complementing-gdpr-article-15">Right to Immediate Access (Article 9, complementing GDPR Article 15) </h4>
+<ul>
+<li>Natural persons have right to <strong>immediate, free-of-charge access</strong> to specific priority categories of their personal electronic health data</li>
+<li>Exercised through <strong>electronic health data access services</strong> (not individual controllers)</li>
+<li><strong>Technological practicability</strong> caveat noted</li>
+</ul>
+<p><strong>Contrast with GDPR Article 15</strong>:</p>
+<ul>
+<li>GDPR grants access within one month</li>
+<li>EHDS grants immediate access but limited to priority categories</li>
+<li>EHDS exercised via service, not individual controller</li>
+</ul>
+<h4 id="priority-categories-of-health-data-article-14">Priority Categories of Health Data (Article 14) </h4>
+<p>Prioritized for exchange and access:</p>
+<ol>
+<li><strong>Patient Summaries</strong> — core clinical information</li>
+<li><strong>Electronic Prescriptions and Dispensations</strong> — medication history</li>
+<li><strong>Medical Imaging Studies and Related Reports</strong> — diagnostic images and interpretations</li>
+<li><strong>Medical Test Results</strong> — laboratory and diagnostic results</li>
+<li><strong>Discharge Reports</strong> — hospital episode summaries</li>
+</ol>
+<p>Additional categories may be added per Article 25.</p>
+<h4 id="right-to-add-information-article-5">Right to Add Information (Article 5) </h4>
+<p>Natural persons can add health data to their EHRs or store in separate personal health records accessible to health professionals.</p>
+<p><strong>Important caveat</strong>: Data added by patients must be <strong>clearly distinguishable</strong> from professional data and lacks same clinical/legal value.</p>
+<h4 id="right-to-request-rectification-article-6">Right to Request Rectification (Article 6) </h4>
+<ul>
+<li>Natural persons can request <strong>online, immediate, free-of-charge rectification</strong> of incorrect data through electronic health data access service</li>
+<li>Healthcare provider remains responsible for assessing rectification requests under GDPR Article 16</li>
+</ul>
+<h4 id="enhanced-right-to-data-portability-article-7-8-complementing-gdpr-article-20">Enhanced Right to Data Portability (Article 7-8, complementing GDPR Article 20) </h4>
+<p><strong>GDPR Article 20</strong> limits portability to:</p>
+<ul>
+<li>Data based on consent or contract</li>
+<li>Data provided by data subject</li>
+<li>Direct transmission only where technically feasible</li>
+</ul>
+<p><strong>EHDS extends this</strong>:</p>
+<ul>
+<li>Applies to priority categories regardless of legal basis</li>
+<li>Transmittable in <strong>European electronic health record exchange format</strong></li>
+<li>Health professionals must not hinder use of cross-border data in interoperable format</li>
+<li>Natural persons can download or request transmission to third party (e.g., healthcare provider in another MS)</li>
+</ul>
+<h4 id="right-to-restrict-access-article-10">Right to Restrict Access (Article 10) </h4>
+<ul>
+<li>Natural persons can <strong>set restrictions</strong> on access to parts of their health data</li>
+<li>Granular control possible (e.g., restrict specific sensitive categories)</li>
+<li>Restrictions apply uniformly within Member State and cross-border</li>
+</ul>
+<p><strong>Important caveat</strong>:</p>
+<ul>
+<li>Must be informed of patient safety risks from restricted data</li>
+<li>Emergency access possible where vital interests at risk</li>
+<li>Data subject assumes responsibility for restricted data impacting care quality</li>
+</ul>
+<h4 id="right-to-opt-out-from-cross-border-access-article-92-article-18">Right to Opt-Out from Cross-Border Access (Article 9(2), Article 18) </h4>
+<p>Member States <strong>may</strong> provide absolute right to opt out from access by anyone other than original healthcare provider.</p>
+<ul>
+<li>No data made available through EHDS services other than to original provider</li>
+<li>Healthcare provider must still maintain records</li>
+<li>Reversible decision</li>
+</ul>
+<h3 id="infrastructure-for-primary-use">Infrastructure for Primary Use </h3>
+<h4 id="electronic-health-data-access-services-article-4">Electronic Health Data Access Services (Article 4) </h4>
+<p>Member States must establish one or more electronic health data access services:</p>
+<ul>
+<li>National, regional, or local level</li>
+<li>Provided by healthcare providers, national authorities, or third parties</li>
+<li>Form: Online patient portal, mobile app, or other means</li>
+<li>Design: Accessible to persons with disabilities</li>
+<li>Legal basis: Article 6(1)(e) and Article 9(2)(g) GDPR (public task)</li>
+</ul>
+<h4 id="health-professional-access-services-article-12">Health Professional Access Services (Article 12) </h4>
+<ul>
+<li>Member States must establish services enabling health professionals to access patient data</li>
+<li>Legal basis: Article 6(1)(e) GDPR (public task) and Article 9(2)(h) (healthcare provision)</li>
+<li><strong>Data minimization required</strong>: Health professionals access only data necessary for specific care episode</li>
+<li><strong>Logging and transparency</strong>: Detailed records of who accessed what data when</li>
+</ul>
+<h4 id="proxy-services-article-13-14">Proxy Services (Article 13-14) </h4>
+<ul>
+<li>Enable natural persons to authorize others (family, relatives, guardians) to access or manage their health data</li>
+<li>Must accommodate minors and dependent persons</li>
+<li>Should align with eIDAS Regulation for interoperability</li>
+<li>Member States can establish safeguards to protect minors' interests</li>
+</ul>
+<h4 id="european-electronic-health-record-exchange-format-article-15-16">European Electronic Health Record Exchange Format (Article 15-16) </h4>
+<ul>
+<li>Common format for transmitting health data across EU</li>
+<li>Based on <strong>Commission Recommendation (EU) 2019/243</strong></li>
+<li>Enables translation into EU official languages (where possible)</li>
+<li>Used for both national and cross-border exchange</li>
+<li>Subject to quality and security requirements</li>
+</ul>
+<h4 id="myhealtheu-infrastructure-article-23-24">MyHealth@EU Infrastructure (Article 23-24) </h4>
+<ul>
+<li><strong>Mandatory cross-border infrastructure</strong> for primary use</li>
+<li>Enables natural persons to share health data when accessing healthcare in other Member States</li>
+<li><strong>Member State participation mandatory</strong> (was previously voluntary)</li>
+<li>Commission acts as processor on behalf of Member States</li>
+<li><strong>Significant funding implications</strong> for MS implementation</li>
+</ul>
+<h4 id="digital-health-authorities-article-2">Digital Health Authorities (Article 2) </h4>
+<ul>
+<li>Member States must designate relevant digital health authorities</li>
+<li>Responsible for planning and implementing standards</li>
+<li>Separate organizations or existing bodies</li>
+<li>Staff must be independent with no financial conflicts of interest</li>
+<li>Cooperate with DPAs, eID supervisory bodies, AI Board, Medical Device Coordination Group</li>
+</ul>
+<h3 id="protection-of-fundamental-rights-in-primary-use">Protection of Fundamental Rights in Primary Use </h3>
+<h4 id="restrictions-on-access-to-sensitive-categories-article-17-18">Restrictions on Access to Sensitive Categories (Article 17-18) </h4>
+<p>Similar to GDPR Article 23, Member States can restrict EHDS access where:</p>
+<ul>
+<li>Necessary and proportionate in democratic society</li>
+<li>Examples: Delaying urgent health information until patient can be counseled by physician</li>
+</ul>
+<h4 id="patient-safety-considerations-article-10-recital-17">Patient Safety Considerations (Article 10, Recital 17) </h4>
+<ul>
+<li>Patient must be informed of risks that access restrictions could harm care quality</li>
+<li>Patient assumes responsibility for consequences of restrictions</li>
+<li>Emergency override possible where vital interests at risk</li>
+</ul>
+<h4 id="enforcement-and-data-protection-rights-article-40-42">Enforcement and Data Protection Rights (Article 40-42) </h4>
+<ul>
+<li><strong>Data Protection Authorities</strong> enforce EHDS rights</li>
+<li>Must have adequate financial and human resources</li>
+<li>Competent to impose administrative fines</li>
+<li>Denmark exception: Fines imposed as criminal penalty by courts instead</li>
+</ul>
+<hr>
+<h2 id="ehds-secondary">9. EHDS: Secondary Use of Health Data </h2>
+<p>Secondary use refers to <strong>processing of health data for purposes other than initial purposes for which collected or produced</strong> (Article 2(2)(e)). Permitted purposes:</p>
+<ul>
+<li>Research and innovation</li>
+<li>Policy-making and education</li>
+<li>Patient safety and personalised medicine</li>
+<li>Regulatory activities</li>
+</ul>
+<h3 id="legal-framework-for-secondary-use">Legal Framework for Secondary Use </h3>
+<h4 id="legal-basis-recital-52">Legal Basis (Recital 52) </h4>
+<p>Secondary use of health data must rest on one of four legal bases from GDPR Article 6. Consent by the data subject constitutes one available basis. Legal Obligation—created by the EHDS itself—provides another basis, reflecting that the regulation imposes affirmative obligations on data holders to make data available. Public Task provision applies when health data access bodies manage access and perform their regulatory functions. Legitimate Interest constitutes the fourth basis, applicable when the balancing of interests favors data use.</p>
+<p>Processing special categories of personal data, including health data, must additionally satisfy requirements under GDPR Article 9(2). Health data specifically qualifies for protection under paragraphs 9(2)(g-j) concerning scientific research, meaning organizations can invoke research exemptions that relax certain GDPR requirements while maintaining appropriate safeguards.</p>
+<h4 id="permitted-categories-of-health-data-for-secondary-use-article-51">Permitted Categories of Health Data for Secondary Use (Article 51) </h4>
+<p>The regulation establishes broadly permissive categories of health data available for secondary use. Electronic health records data from clinical encounters comprise the primary category. Claims data from insurance and reimbursement systems provide economic and utilization perspectives. Dispensation data from pharmacy systems document medication use patterns. Disease registries focusing on specific conditions offer rich longitudinal information. Genomic data—specifically mentioned in the regulation—reflects recognition of the importance of genetic information for research. Automatically generated data from medical devices provides real-world clinical information. Person-generated data from wellness applications and patient-reported outcomes capture patient perspectives. Clinical trials and clinical investigations data offer controlled research evidence. Environmental and socioeconomic health determinants capture social factors affecting health. Automatically recorded data from various sources rounds out the permissible categories, reflecting a recognition that useful health information exists in diverse formats and sources.</p>
+<h4 id="prohibited-uses-article-62">Prohibited Uses (Article 62) </h4>
+<p>The EHDS regulation establishes strict prohibitions on certain uses of health data for secondary purposes. Uses that would be detrimental to natural persons are strictly prohibited, including measures that increase insurance premiums, determine employment decisions or pension amounts, or affect banking and mortgage decisions. Marketing of products or treatments using health data is prohibited. Automated individual decision-making affecting a person's legal situation is not permitted. Health data users must not attempt to re-identify natural persons even when working with pseudonymized data. Development of harmful products using health data is prohibited. Activities contrary to ethical provisions under national law are not permitted (though important exceptions exist for consent and opt-out situations where EHDS takes precedence over conflicting ethical provisions). Sharing data with unauthorized third parties violates the secondary use framework.</p>
+<h3 id="key-administrative-actors">Key Administrative Actors </h3>
+<h4 id="health-data-holders-article-60">Health Data Holders (Article 60) </h4>
+<p>Health data holders encompass diverse entities that hold health data for secondary use purposes. Healthcare providers such as hospitals, clinics, and general practitioner offices constitute primary examples, as do specialized care providers. Research entities operating in health and care sectors qualify as data holders. Organizations developing products and services for health and care contexts, including wellness application developers, fall within this category. Both public and private entities can serve as data holders, as can not-for-profit organizations. The regulation exempts natural persons and microenterprises from data holder obligations, unless Member States choose to extend obligations to these smaller actors.</p>
+<p>A critical requirement introduced by EHDS: data holders must make their health data available for secondary use through the permit system. This obligation represents a significant shift in governance, transforming data holders from entities with discretionary control over data into regulated actors with affirmative obligations to facilitate secondary use.</p>
+<h4 id="health-data-access-bodies-hdab-article-36-59-68">Health Data Access Bodies (HDAB) (Article 36, 59-68) </h4>
+<p>Central governance entities at Member State level:</p>
+<ul>
+<li>At least one per Member State</li>
+<li>Can be dedicated organization or unit in existing body</li>
+<li>Designated <strong>Digital Health Authority</strong> oversees oversight</li>
+<li>When multiple bodies exist, one designated as <strong>coordinator</strong></li>
+</ul>
+<p><strong>Key responsibilities</strong>:</p>
+<ol>
+<li><strong>Decision-making on data access applications</strong> (Article 67-68)</li>
+<li><strong>Issuance of data permits</strong> specifying conditions and limitations</li>
+<li><strong>Enforcement</strong> of secondary use rules</li>
+<li><strong>Transparency</strong>: Publish data permits and justifications</li>
+<li><strong>Support to data holders</strong>: Assist with data provision, quality assurance</li>
+<li><strong>Cooperation</strong>: With other HDABs, supervisory authorities, stakeholders</li>
+</ol>
+<p><strong>Independence</strong>: Members and staff must avoid conflicts of interest and incompatible occupations.</p>
+<p><strong>Resources</strong>: Must receive adequate financial, technical, and human resources for effective performance.</p>
+<h4 id="health-data-users-article-61">Health Data Users (Article 61) </h4>
+<p>Entities accessing data for secondary use:</p>
+<ul>
+<li>Public or private entities</li>
+<li>Not-for-profit organizations</li>
+<li>Individual researchers</li>
+<li>Public sector bodies</li>
+<li>Private companies and innovators</li>
+<li>Academic institutions</li>
+</ul>
+<p><strong>Must demonstrate</strong>: Valid legal basis under GDPR Article 6 and compliance with EHDS requirements.</p>
+<h3 id="right-to-opt-out-article-54">Right to Opt-Out (Article 54) </h3>
+<h4 id="general-opt-out-right">General Opt-Out Right </h4>
+<p>Natural persons can exercise <strong>right to opt-out</strong> from having their personal electronic health data made available for secondary use.</p>
+<ul>
+<li><strong>Simple and reversible mechanism</strong> must be provided</li>
+<li>No reasons required</li>
+<li>Can be exercised at any time</li>
+<li>Users must be informed of <strong>benefits and drawbacks</strong> of opting out</li>
+</ul>
+<h4 id="override-possibilities-article-542">Override Possibilities (Article 54(2)) </h4>
+<p>For <strong>strong public interest purposes only</strong>, Member States can provide mechanism to override opt-out where:</p>
+<ol>
+<li>
+<p><strong>Public interest purposes</strong>:</p>
+<ul>
+<li>Protection against serious cross-border health threats</li>
+<li>Scientific research for <strong>important reasons of public interest</strong> (e.g., rare diseases, emerging health threats)</li>
+</ul>
+</li>
+<li>
+<p><strong>Restrictive conditions</strong>:</p>
+<ul>
+<li>Only for <strong>public sector bodies</strong> or Union institutions with public health mandate</li>
+<li>Data cannot be obtained by alternative means in timely and effective way</li>
+<li>Necessary and proportionate in democratic society</li>
+<li>Justification required for each individual application</li>
+</ul>
+</li>
+<li>
+<p><strong>Safeguards maintained</strong>:</p>
+<ul>
+<li>Prohibition on re-identification strictly enforced</li>
+<li>Processing in secure processing environment</li>
+<li>Other safeguards under Chapter IV continue</li>
+</ul>
+</li>
+</ol>
+<h4 id="transparency-on-opt-out">Transparency on Opt-Out </h4>
+<ul>
+<li><strong>Information requirement</strong>: Natural persons must be fully informed of right to opt-out</li>
+<li><strong>Accessibility</strong>: Mechanism must be easily understandable and accessible</li>
+<li><strong>Tracking</strong>: Health data access bodies must maintain records of opt-outs</li>
+</ul>
+<h3 id="data-quality-and-utility">Data Quality and Utility </h3>
+<h4 id="data-minimization-article-72">Data Minimization (Article 72) </h4>
+<p>Core principle: <strong>Use least sensitive data format possible</strong></p>
+<ol>
+<li><strong>Non-personal data preferred</strong>: When sufficient for purpose, use anonymized/non-personal data</li>
+<li><strong>Pseudonymization required</strong>: When personal data necessary, must be pseudonymized as early as possible</li>
+<li><strong>Justification</strong>: Health data user must justify why personal data needed</li>
+<li><strong>HDAB assessment</strong>: Body assesses whether justification valid</li>
+</ol>
+<h4 id="anonymization-and-pseudonymization-article-72">Anonymization and Pseudonymization (Article 72) </h4>
+<p>When pseudonymization or anonymization is employed, it must use state-of-the-art techniques designed to make re-identification as difficult as possible. Either the health data access body or the original data holder can perform this technical work. However, the regulation acknowledges a realistic constraint: for rare diseases and certain sensitive data categories, some residual re-identification risk may remain despite best efforts, meaning perfect anonymization cannot always be guaranteed. This acknowledgment reflects recognition that truly rare populations of patients may be re-identifiable even after sophisticated anonymization techniques.</p>
+<h4 id="re-identification-prohibition-article-72">Re-identification Prohibition (Article 72) </h4>
+<p>A strict prohibition forbids health data users from attempting to re-identify natural persons, even when working with data presented in pseudonymized or anonymized form. Violation of this prohibition carries serious consequences, including both criminal penalties possible under national law and administrative fines under the EHDS framework itself. This prohibition reflects recognition that the most significant privacy risk in secondary use contexts comes not from the data holder's actions but from sophisticated attempts by researchers or malicious actors to reverse anonymization.</p>
+<h4 id="data-quality-and-utility-framework-article-85-87">Data Quality and Utility Framework (Article 85-87) </h4>
+<p>The EHDS establishes mechanisms to address a critical challenge in health data use: researchers often lack information about the quality, completeness, and limitations of available datasets. To address this, the regulation introduces a Data Quality and Utility Label—a standardized label indicating dataset quality characteristics that enables informed decision-making by researchers about which datasets suit their purposes. An EU Dataset Catalogue functions as a central registry of available datasets with quality information, complemented by National Dataset Catalogues maintained at the Member State level and linked to the central catalogue. This distributed catalogue approach minimizes burden on individual data holders while maintaining searchability and discoverability. The regulation establishes Minimum Data Fields to be specified through implementing acts, creating harmonized datasets that facilitate comparison and aggregation across sources. Disease-specific harmonized templates for structured data further promote data quality and utility by establishing common coding standards and data structures.</p>
+<h3 id="data-permit-system-article-67-68">Data Permit System (Article 67-68) </h3>
+<h4 id="health-data-access-application-article-67">Health Data Access Application (Article 67) </h4>
+<p>Researchers seeking to access health data for secondary use must submit applications containing essential information. The application must describe the intended purpose and proposed use of the data. It must identify the principal investigator responsible for the project. It must provide justification for whether the research requires personal data or whether anonymized or pseudonymized data would suffice. Researchers specify the data categories they require. They must explain the duration of the research project and arrangements for data storage. Critically, applicants must provide a declaration that their intended use does not pose risk of stigmatization or harm to dignity of data subjects. Where national law requires, an ethical assessment or research ethics review must accompany the application.</p>
+<h4 id="data-permit-issuance-article-68">Data Permit Issuance (Article 68) </h4>
+<p>Health data access bodies issue data permits only when all specified conditions are satisfied. They must verify that all conditions established under Chapter IV of the regulation are met. They must confirm that the proposed purpose falls within permitted categories under Articles 53-54. They must ensure applicants have demonstrated a valid legal basis under GDPR Article 6. Where required, they must verify that risk assessments or ethical reviews have been completed. They must satisfy themselves that appropriate safeguards exist to protect data and respect fundamental rights.</p>
+<p>The data permit itself must specify several critical elements including which data categories are authorized for access, who is authorized to use the data (the principal investigator and named team members), the research purpose and authorized duration, any specific conditions or limitations on use, requirements for secure processing environments, explicit re-identification prohibitions, and conditions for any potential re-use or extension of the permit.</p>
+<h4 id="timeline-for-decisions">Timeline for Decisions </h4>
+<p>The EHDS establishes decision timelines to prevent indefinite delays that would hinder research. Standard procedures provide for data permits to be issued within timelines to be specified through implementing acts, providing certainty while allowing flexibility in the regulations. Accelerated procedures serve Union institutions with public health mandates, allowing them to receive expedited decisions ordinarily within two months, with an additional month permitted for particularly complex cases. This expedited track recognizes that public health emergencies sometimes require rapid access to data. Permits can be extended (for instance, when researchers need additional time for publication review), subject to amendment and potentially additional fees, allowing flexibility as research evolves.</p>
+<p>When applications are refused, health data access bodies must provide clear justification, but rejection does not preclude resubmission of new applications, allowing researchers to reframe proposals or provide additional information addressing the body's concerns.</p>
+<h3 id="secure-processing-environments-article-73-77">Secure Processing Environments (Article 73, 77) </h3>
+<h4 id="definition-and-purpose">Definition and Purpose </h4>
+<p>Secure processing environments constitute controlled, isolated computing environments where researchers can access pseudonymized or anonymized health data while technical and security safeguards prevent unauthorized access or data extraction. These environments embody a "questions to data, not data to questions" principle—rather than downloading raw data for external analysis, researchers pose analytical questions and receive only aggregated, anonymized results. Data remains under the physical and logical control of the health data access body or data holder, preventing removal from secure environments.</p>
+<h4 id="key-requirements">Key Requirements </h4>
+<p>Secure processing environments must meet state-of-the-art security standards providing multiple layers of protection. A critical requirement prohibits download of personal data from the environment; only aggregated and anonymized results can be extracted and made available to researchers. The health data access body or data holder retains continuous control over data access and removal, enabling them to revoke access if violations occur. The environments must comply with GDPR requirements including processor obligations under Article 28, whether operated directly or delegated to third-party processors. Comprehensive logging and audit capabilities enable tracking of all data access and analysis activities. Member States and health data access bodies provide access to secure processing environments, though the Commission can establish union-level environments for multi-national analysis requiring coordination. Technical specifications for environments are established through implementing acts. Critically, data minimization principles persist even within secure environments; users access only data necessary for their specific research question.</p>
+<h3 id="secondary-use-infrastructure-healthdataeu-article-80-84">Secondary Use Infrastructure: HealthData@EU (Article 80-84) </h3>
+<h4 id="purpose-and-architecture">Purpose and Architecture </h4>
+<ul>
+<li><strong>Cross-border infrastructure</strong> for secondary use</li>
+<li>Accelerates access while ensuring privacy</li>
+<li>Enables linking health data with other sectoral data spaces</li>
+<li>Principles: Privacy by design, privacy by default</li>
+</ul>
+<h4 id="participants">Participants </h4>
+<ul>
+<li><strong>National contact points for secondary use</strong>: Organizational gateways from each MS</li>
+<li><strong>Authorized participants</strong>:
+<ul>
+<li>Research infrastructures (ERIC, EDIC)</li>
+<li>European research infrastructures (ESFRI)</li>
+<li>EOSC-federated infrastructures</li>
+<li>Third countries (with compliance checks)</li>
+<li>International organizations</li>
+</ul>
+</li>
+</ul>
+<h4 id="commission-services">Commission Services </h4>
+<p>Commission provides and manages:</p>
+<ul>
+<li>Support for cross-border data access request handling</li>
+<li>Maintenance of catalogues of available datasets</li>
+<li>Network discoverability and metadata queries</li>
+<li>Connectivity services</li>
+<li>Compliance services</li>
+<li>Potential secure processing environment for multi-national analysis</li>
+</ul>
+<h4 id="data-transfer-instruments">Data Transfer Instruments </h4>
+<ul>
+<li>Third-country connections require appropriate <strong>Chapter V GDPR transfer instruments</strong> (adequacy decisions, standard contractual clauses)</li>
+<li>Reciprocity principle applies: Third countries must allow equivalent access by EU entities</li>
+</ul>
+<h4 id="single-application-principle-article-83">Single Application Principle (Article 83) </h4>
+<ul>
+<li>Health data users can submit single application for data from multiple Member States</li>
+<li>Reduces burden and barriers</li>
+<li>Enhances cross-border research</li>
+</ul>
+<h3 id="trusted-health-data-holders-article-76">Trusted Health Data Holders (Article 76) </h3>
+<h4 id="concept">Concept </h4>
+<p>Member States can designate <strong>trusted health data holders</strong> for simplified data permit procedures:</p>
+<ul>
+<li>Large repositories with high-quality datasets</li>
+<li>Demonstrated expertise in data provision</li>
+<li>Meet security and ethical standards</li>
+</ul>
+<h4 id="simplified-procedure">Simplified Procedure </h4>
+<ul>
+<li>Trusted holder can <strong>assess applications</strong> based on expertise</li>
+<li>Issues <strong>recommendation</strong> to HDAB (not binding decision)</li>
+<li>HDAB retains final decision authority</li>
+<li>Reduces administrative burden on HDAB</li>
+</ul>
+<h4 id="limitations">Limitations </h4>
+<ul>
+<li>Health data intermediation entities cannot be designated as trusted holders</li>
+</ul>
+<h3 id="fees-and-cost-recovery-article-69-70">Fees and Cost Recovery (Article 69-70) </h3>
+<h4 id="principles">Principles </h4>
+<ul>
+<li>Health data holders can charge <strong>proportionate, justified, transparent fees</strong></li>
+<li>Fees reflect costs of making data available</li>
+<li>Public sector bodies: Fees cannot include cost of initial data collection</li>
+<li><strong>SMEs, individual researchers, public bodies</strong>: May receive reduced fees</li>
+</ul>
+<h4 id="consistency-framework">Consistency Framework </h4>
+<ul>
+<li>HDAB charges fees for its operations</li>
+<li>HDAB can charge additional fees for health data holder costs</li>
+<li>Single invoice to user (HDAB collects and transfers to holder)</li>
+<li>Implementing acts establish harmonized fee framework</li>
+<li><strong>Article 10 of DGA</strong> principles apply</li>
+</ul>
+<h4 id="fairness-obligation">Fairness Obligation </h4>
+<p>Health data holders must:</p>
+<ul>
+<li>Not withhold data unjustifiably</li>
+<li>Not impose unjustified fees deterring access</li>
+<li>Not require co-publication as condition</li>
+<li>Consider ethical approval separately from data access</li>
+</ul>
+<h3 id="enforcement-and-penalties-article-71-103-106">Enforcement and Penalties (Article 71, 103-106) </h3>
+<p>Violations of EHDS secondary use requirements carry multiple enforcement mechanisms. Administrative fines apply to serious infringements including re-identification of natural persons, downloading personal data outside secure processing environments, processing health data for prohibited uses, or using data not covered by a valid data permit. When determining fine amounts, health data access bodies assess them proportionately based on the nature, gravity, and duration of the infringement, the consequences of violations, compliance measures the violator had taken, and any mitigating factors.</p>
+<p>Non-compliant health data users face temporary or permanent exclusion from EHDS access, creating significant business consequences for organizations that violate rules. Similarly, non-compliant health data holders face enforcement measures, potentially losing their status as authorized data providers.</p>
+<p>All relevant parties—health data access bodies, data holders, data users, and health professionals—bear liability for damages resulting from infringements. The regulation interprets damage broadly, extending beyond economic losses to encompass damage to fundamental rights. Member States establish proportionate and dissuasive penalties for violations, with re-identification receiving particularly serious treatment as an especially grave breach.</p>
+<h3 id="transparency-and-accountability-article-81-82-86">Transparency and Accountability (Article 81-82, 86) </h3>
+<p>The EHDS establishes comprehensive transparency and accountability mechanisms designed to enable public oversight and evidence-based governance of health data use. Health data access bodies publish activity reports every two years documenting the overview of data permit decisions, audit findings, stakeholder engagement activities, and the outcomes of secondary use research including links to publications generated from permitted data. This reporting creates accountability and enables stakeholders to understand how their health data is being used.</p>
+<p>Organizations must provide dataset transparency information on data permits granted with justifications for permission decisions, measures protecting natural persons' rights, methods for individuals to exercise their rights, and outcomes of research conducted with permitted data (including lay summaries making results accessible to non-technical audiences). These transparency obligations complement but do not replace GDPR Article 14 requirements for information provision.</p>
+<p>Where health data users make significant health findings about natural persons during their research, regulations require that data holders inform those persons of the findings. Individuals retain the ability to opt out of receiving such notifications. Member States can delay notification for patient safety or ethics reasons when immediate notification might cause harm.</p>
+<p>The EU Dataset Catalogue serves as a user-friendly, accessible, cost-effective central registry connecting national catalogues operated by Member States, avoiding redundant registration while improving discoverability. The catalogue can align with existing <a href="http://data.europa.eu">data.europa.eu</a> initiatives and maintain interoperability with research infrastructure catalogues, creating a federated discovery infrastructure.</p>
+<h3 id="governance-european-health-data-space-board-article-95-98">Governance: European Health Data Space Board (Article 95-98) </h3>
+<h4 id="composition-and-role">Composition and Role </h4>
+<p>The EHDS Board brings together digital health authorities and health data access bodies from all Member States under commission co-chairing, creating a central coordination mechanism for consistent application of the regulation across the Union. The Board can establish subgroups focused on specific topics including primary use, secondary use, and other governance issues, allowing specialization while maintaining overall coordination.</p>
+<h4 id="tasks">Tasks </h4>
+<p>The Board issues written contributions on consistent application of EHDS rules across Member States, coordinating how different national implementations approach similar situations. It coordinates Member State use of health data, ensuring that national policies complement rather than conflict with each other. It shares information on risks, incidents, and emerging challenges in health data governance, enabling collective learning and early warning of systematic problems. The Board operates independently in the public interest, with governance arrangements ensuring it remains focused on health system outcomes rather than narrow political considerations.</p>
+<h4 id="stakeholder-forum-article-97">Stakeholder Forum (Article 97) </h4>
+<p>An advisory stakeholder forum composed of patient and consumer organizations, health professionals, industry representatives, scientific researchers, and academia ensures diverse perspectives inform the Board's decision-making. The composition is deliberately balanced to represent competing interests and ensure that the Board considers perspectives from affected populations, healthcare workers, commercial innovators, and scientific experts.</p>
+<h4 id="steering-groups-article-98">Steering Groups (Article 98) </h4>
+<p>Member State representative committees at operational levels handle day-to-day management decisions and technical infrastructure development, allowing practical governance to proceed efficiently without requiring full Board involvement in all matters. These groups can invite observers and expert consultants as needed to address specific technical or policy questions.</p>
+<hr>
+<h2 id="implementation">10. Implementation Roadmap and Timeline </h2>
+<h3 id="entry-into-force-and-application-timeline">Entry into Force and Application Timeline </h3>
+<h4 id="key-dates">Key Dates </h4>
+<ul>
+<li><strong>5 March 2025</strong>: Regulation published in Official Journal</li>
+<li><strong>26 March 2025</strong>: Regulation enters into force (transition period begins)</li>
+<li><strong>26 March 2027</strong>: Regulation applies generally (main application date)</li>
+</ul>
+<h4 id="gradual-implementation-phases-recital-115-articles-103-109">Gradual Implementation Phases (Recital 115, Articles 103-109) </h4>
+<h5 id="2025-2027-transition-period"><strong>2025-2027: Transition Period</strong> </h5>
+<ul>
+<li>Commission adopts implementing acts</li>
+<li>Member States prepare infrastructure</li>
+<li>Organizations build capacity</li>
+<li>Limited voluntary early implementation possible</li>
+</ul>
+<h5 id="2027-2029-primary-use-phase-1"><strong>2027-2029: Primary Use Phase 1</strong> </h5>
+<ul>
+<li><strong>March 2027</strong>: Legal entry into effect</li>
+<li><strong>March 2029</strong>: First mandatory exchange of priority category 1 health data
+<ul>
+<li>Patient Summaries</li>
+<li>Electronic Prescriptions and Dispensations</li>
+</ul>
+</li>
+<li>MyHealth@EU becomes mandatory cross-border infrastructure</li>
+<li>EHR system certification begins (1st categories)</li>
+</ul>
+<h5 id="2029-2031-primary-use-phase-2--secondary-use-begins"><strong>2029-2031: Primary Use Phase 2 &amp; Secondary Use Begins</strong> </h5>
+<ul>
+<li><strong>March 2030</strong>: Mandatory exchange of priority category 2 health data
+<ul>
+<li>Medical imaging studies and reports</li>
+<li>Medical test results</li>
+<li>Discharge reports</li>
+</ul>
+</li>
+<li><strong>March 2029</strong>: Secondary use begins for most data categories</li>
+<li><strong>March 2030</strong>: Secondary use includes genomics, omics, wellness applications</li>
+<li>EHR system certification continues (2nd categories)</li>
+</ul>
+<h5 id="2031-2036-secondary-use-expansion--third-countries"><strong>2031-2036: Secondary Use Expansion &amp; Third Countries</strong> </h5>
+<ul>
+<li><strong>March 2031</strong>: Secondary use rules fully operational</li>
+<li><strong>March 2032</strong>: All EHR systems require compliance certification</li>
+<li><strong>March 2034</strong>: Third countries can join HealthData@EU for secondary use</li>
+</ul>
+<h3 id="implementation-requirements-for-member-states">Implementation Requirements for Member States </h3>
+<h4 id="primary-use-infrastructure">Primary Use Infrastructure </h4>
+<ol>
+<li>
+<p><strong>Electronic Health Data Access Services</strong> (Article 4)</p>
+<ul>
+<li>Patient portals</li>
+<li>Mobile applications</li>
+<li>Other interfaces enabling data access</li>
+</ul>
+</li>
+<li>
+<p><strong>Health Professional Access Services</strong> (Article 12)</p>
+<ul>
+<li>Provider access to patient data</li>
+<li>Logging and audit capabilities</li>
+</ul>
+</li>
+<li>
+<p><strong>Proxy Services</strong> (Article 13-14)</p>
+<ul>
+<li>Enable authorization of third parties</li>
+<li>Integration with eID services</li>
+</ul>
+</li>
+<li>
+<p><strong>MyHealth@EU Participation</strong> (Article 23-24)</p>
+<ul>
+<li>Mandatory connection</li>
+<li>National contact points for digital health</li>
+<li>Healthcare provider connections</li>
+</ul>
+</li>
+<li>
+<p><strong>Digital Health Authorities</strong> (Article 30)</p>
+<ul>
+<li>Designated responsible entity</li>
+<li>Sufficient technical expertise</li>
+<li>Cooperation with DPAs, other bodies</li>
+</ul>
+</li>
+</ol>
+<h4 id="secondary-use-infrastructure">Secondary Use Infrastructure </h4>
+<ol>
+<li>
+<p><strong>Health Data Access Bodies</strong> (Article 59-68)</p>
+<ul>
+<li>One or more per Member State</li>
+<li>Sufficient staffing and resources</li>
+<li>Decision-making capacity</li>
+</ul>
+</li>
+<li>
+<p><strong>HealthData@EU Connection</strong> (Article 80)</p>
+<ul>
+<li>National contact points for secondary use</li>
+<li>Compliance with technical specifications</li>
+</ul>
+</li>
+<li>
+<p><strong>Secure Processing Environments</strong> (Article 77)</p>
+<ul>
+<li>Established by HDAB or delegated to third party</li>
+<li>Meets security standards</li>
+</ul>
+</li>
+<li>
+<p><strong>Digital Literacy and Training</strong> (Article 89)</p>
+<ul>
+<li>Health professional training on new systems</li>
+<li>Natural person support services</li>
+<li>Targeted programs for vulnerable groups</li>
+</ul>
+</li>
+</ol>
+<h4 id="data-preparation">Data Preparation </h4>
+<p>EHDS imposes several data preparation requirements before implementation can proceed. First, organizations must register health data in electronic format systematically using the established European electronic health record exchange format. This requirement goes beyond simply storing data electronically—it mandates active registration in specified formats enabling interoperability. Specific data quality requirements must be met to ensure data is fit for its intended purposes. Standards and coding systems must be harmonized across organizations to enable meaningful exchange and analysis. These preparation requirements represent substantial work, particularly for healthcare systems using legacy systems not designed for standardized data sharing.</p>
+<h3 id="key-implementing-acts-needed-article-105-109">Key Implementing Acts Needed (Article 105-109) </h3>
+<p>The regulation delegates significant technical details to implementing acts that the Commission must adopt. For primary use, the Commission must specify proxy service technical specifications, data quality requirements for EHR registration, cross-border identification and authentication requirements, implementation mechanisms for patient data access rights, MyHealth@EU technical specifications and security requirements, and interoperability requirements between MyHealth@EU and other health data systems.</p>
+<p>For secondary use, implementing acts must address data permit templates and procedures, requirements for health data access applications, fee policy principles, secure processing environment technical requirements and security standards, HealthData@EU architecture and connection requirements, data quality and utility label specifications, and criteria for designating trusted health data holders.</p>
+<p>General implementing acts must establish common specifications for EHR system compliance and certification, detailed specifications of the European electronic health record exchange format, requirements for EHR systems digital testing environments to enable compliance validation, and labelling requirements for wellness applications.</p>
+<h3 id="estimated-economic-costs">Estimated Economic Costs </h3>
+<p>Implementation of EHDS entails substantial costs across multiple categories. Infrastructure development requires significant investment by healthcare systems, national authorities, and technology vendors to establish the connectivity, data systems, and governance mechanisms the regulation requires. Staff training for health professionals, IT personnel, and administrators is essential given the complexity of new systems and procedures. Data preparation activities including digitization of legacy records, standardization to common formats, and quality assurance represent ongoing operational demands. Security enhancement involves investing in cybersecurity infrastructure appropriate to the sensitivity of health data. Ongoing operational costs sustain health data access bodies and health authorities.</p>
+<p>Funding mechanisms to support these costs come from diverse sources. EU funding through structural funds, research programs, and digital infrastructure initiatives provides some support. Member State budgets from national healthcare systems provide the primary funding source. User fees charged by health data access bodies for secondary use provide revenue, though the regulation limits these fees to prevent deterring legitimate research. Cost-sharing arrangements aim to distribute the implementation burden fairly between EU-level and Member State-level actors, reflecting the principle that both benefit from coordinated systems.</p>
+<h3 id="expected-benefits">Expected Benefits </h3>
+<p>The EHDS produces estimated economic benefits of approximately €5.5 billion in savings over ten years from improved healthcare delivery alone, alongside 20-30% growth in the digital health market. Secondary use of health data generates estimated €5.4 billion in additional savings over the same period.</p>
+<p>Healthcare systems benefit through improved continuity of care for patients accessing healthcare across borders, reducing duplicative testing and administrative burden that currently characterizes fragmented systems. Data availability enables faster diagnosis and treatment by providing clinicians with comprehensive patient histories. Better-informed clinical decisions result from access to complete information. Health system efficiency improvements emerge from standardization and elimination of redundant processes.</p>
+<p>Research and innovation receive substantial benefits. Larger datasets drawn from multiple Member States accelerate drug development by providing evidence from more diverse populations than individual national systems could offer. Rare disease research becomes feasible for the first time when aggregating data from small populations across an entire continent. Real-world evidence for regulatory decisions becomes available, complementing traditional randomized trials. Personalized medicine advancement accelerates through access to larger datasets enabling more granular analysis. New digital health products and services emerge as entrepreneurs develop applications leveraging standardized health data infrastructure.</p>
+<p>Public health and policy benefit from improved pandemic preparedness as real-time health data enables early warning and rapid response to emerging threats. Evidence-based health policy development improves when policymakers have comprehensive data about health system performance and health outcomes. Patient safety monitoring at population level enables identification of safety signals affecting large numbers of people. Health inequalities reduction becomes possible through data-driven interventions targeting specific populations identified through health data analysis.</p>
+<hr>
+<h2 id="challenges">11. Critical Perspectives and Challenges </h2>
+<h3 id="academic-and-expert-concerns">Academic and Expert Concerns </h3>
+<h4 id="patient-control-and-consent-issues-marelli-et-al-2023">Patient Control and Consent Issues (Marelli et al., 2023) </h4>
+<p>Academic experts have raised important concerns that EHDS—as initially proposed—could paradoxically undermine rather than enhance patient control over health data. These concerns focus on several interrelated dimensions. First, transparency may be reduced through lower requirements for individual-level information provision to data subjects and consent waivers for certain secondary uses. The practical effect is that patients may only learn about data processing generally or when they specifically request information, rather than receiving proactive notification of how their data flows through the system. This creates risks that patients remain unaware of processing activities.</p>
+<p>Second, informational self-determination becomes diminished when patients cannot determine specifically by whom and for which purposes their data is processed. Control over research participation—including the ability to object on moral grounds to participation in research they find ethically problematic—becomes constrained. This dynamic creates tension with GDPR's foundational principle of informed consent as the basis for personal data protection.</p>
+<p>Third, safeguard gaps emerge as large datasets built through EHDS accumulate, increasing re-identification risks and creating opportunities for privacy intrusions. Meanwhile, patients receive reduced opportunities to become informed of these heightened risks. The alignment between health data access bodies and existing oversight structures like ethics review boards and data protection authorities remains unclear, potentially creating gaps in accountability.</p>
+<p>Fourth, public trust risks accompany these developments. Research demonstrates that public opinion about health data reuse depends critically on maintaining strong consent requirements and meaningful control mechanisms. Regulatory frameworks appearing to prioritize data access over patient autonomy risk eroding the public trust necessary for voluntary participation in health data systems. If citizens lose confidence that their data will be handled in ways they control and understand, willingness to share health information may decline, potentially undermining the entire EHDS project.</p>
+<h4 id="health-professional-burden">Health Professional Burden </h4>
+<p>Health regulations impose substantial responsibilities on health professionals that carry risks of creating administrative burden affecting care delivery. Healthcare workers must navigate complex obligations regarding data access, transfer, and confidentiality while continuing to provide patient care. Regulations risk placing health professionals in positions where they might violate professional confidentiality duties or other ethical obligations. When patient data crosses borders under EHDS mechanisms, responsibility allocation becomes unclear—does liability rest with the sending provider, the receiving provider, or the infrastructure operator? Insufficient guidance navigating legal uncertainties leaves health professionals exposed to liability when genuine ambiguities arise.</p>
+<h4 id="data-quality-and-standardization-challenges">Data Quality and Standardization Challenges </h4>
+<p>Existing data collection practices across EU Member States are heterogeneous, reflecting different healthcare system designs, clinical terminologies, and documentation traditions. Converting this diverse data to common formats is both costly and technically challenging. Data collected from different sources using different definitions proves difficult to combine meaningfully for analysis, potentially reducing the actual utility of aggregated datasets. A persistent problem emerges: even when formal standards are adopted, different organizations often implement them differently, creating apparent standardization that masks underlying semantic differences. This "same standards used differently" phenomenon can propagate errors into research findings using apparently standardized data.</p>
+<h4 id="data-quality-and-standardization-challenges-1">Data Quality and Standardization Challenges </h4>
+<ul>
+<li><strong>Semantic heterogeneity</strong>: Same diagnostic codes used differently across healthcare systems with different disease classification traditions, remuneration systems, and registration practices</li>
+<li><strong>Implementation complexity</strong>: Achieving agreement on data standards among diverse Member States is "monumental challenge"</li>
+<li><strong>Cost estimates</strong>: Previous experience (EU Clinical Trials Regulation) shows digital infrastructure projects experience massive delays and cost overruns</li>
+<li><strong>Data usefulness questions</strong>: Shared standards without addressing contextual differences can result in frequent misinterpretations and faulty analyses</li>
+</ul>
+<h4 id="infrastructure-investment-risk">Infrastructure Investment Risk </h4>
+<ul>
+<li>EHDS requires "widespread, technically complex, and massively costly digital infrastructure"</li>
+<li>Previous projects (EU Clinical Trials Regulation) experienced multi-year delays despite significant investment</li>
+<li>Risk of infrastructure "lock-in" and stranded investments</li>
+</ul>
+<h4 id="value-extraction-and-benefit-sharing">Value Extraction and Benefit-Sharing </h4>
+<p><strong>Big Tech Involvement</strong>:</p>
+<ul>
+<li>Major technology corporations increasingly entering health research</li>
+<li>EHDS provides few safeguards ensuring returns on public investment</li>
+<li>Example: NHS COVID-19 data partnerships with Google, Amazon, Microsoft, Palantir where companies retained IP rights and profit from NHS data</li>
+</ul>
+<p><strong>Recommended Solutions</strong>:</p>
+<ul>
+<li>Explicit benefit-sharing agreements and licensing requirements</li>
+<li>Ensuring commercial profits derived from public health data flow back to public sector</li>
+<li>Restrictions on IP concentration among private corporations</li>
+</ul>
+<h4 id="digital-divide-and-health-inequalities">Digital Divide and Health Inequalities </h4>
+<p>Risk that EHDS <strong>exacerbates existing digital inequalities</strong>:</p>
+<ul>
+<li>Assumes digital literacy and device access among all citizens</li>
+<li>Vulnerable populations (elderly, disadvantaged socioeconomic status, chronic disease sufferers, ethnic minorities) may lack:
+<ul>
+<li>Digital literacy</li>
+<li>Device and connectivity access</li>
+<li>Language skills for cross-border systems</li>
+</ul>
+</li>
+</ul>
+<p><strong>Result</strong>: Those who could most benefit from system improvements potentially excluded.</p>
+<p><strong>Mitigation needed</strong>:</p>
+<ul>
+<li>Targeted digital literacy programs</li>
+<li>Ensure non-digital access alternatives</li>
+<li>Address digital infrastructure gaps in underserved regions</li>
+</ul>
+<h4 id="resource-and-capacity-issues">Resource and Capacity Issues </h4>
+<ul>
+<li>Healthcare systems already stretched for resources</li>
+<li>Significant additional burden to collect, store, standardize, and provide health data</li>
+<li>Additional burden on HDABs to manage secondary use requests</li>
+<li>Training requirements for health professionals, IT personnel</li>
+<li>No guarantee EU or MS funding adequate to support implementation</li>
+</ul>
+<hr>
+<h3 id="regulatory-coordination-challenges">Regulatory Coordination Challenges </h3>
+<h4 id="interaction-with-gdpr">Interaction with GDPR </h4>
+<ul>
+<li><strong>Reduced consent requirements in EHDS</strong> appear inconsistent with GDPR's emphasis on informed consent</li>
+<li><strong>Scope of scientific research exception</strong>: GDPR Article 9(2)(j) allows relaxation of rights where research aims might be "hampered"; EHDS takes different approach with broader default access to data</li>
+</ul>
+<h4 id="interaction-with-data-act">Interaction with Data Act </h4>
+<ul>
+<li><strong>Different regime for B2G data sharing</strong>: Data Act Chapter 5 limited to "exceptional need" while EHDS provides broader secondary use access</li>
+<li><strong>Reciprocity requirements</strong>: Data Act Article 10 and EHDS both include reciprocity principles but with potentially different applications</li>
+</ul>
+<h4 id="interaction-with-dga">Interaction with DGA </h4>
+<ul>
+<li><strong>Data intermediation services</strong>: Overlap between DGA intermediaries and EHDS health data intermediaries</li>
+<li><strong>Trusted health data holders</strong>: New concept in health sector may conflict with existing DGA-defined data intermediation services</li>
+</ul>
+<h4 id="medical-device-and-ai-regulation-overlaps">Medical Device and AI Regulation Overlaps </h4>
+<ul>
+<li>EHR systems may qualify as medical devices under Regulation (EU) 2017/745</li>
+<li>AI systems in EHRs subject to EU AI Act (Regulation (EU) 2024/1689)</li>
+<li>Multiple regulatory frameworks may create conflicting requirements</li>
+</ul>
+<hr>
+<h3 id="implementation-and-enforcement-issues">Implementation and Enforcement Issues </h3>
+<h4 id="compliance-and-implementation-deficit-risk">Compliance and Implementation Deficit Risk </h4>
+<ul>
+<li>Complex infrastructure requirements may not be met by all MS</li>
+<li>Fragmentation continues if some MS implement slowly or incompletely</li>
+<li>No clear enforcement mechanism for persistent non-compliance</li>
+<li>Risk of "two-speed" Europe with advanced and lagging MS</li>
+</ul>
+<h4 id="data-quality-and-interoperability-challenges">Data Quality and Interoperability Challenges </h4>
+<ul>
+<li>Existing data collection practices heterogeneous across MS</li>
+<li>Conversion to common formats costly and challenging</li>
+<li>Data from different sources, collected with different definitions, difficult to combine meaningfully</li>
+<li>"Same standards used differently" problem persists despite formal standardization</li>
+</ul>
+<h4 id="cybersecurity-and-data-protection-risks">Cybersecurity and Data Protection Risks </h4>
+<p>Large centralized datasets create attractive targets for cybercriminals precisely because health data possesses exceptional value in criminal markets. Identity theft using genetic information or mental health diagnoses commands premium prices. Blackmail possibilities arise from disclosure of sensitive health information. Breach consequences prove particularly severe because genetic information, mental health diagnoses, substance use history, and sexual health data cannot be changed if compromised; unlike financial fraud where accounts can be closed or passwords reset, health data breaches create permanent privacy intrusions. Secure processing environments represent new technology with unknown implementation risks, and reliance on specific vendors creates potential vendor lock-in concerns where future switching becomes prohibitively expensive.</p>
+<h4 id="third-country-data-transfer-issues">Third-Country Data Transfer Issues </h4>
+<p>EHDS enables transfers of health data to third countries through HealthData@EU connections, but these transfers depend on legal mechanisms under GDPR Chapter V. Relatively few jurisdictions possess adequacy decisions recognizing equivalent data protection; most third countries require standard contractual clauses or other transfer instruments that provide weaker protections than direct adequacy findings. Health data transferred to third countries may become subject to foreign law enforcement demands, intelligence gathering activities, or other government access that European individuals cannot challenge under European law. These dynamics create risks that health data intended for narrow research purposes becomes accessible to third-country governments through legal processes individuals cannot contest or even learn about.</p>
+<h3 id="ethical-concerns">Ethical Concerns </h3>
+<h4 id="individual-vs-collective-autonomy">Individual vs. Collective Autonomy </h4>
+<p>Fundamental tension exists between respecting individual rights to control personal data and achieving collective benefits from large-scale data aggregation. EHDS attempts to navigate this tension through mechanisms like the right to opt out, but these mechanisms contain important limitations. Override mechanisms for public health purposes (Article 54) raise questions about proportionality and necessity when individual autonomy is set aside. Determining when public interest genuinely justifies overriding individual preferences proves inherently contestable; there exists risk of abuse if "public interest" receives expansive interpretation extending beyond genuine emergency contexts.</p>
+<h4 id="justice-and-equity">Justice and Equity </h4>
+<p>Health data distribution across EU Member States is systematically unequal, with over-representation from wealthy Member States possessing advanced digital infrastructure while data from populations in less-developed regions may be scarcer or lower quality. This creates risk that research and innovation benefits concentrate in wealthy countries while valuable data originates from less-advantaged populations. Such dynamics echo historical exploitation patterns where developing countries provide raw materials while developed countries capture value-added processing and profits. Addressing this requires explicit attention to equitable benefit-sharing and ensuring governance structures represent and include voices from underrepresented regions and populations.</p>
+<h4 id="profiling-and-discrimination-risk">Profiling and Discrimination Risk </h4>
+<p>Large-scale health data aggregation enables sophisticated profiling capable of categorizing individuals by health risk, susceptibility, and predicted healthcare costs. Despite formal prohibitions on detrimental treatment (Article 62), algorithmic discrimination remains possible through subtle mechanisms where decisions appear neutral but produce disparate impact on specific populations. Historical patterns of discrimination in medicine—from syphilis studies on African American subjects to contemporary disparities in pain management and cardiac care—demonstrate how medical systems can embed bias in ways that appear scientifically justified. Health data systems enabling automated decision-making risk systematizing and amplifying these existing patterns unless deliberate safeguards address them.</p>
+<hr>
+<h2 id="conclusions">12. Key Takeaways </h2>
+<h3 id="regulatory-architecture">Regulatory Architecture </h3>
+<p>Health data governance operates through a layered regulatory framework comprising multiple complementary instruments. The General Data Protection Regulation provides the foundational privacy and personal data protection framework applicable to all processing. The Data Governance Act establishes general principles for data spaces and intermediation services. The Data Act provides a model for fair data access based on reciprocity and transparency. EHDS builds upon these foundations by creating health-sector-specific governance tailored to the particular needs of healthcare systems and populations.</p>
+<p>Health data receives this heightened regulatory attention because it merits exceptionalism within data governance. The sensitivity of health information—revealing personal health status, genetic characteristics, and individual vulnerabilities—demands special protection. Medical confidentiality traditions reflecting centuries of healthcare ethics inform regulatory design. Risk of discrimination based on health status or genetic information creates stakes for discrimination prevention that exceed ordinary data governance concerns. Critically, healthcare systems depend on patient trust; regulatory frameworks that appear to undermine data control risk eroding the trust necessary for individuals to seek healthcare and share sensitive information with providers.</p>
+<p>EHDS attempts to balance multiple competing interests and rights. Patient autonomy and control must be protected through primary use rights, opt-out mechanisms, and granular access restrictions. Simultaneously, public health and research benefits must be realized through enabling secondary uses and cross-border data flows. Data provider interests must be protected through appropriate fees and protection mechanisms. Data user access must be facilitated through structured permit systems that reduce unnecessary barriers while maintaining appropriate safeguards. This balance reflects recognition that health data governance serves multiple legitimate purposes that cannot be entirely optimized simultaneously.</p>
+<h3 id="primary-use-transformation">Primary Use Transformation </h3>
+<p>EHDS significantly enhances patient rights beyond what GDPR provides. Patients enjoy the right to immediate access to priority health data without the one-month delay GDPR typically allows. Enhanced portability rights enable moving data across borders in standardized formats rather than only where technically feasible as GDPR requires. Granular access controls allow patients to restrict access to specific sensitive data categories while remaining accessible for other purposes. Rectification mechanisms enable correcting inaccurate records. Importantly, patients retain opt-out rights from cross-border sharing where Member States choose to provide them, offering meaningful control over data export.</p>
+<p>These patient rights are supported by mandatory infrastructure requirements. Member States must establish electronic health data access services enabling patients to access their data. Health professional access services enable healthcare providers to access patient data to provide care. MyHealth@EU infrastructure enables cross-border healthcare through standardized data sharing when patients seek care in other Member States. Digital health authorities provide governance and coordination. These infrastructure requirements represent substantial investment but enable the functional exercise of patient rights rather than merely theoretical rights on paper.</p>
+<p>Underlying this infrastructure is an interoperability imperative. The European electronic health record exchange format enables data portability across systems and borders. Harmonized standards and common specifications are essential for systems to function together rather than remaining in separate silos. Healthcare system digitalization is accelerated throughout the EU as this regulatory push forces modernization of systems that might otherwise operate indefinitely with legacy technology.</p>
+<h3 id="secondary-use-framework">Secondary Use Framework </h3>
+<p>The EHDS replaces ad-hoc health data governance with a structured access system built around health data access bodies, data permits, and secure processing environments. Health data access bodies provide centralized governance replacing the previous system where individual data holders determined access unilaterally. Data permits specify exactly which data can be used, for what purposes, under which safeguards, and for how long, creating transparency and consistency. Secure processing environments prevent unauthorized access and prohibit re-identification attempts, maintaining data holder control throughout analysis. Public reporting requirements ensure transparent decision-making rather than opaque governance conducted behind closed doors.</p>
+<p>This framework attempts to balance innovation with protection through permissive scope combined with meaningful safeguards. Permitted purposes encompass broad categories including research, policy-making, regulatory activities, and innovation, creating space for diverse beneficial uses. Prohibited uses—detrimental treatment, marketing, automated decision-making, re-identification attempts—establish clear bright-line boundaries that data users cannot cross. Data minimization principles require use of anonymized data where possible and pseudonymized data where necessary, reducing privacy risks. Criminal liability for re-identification attempts establishes severe consequences for violating privacy protections.</p>
+<p>Importantly, data subjects retain agency within this framework. The right to opt out from secondary use in principle (with exceptions only for genuine public health emergencies) preserves individual decision-making. Information rights ensure individuals learn how their data is used. Significant findings notification requires researchers to inform individuals of health discoveries about them. Complaint mechanisms allow individuals to report violations. These provisions attempt to maintain data subject voice even within large-scale automated systems.</p>
+<h3 id="governance-innovations">Governance Innovations </h3>
+<p>EHDS introduces several governance innovations enabling coordination across the EU while respecting national healthcare system autonomy. HealthData@EU provides cross-border infrastructure connecting Member States for secondary use, accelerating research coordination across national boundaries. The single application principle enables researchers to submit one application rather than separate applications to each Member State, significantly reducing burden and barriers to cross-border research. Reciprocity requirements ensure that third-country participation creates mutual obligations rather than one-way data extraction. Trusted third countries can participate in the framework, extending benefits beyond the EU.</p>
+<p>Multi-stakeholder coordination mechanisms ensure diverse perspectives inform governance. The EHDS Board coordinates Member States and the Commission, creating a forum for resolving conflicts and establishing consistent practice. A stakeholder forum including patients, health professionals, industry, researchers, and academics ensures the Board considers perspectives beyond government actors. Steering groups manage day-to-day operations while the full Board addresses strategic questions. Cooperation with other authorities including data protection authorities, the AI Board, and medical device bodies ensures EHDS integration into the broader EU regulatory ecosystem rather than operating in isolation.</p>
+<p>Data quality receives explicit governance focus recognizing that datasets of poor quality serve no one—neither protecting privacy nor enabling research. Data quality and utility labels inform potential users about dataset characteristics, enabling informed decisions about fitness for particular purposes. The EU dataset catalogue improves discoverability of available datasets, reducing duplication and enabling optimal allocation of data to appropriate uses. Harmonized standards for coding and registration reduce the translation burden researchers face when combining data from multiple sources. Data enrichment mechanisms improve datasets over time as researchers identify completeness gaps.</p>
+<h3 id="implementation-challenges">Implementation Challenges </h3>
+<p>The transition from current fragmented health data systems to the EHDS framework represents a complex undertaking unfolding gradually between 2025 and 2034. This extended timeline reflects recognition that simultaneous implementation across all EU Member States and healthcare systems is not feasible. The transition requires significant infrastructure investment throughout the EU, technical standardization across diverse existing national systems that evolved independently, extensive staff training and capacity building, and organizational restructuring to accommodate new governance mechanisms. These requirements fall heavily on healthcare systems and Member State authorities already managing substantial demands.</p>
+<p>Funding sustainability remains incompletely resolved. Cost-sharing between EU and Member State budgets lacks clear specification, creating uncertainty about who bears various costs. Fee structures for secondary use must be carefully calibrated—high enough to support operations and reasonable data holder compensation, yet low enough not to deter research and innovation. Healthcare system burdens from data provision and management responsibilities may accumulate, particularly if funding proves inadequate. Risk of implementation deficit exists if some Member States lack resources or political will to implement fully, potentially creating a "two-speed Europe" where some jurisdictions implement advanced systems while others lag.</p>
+<p>Trust and social license represent critical success factors that cannot be mandated. Public support is essential for health data systems to function effectively; citizens must be willing to trust healthcare organizations with sensitive information. Individual control and consent remain valued by citizens more highly than many policymakers assume; frameworks appearing to minimize patient choice risk eroding participation. Transparency requirements are essential for regulatory legitimacy; if governance operates behind closed doors, trust erodes even if actual practices prove benign. Benefit-sharing mechanisms are needed to ensure that returns on public investment in health data systems accrue to publics rather than narrowly to commercial beneficiaries.</p>
+<h3 id="strategic-considerations-for-stakeholders">Strategic Considerations for Stakeholders </h3>
+<p><strong>Healthcare Providers</strong> must prepare comprehensively for EHDS implementation. They should anticipate mandatory requirements for electronic health record system compliance with EHDS standards and begin planning infrastructure for patient data access services and health professional access services. Staff training programs must be developed to ensure personnel understand new systems and procedures. Data governance frameworks addressing data quality, access control, and responsibility allocation should be established before implementation deadlines. Engagement with digital health authorities and early participation in implementation planning can help ensure that healthcare provider perspectives inform regulation implementation.</p>
+<p><strong>Researchers and Innovators</strong> should familiarize themselves with data permit requirements and application procedures before implementation, enabling rapid access once systems become operational. Understanding secure processing environment rules and technical constraints helps researchers plan efficient analytical workflows within regulatory parameters. Multi-country data access strategies should be developed recognizing that EHDS enables cross-border research that was previously prohibitively complex. Budgeting for health data access body fees should be incorporated into research financial planning. Ensuring that research projects include ethical approval mechanisms as required by national law demonstrates compliance from inception rather than discovering problems during application review.</p>
+<p><strong>Patient and Consumer Organizations</strong> play crucial advocacy roles in ensuring EHDS implementation respects patient interests. Advocating for transparent implementation procedures helps ensure that decisions reflect evidence rather than hidden agendas. Ensuring patient voice in health data access body governance directly shapes how those bodies exercise their powers. Monitoring whether patient consent and control are preserved as implementation proceeds enables early warning if actual practice diverges from regulatory intent. Tracking benefit-sharing outcomes reveals whether EHDS generates public benefits or narrowly enriches commercial actors. Supporting digital literacy initiatives helps ensure that patient agency becomes meaningful as systems grow more complex.</p>
+<p><strong>Digital Health Authorities and Health Data Access Bodies</strong> serve as primary implementation actors bearing responsibility for system success. They must develop robust governance frameworks establishing decision-making processes, conflict resolution procedures, and accountability mechanisms. Establishing data quality standards for acceptable datasets requires technical expertise and stakeholder consultation. Creating efficient permit issuance processes demonstrates responsiveness to researchers while maintaining appropriate safeguards. Building secure processing infrastructure requires substantial technical and financial resources. Stakeholder engagement throughout implementation builds legitimacy and improves outcomes by incorporating diverse perspectives.</p>
+<p><strong>The EU Commission</strong> bears responsibility for implementation guidance and system coherence. Developing detailed implementing acts within the timelines the regulation specifies enables Member States to proceed with implementation. Supporting Member State capacity building recognizes that unequal resources across Member States could produce unequal implementation. Monitoring implementation progress and intervening when serious gaps emerge prevents backsliding toward pre-EHDS fragmentation. Addressing emerging interoperability issues ensures that systems designed independently can actually communicate. Ensuring coherence with other EU regulations including the AI Act, Cybersecurity Act, and medical device regulations prevents conflicting requirements from creating compliance confusion.</p>
+<hr>
+<h2 id="references-and-key-articles">References and Key Articles </h2>
+<h3 id="ehds-regulation">EHDS Regulation </h3>
+<ul>
+<li><strong>Regulation (EU) 2025/327</strong> of 11 February 2025 on the European Health Data Space, OJ L 327, 5.3.2025</li>
+</ul>
+<h3 id="related-eu-regulations">Related EU Regulations </h3>
+<ul>
+<li><strong>Regulation (EU) 2016/679</strong> (GDPR), OJ L 119, 4.5.2016</li>
+<li><strong>Regulation (EU) 2022/868</strong> (DGA), OJ L 152, 3.6.2022</li>
+<li><strong>Regulation (EU) 2023/2854</strong> (Data Act), OJ L 2023/2854, 22.12.2023</li>
+<li><strong>Regulation (EU) 2024/1689</strong> (AI Act), OJ L 2024/1689, 12.7.2024</li>
+<li><strong>Regulation (EU) 2024/2847</strong> (Cyber Resilience Act), OJ L 2024/2847, 20.11.2024</li>
+<li><strong>Regulation (EU) No 910/2014</strong> (eIDAS), OJ L 257, 28.8.2014</li>
+<li><strong>Directive 2011/24/EU</strong> (Cross-border healthcare), OJ L 88, 4.4.2011</li>
+</ul>
+<h3 id="key-academic-and-policy-analysis">Key Academic and Policy Analysis </h3>
+<ul>
+<li>Marelli, L., et al. (2023). "The European health data space: Too big to succeed?" <em>Health Policy</em>, 135, 104861.</li>
+<li>Marcus, J.S., Martens, B., Carugati, C., Bucher, A., &amp; Godlovitch, I. (2022). <em>The European Health Data Space</em>. Policy Department for Economic, Scientific and Quality of Life Policies, European Parliament.</li>
+<li>Malgieri, G., &amp; Comandé, G. (2017). "Sensitive-by-distance: quasi-health data in the algorithmic era." <em>Information &amp; Communications Technology Law</em>, 26(3), 229-259.</li>
+<li>Fiske, A., et al. (2022). "Value-creation in the health data domain: a typology of what health data help us do." <em>Biosocieties</em>, 18, 473-494.</li>
+<li>Fiske, A., et al. (2020). "Sharing health data for research." <em>Lancet</em>, 395(10224), 491-492.</li>
+</ul>
+<h3 id="foundational-eu-documents">Foundational EU Documents </h3>
+<ul>
+<li>Commission Recommendation (EU) 2019/243 on European Electronic Health Record exchange format</li>
+<li>eHealth Network Working Documents on digital health governance</li>
+<li>European ethical principles for digital health (eHealth Network, January 2022)</li>
+</ul>
+<hr>
+<p><strong>End of Consolidated Summary</strong></p>
+<p>This document is part of Module 2: The (EU) Regulation of Health Data Sharing, as part of the JBL110 Innovation and Regulation course at Tilburg Law School. For the most current information and official guidance, consult the full EHDS Regulation text and implementing acts as adopted by the European Commission.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

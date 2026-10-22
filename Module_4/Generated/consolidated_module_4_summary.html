@@ -1,0 +1,841 @@
+<!DOCTYPE html><html><head>
+      <title>consolidated_module_4_summary</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\20232788\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:///c:\Users\20232788\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\mermaid\mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="module-4-intellectual-property-law--database-protection--consolidated-summary">Module 4: Intellectual Property Law &amp; Database Protection – Consolidated Summary </h1>
+<p><strong>Module Title:</strong> Intellectual Property Law &amp; Database Protection<br>
+<strong>Instructor:</strong> Dr. Sunimal Mendis, Assistant Professor in Intellectual Property Law, Tilburg University, TILT<br>
+<strong>Date:</strong> 07/10/2025</p>
+<p>This consolidated document synthesizes the essential concepts from Module 4, integrating comprehensive coverage of database protection regimes, text and data mining exceptions, and the critical EU legal frameworks governing data use in the digital economy. It combines theoretical foundations with practical implications for artificial intelligence development and data-driven innovation.</p>
+<hr>
+<h2 id="table-of-contents">Table of Contents </h2>
+<ol>
+<li><a href="#introduction">Introduction: Data and IP Law</a></li>
+<li><a href="#foundations">Foundational Concepts: Data, Information, and IP Protection</a></li>
+<li><a href="#database-directive">The EU Database Directive: Two-Regime Protection</a></li>
+<li><a href="#copyright-protection">Copyright Protection of Databases</a></li>
+<li><a href="#sui-generis-right">Sui Generis Database Rights</a></li>
+<li><a href="#machine-generated">Machine-Generated Databases</a></li>
+<li><a href="#tdm-exceptions">Text and Data Mining (TDM) Under the DSM Directive</a></li>
+<li><a href="#contract-law">Contract Law as a Barrier to Data Mining</a></li>
+<li><a href="#ai-implications">Implications for AI and Data-Driven Innovation</a></li>
+<li><a href="#conclusions">Key Takeaways and Recommendations</a></li>
+</ol>
+<hr>
+<h2 id="introduction">Introduction: Data and IP Law </h2>
+<h3 id="the-central-question">The Central Question </h3>
+<p><strong>Does EU IP law allow data mining of non-personal data contained in a database that has been made available to the public?</strong></p>
+<p>This deceptively simple question underlies complex legal, economic, and ethical tensions in contemporary European law. The answer requires navigation through multiple legal regimes, each with different scopes, requirements, and exceptions.</p>
+<p>The question is critical for multiple interconnected reasons. Data serves as the raw material for artificial intelligence, and algorithms require enormous volumes of data to train effectively. Start-ups and small or medium-sized enterprises lack the resources to generate equivalent datasets independently, creating a genuine need for data access. Simultaneously, the European Union aims to foster innovation through its Digital Single Market policies, which explicitly prioritize data-driven innovation. Yet this objective must be balanced against the legitimate interests of database creators who have invested considerable resources in data collection and organization and deserve compensation for their efforts. Beyond these economic considerations, there exists a broader public interest in information access, as freedom of information and knowledge dissemination underpin democratic societies and individual development.</p>
+<h3 id="the-fundamental-misconception-available--free-to-use">The Fundamental Misconception: "Available ≠ Free to Use" </h3>
+<p>A critical misunderstanding pervades contemporary data practices: the belief that publicly accessible data can be freely exploited. This conflates five distinct legal and ethical frameworks that operate independently and simultaneously.</p>
+<p>Intellectual property law provides the first layer of protection. Data remain protected by copyright and database rights even when publicly visible. A publicly searchable database does not mean the data within it are in the public domain. Copyright law protects databases that demonstrate originality in their selection and arrangement, and the <em>sui generis</em> database right extends to protect compilations regardless of originality, provided substantial investment was made in their creation or verification.</p>
+<p>Data protection law, particularly the General Data Protection Regulation, provides a second framework. Personal data remain protected even when publicly visible online. Individuals retain fundamental rights over their personal information regardless of whether they posted it on social media or otherwise made it publicly accessible. The right to data protection cannot be waived by publication, and collection of personal data triggers detailed legal obligations on the collector.</p>
+<p>Web scraping law under the DSM Directive creates a third framework, though it is more permissive than the first two. The EU Copyright in the Digital Single Market Directive provides limited exceptions to copyright restrictions for text and data mining, but these exceptions contain critical limitations. The exceptions apply only to lawfully accessed content, and right holders can opt-out through machine-readable signals such as robots.txt files. For research organizations, opt-out is not permitted and the exception is mandatory, but for commercial users, the ability to opt-out significantly limits text and data mining freedoms and reduces the practical utility of this exception.</p>
+<p>Contract law functions as a fourth framework. Website Terms of Service constitute binding contracts in EU law, and terms prohibiting automated access or data extraction create legal obligations enforceable against users. The landmark <em>Ryanair v. PR Aviation</em> case established a particularly important principle: contractual restrictions on scraping even unprotected databases are enforceable, meaning right holders can create contractual protection more extensive than intellectual property law itself permits.</p>
+<p>Beyond legal requirements, ethical frameworks establish a fifth dimension. Using data without consent, transparency, or legitimate purpose violates human autonomy and dignity. International frameworks including the EU's High-Level Expert Group Guidelines on AI and the UNESCO Recommendation on AI Ethics emphasize respect for persons and prevention of harm, establishing normative expectations that extend beyond what law formally requires.</p>
+<hr>
+<h2 id="foundations">Foundational Concepts: Data, Information, and IP Protection </h2>
+<h3 id="distinguishing-data-from-information">Distinguishing Data from Information </h3>
+<p>The Database Directive protects not individual data points but rather compilations—specifically the selection and arrangement of data. Understanding this fundamental distinction is essential to comprehending the entire framework of database protection.</p>
+<p>Raw data consists of unrefined, unorganized symbols such as numbers, text, or images that do not inherently carry specific meaning unless they are processed, organized, and structured within a specific context. Individual units of such raw data are generally not protected under intellectual property law because they do not typically qualify as products of human intellect. A single customer name, address, or phone number has no inherent intellectual property protection, and data in isolation are considered common goods that cannot be appropriated.</p>
+<p>Information, by contrast, consists of data that has been processed, organized, and structured within a specific context in order to enable analysis and knowledge acquisition. Information and informational goods can be protected under intellectual property rights when human intellectual effort has been invested in their production. Two principal protections apply: trade secrets protect arrangements of data under the Trade Secrets Directive of 2016, and databases protect collections of data under the Database Directive of 1996.</p>
+<p>This distinction proves critical for understanding database protection. The law does not protect the individual facts or data points themselves but rather the human creativity, effort, or investment reflected in how those data are selected, arranged, organized, or verified. This means that the same data could potentially be reused if reorganized or presented in a sufficiently different manner, as the protection extends to the database as a compilation rather than to the data as such.</p>
+<h3 id="criteria-for-ip-protection">Criteria for IP Protection </h3>
+<p>Three foundational requirements must be met for intellectual property protection to attach to any subject matter. First, the subject matter must qualify as a protectable form, such as a literary work, database, or invention that can potentially receive protection. Second, the specific conditions for that particular form of protection must be fulfilled—originality for copyright, novelty and non-obviousness for patents, distinctiveness for trademarks, and so forth. Third, the rights must be properly exercised through appropriate assignment, licensing, or attribution procedures.</p>
+<p>These requirements operate together to ensure that intellectual property protection applies only where both the subject matter is appropriate and the legal requirements have been satisfied. This prevents over-protection while ensuring legitimate protectable interests receive legal recognition.</p>
+<h3 id="what-can-be-protected-under-ip-law">What Can Be Protected Under IP Law? </h3>
+<p>Only products of human intellectual effort qualify for intellectual property protection. This fundamental principle means certain categories are necessarily excluded from protection: raw data that remains unprocessed and disorganized, physical objects, natural phenomena occurring without human intervention, and abstract ideas or facts in their isolated form. These exclusions reflect a policy judgment that IP law should protect human creativity and investment, not simply the discovery or documentation of pre-existing facts or phenomena.</p>
+<p>What intellectual property law does protect includes original literary, artistic, and scientific expression through copyright, inventions meeting novelty and non-obviousness criteria through patent law, distinctive commercial signs through trademark law, distinctive product designs through design rights, and databases exhibiting either originality in their selection and arrangement through copyright or substantial investment in obtaining, verifying, or presenting their contents through the <em>sui generis</em> right. This positive list demonstrates that IP protection extends across creative works, technical innovations, commercial signification, design achievements, and specialized compilations of information.</p>
+<hr>
+<h2 id="database-directive">The EU Database Directive: Two-Regime Protection </h2>
+<p>The <strong>EU Directive 96/9/EC on the legal protection of databases</strong> represents a unique European approach to database protection. Rather than adopting a single regime, it establishes <strong>two parallel protection mechanisms</strong>, each addressing different policy objectives.</p>
+<div class="mermaid">graph TB
+    A["DATABASE PROTECTION&lt;br/&gt;Directive 96/9/EC&lt;br/&gt;Two Regimes"] --&gt; B["COPYRIGHT PROTECTION&lt;br/&gt;Articles 3-6"]
+    A --&gt; C["SUI GENERIS RIGHT&lt;br/&gt;Articles 7-11"]
+    B --&gt; B1["Protects:&lt;br/&gt;Original selection/&lt;br/&gt;arrangement"]
+    B --&gt; B2["Criterion:&lt;br/&gt;AOIC originality&lt;br/&gt;standard"]
+    B --&gt; B3["Duration:&lt;br/&gt;Life + 70 years"]
+    C --&gt; C1["Protects:&lt;br/&gt;Investment in obtaining,&lt;br/&gt;verifying, presenting"]
+    C --&gt; C2["Criterion:&lt;br/&gt;Substantial investment"]
+    C --&gt; C3["Duration:&lt;br/&gt;15 years from&lt;br/&gt;completion"]
+    C --&gt; C4["Can be renewed with&lt;br/&gt;substantial changes"]
+    style A fill:#003d99,color:#fff
+    style B fill:#0056b3,color:#fff
+    style C fill:#004899,color:#fff
+</div><h3 id="defining-a-database-article-12">Defining a Database (Article 1(2)) </h3>
+<p>A database is formally defined as "a collection of independent works, data or other materials arranged in a systematic or methodical way and individually accessible by electronic or other means." This definition requires four cumulative criteria to be satisfied, and all must be present for something to qualify as a database under the Directive.</p>
+<p>First, the subject must constitute a collection or compilation of multiple elements gathered into a coherent whole. Importantly, databases need not contain large numbers of elements or elements drawn from identical sources. A relatively small collection can qualify as a database if the other criteria are satisfied, provided that some assembly of elements has occurred.</p>
+<p>Second, the contents must have independence in the sense that each item retains autonomous informative value. The test for independence requires that each data unit retains independent meaning even when separated from the collection as a whole. A decline in informative value after extraction does not negate the independence of an item; what matters is that the item possesses some meaningful value on its own.</p>
+<p>Third, these elements must be arranged in a systematic or methodical way, which means the arrangement follows a logical system, plan, or method rather than occurring arbitrarily. The Directive excludes arbitrary, accidental, or hazardous arrangements. Alphabetical, chronological, and logical ordering all satisfy this criterion as they demonstrate methodical organization.</p>
+<p>Fourth, independent items must be individually accessible, which means there must exist some means of retrieving any particular item. This might be a search engine for electronic databases, an index for printed materials, a particular plan of organization, or other classification system. The criterion applies to both electronic and non-electronic means of retrieval.</p>
+<p>Several familiar examples qualify as databases: e-versions of newspapers and websites, catalogues and address lists, transportation schedules such as flight timetables or television program listings, telephone directories, grids of pharmaceutical results, calendars and agendas, and maps such as those provided by Google Maps. Even social media profiles with structured data can constitute databases. Notably, other materials commonly confused with databases do not qualify. A film like "The Matrix" as watched in a cinema constitutes a single creative work rather than a database. Collections without systematic organization lack the required structure. Collections where items lack independent informative value similarly fail to qualify.</p>
+<p>An important limitation deserves emphasis: database protection does not extend to individual units of data contained within the database. However, such content may independently qualify for protection. For instance, individual photographs incorporated into a photography catalogue may themselves be protected by copyright as photographic works even if the database comprising the collection receives only database-level protection. This distinction proves critical when training artificial intelligence models, as doing so requires navigating both database-level intellectual property protections and potentially content-level protections for individual items within the database.</p>
+<hr>
+<h2 id="copyright-protection">Copyright Protection of Databases </h2>
+<h3 id="subject-matter-and-criteria">Subject-Matter and Criteria </h3>
+<p>Copyright protection applies to original databases. The sole criterion for such protection is originality—specifically, the AOIC (Author's Own Intellectual Creation) standard, which represents a particularly demanding originality test unique to the European legal tradition.</p>
+<p>The database must be original "by reason of the selection and/or arrangement of the contents [which] constitute the author's own intellectual creation." This formulation makes clear that protection attaches not necessarily to the content itself but to how the creator chose and arranged that content.</p>
+<h3 id="the-aoic-standard-two-part-test">The AOIC Standard: Two-Part Test </h3>
+<p>The AOIC standard establishes a demanding two-part test that both creates opportunities for and erects significant barriers to copyright protection of databases.</p>
+<p>The first part of the test requires that the creator must have possessed freedom to engage in genuine creative decision-making. The AOIC standard fails when the creation process is dictated by technical considerations, functional requirements, rules or restrictions, or mandatory legal provisions. These constraints eliminate the creative discretion necessary for the AOIC standard because they leave no meaningful space for personal creative choices. To illustrate this principle, consider a database sorted alphabetically or chronologically by necessity or structured according to a mandatory legal format. Such a database would lack originality because the creator had no meaningful creative choice in how to organize the information; technical or legal requirements determined the structure rather than personal creativity.</p>
+<p>The second part of the test requires that the creator must have actually exercised this freedom to make personal creative choices, thereby leaving their personal touch on the work. A critical point emerges from jurisprudence on this matter: mere expenditure of skill, labor, and know-how is insufficient to establish the AOIC standard. The Court of Justice of the European Union has explicitly rejected "labor theory" approaches that would give protection based on effort and investment. What matters is not how much effort was expended but whether creative choices were made and whether those choices bear the creator's personal stamp.</p>
+<p>To illustrate AOIC fulfillment, consider the Louvre Museum curator who selects 100 paintings from a collection of 300 renaissance portrait paintings based on personal aesthetic judgment and arranges them thematically according to emotional resonance. This curator clearly exercises the AOIC standard because they possessed freedom to choose differently and actually made personal creative choices—a different curator might have selected different works or arranged them differently. The resulting selection and arrangement are stamped with this particular curator's personal touch. By contrast, a database system that includes all available data with no selection or arranges data alphabetically with no creative choices would fail the AOIC standard despite potentially involving great effort.</p>
+<h3 id="practical-application-most-databases-lack-copyright-protection">Practical Application: Most Databases Lack Copyright Protection </h3>
+<p>In practical application, the AOIC originality standard proves so demanding that most digital databases fail to qualify for copyright protection, despite potentially involving considerable effort and investment.</p>
+<p>Multiple factors combine to create this result. First, digital databases tend to be comprehensive rather than selective in their approach, including all available data rather than curated subsets. Such comprehensive inclusion, while useful for users, demonstrates no creative selection. Second, most databases necessarily follow alphabetical, chronological, or logical ordering to maximize usability and maintainability. While such organization is essential, it does not reflect creative choices and thus lacks the originality required. Third, digital database structure is often determined by technical requirements rather than creative decisions. Databases are designed to be efficiently searchable and organized, which means technical functionality dictates structure. Fourth, standard database structures do not reflect the personal creative touch that the AOIC standard requires; they look like countless other databases because they serve the same functional purpose.</p>
+<p>The cumulative result is that many databases that might intuitively seem to deserve protection—particularly those involving substantial investment and effort—fall outside copyright protection because they fail to meet the AOIC originality standard. This gap in copyright protection is precisely what motivated the creation of the <em>sui generis</em> database right, which provides protection based on investment rather than creativity.</p>
+<h3 id="scope-of-copyright-protection">Scope of Copyright Protection </h3>
+<p>Article 5 of the Database Directive specifies the acts that copyright holders can prevent. Copyright holders have exclusive rights to prevent temporary or permanent reproduction in whole or in part, by any means and in any form, whether direct or indirect. This protection extends to copying the database structure and contents, though notably it does not cover mere consultation of publicly available databases. It does cover indirect reproductions such as uploading contents to another system.</p>
+<p>Copyright holders may also prevent distribution of the database or copies to the public, including sale, rental, or lending of copies. They can prevent adaptation or modification, which encompasses translation, alteration of structure, or reorganization of contents. Finally, copyright holders may prevent communication, display, or performance to the public, including interactive on-demand transmission or making the database available in such a way that members of the public may access it from a time and place of their choosing. Importantly, communication to a public requires that the transmission be to a "new public"—an audience to whom the right holder did not intend to make the work available.</p>
+<h3 id="duration-of-protection">Duration of Protection </h3>
+<p>Copyright protection in databases extends for the lifetime of the author plus seventy years. The protection term is calculated from the first of January of the year following the author's death, which means that databases created by long-lived authors receive protection extending well into the future.</p>
+<h3 id="ownership">Ownership </h3>
+<p>Copyright ownership vests according to Article 4 in either the natural person who carried out the selection and arrangement of contents—the author—or the employer of that person, which may be a natural or legal person such as a company or institution. This dual ownership structure means that for institutional databases such as those created by corporations, universities, or government agencies, ownership typically vests in the institution itself rather than in individual employees who may have performed the creative work.</p>
+<p>Multiple joint authors can hold copyright if multiple individuals made creative contributions to the selection or arrangement. This possibility arises because copyright can vest in more than one person if multiple individuals exercise creative choice in the database's creation.</p>
+<h3 id="infringement-test-copyright">Infringement Test: Copyright </h3>
+<p>Determining whether copyright infringement occurs in a database context requires applying a three-step analysis. First, one must establish that the database is actually protected by copyright—that it meets the AOIC originality standard and that protection has not expired. Second, one must determine whether the intended act falls within the scope of copyright protection as defined above—whether it constitutes reproduction, distribution, adaptation, or communication to the public. Third, one must establish whether authorization has been granted or whether a legal exception permits the act. An act is lawful only if the copyright owner has licensed it or if a legal exception explicitly permits it.</p>
+<hr>
+<h2 id="sui-generis-right">Sui Generis Database Rights </h2>
+<h3 id="context-and-rationale">Context and Rationale </h3>
+<p>The <em>sui generis</em> database right ("of its own kind") was introduced in the Database Directive to address a gap in copyright protection. Recognizing that many valuable databases lack copyright protection (because they lack originality), the EU created this novel right to protect investment in database creation.</p>
+<p><strong>Justification:</strong> Database creation requires substantial investment of financial resources, human effort, and expertise. Copyright alone didn't adequately incentivize production, particularly of non-original but valuable databases.</p>
+<h3 id="preliminary-conditions-article-11">Preliminary Conditions (Article 11) </h3>
+<p>Access to <em>sui generis</em> protection is conditioned on the database maker being from certain jurisdictions. Only specific entities can benefit from this protection.</p>
+<p>Natural persons must either be EU citizens or maintain habitual residence in EU territory. This requirement ensures that EU residents are protected but excludes third-country nationals unless they have established EU residence.</p>
+<p>Legal persons such as companies and firms must satisfy two cumulative conditions. First, they must be formed in accordance with the law of an EU Member State, meaning they must be properly established under EU law. Second, they must have their central administration or principal place of business within the EU territory. This second requirement is particularly important because it ensures that the company's operations are genuinely linked to the EU economy on an ongoing basis. A company registered in the EU but operating exclusively outside the EU would not qualify, as its economic operations lack the necessary EU connection. This dual condition reflects a policy judgment that the protection should benefit entities whose economic interests are substantially aligned with the EU.</p>
+<p><strong>Effect:</strong> Non-EU entities and companies with only tangential EU connections cannot obtain <em>sui generis</em> protection.</p>
+<h3 id="subject-matter-and-criteria-article-7">Subject-Matter and Criteria (Article 7) </h3>
+<p>The <em>sui generis</em> right extends to any database, whether original or non-original. The criterion for protection is the presence of substantial investment in obtaining, verifying, or presenting the database's contents. Unlike copyright, which requires creative originality, the <em>sui generis</em> right protects investment, and investment can take multiple forms.</p>
+<p>Investment can be financial, such as spending money to acquire data. It can be material, such as acquiring specialized equipment for data collection. It can be human, consisting of spending time, energy, and effort. Expertise and specialized knowledge also constitute investments. The Directive does not further define the threshold for investment to qualify as "substantial," and to this day, the Court of Justice has not provided binding guidance on what constitutes substantiality. This absence of clear definition means national courts interpret the requirement, creating some uncertainty. However, scholarly consensus suggests the threshold for substantiality is relatively low compared to other IP standards. A moderate investment may often suffice, and both small and large investments can be substantial depending on context and industry.</p>
+<p>The Directive specifies three types of qualifying investments. Obtaining refers to seeking out and collecting existing data to be included in the database. A critical distinction must be drawn between investments made in collecting existing materials, which qualifies for protection, and investments made in creating materials, which does not. A company spending money to purchase viewership data from media research companies makes a qualifying investment in obtaining data. A company spending money to create television program schedules does not make a qualifying investment in obtaining data but rather invests in creating the underlying material.</p>
+<p>Verification refers to monitoring the accuracy of gathered materials to ensure the reliability of database contents. This monitoring can occur at creation, during the database's operation, or afterward. Verification includes checking, correcting, and updating contents to maintain reliability and completeness. Regular quality checks and systematic updates all constitute verification investments.</p>
+<p>Presentation refers to the organization of gathered materials, which encompasses structuring the database and implementing electronic or other means enabling individual item accessibility. Creating an index system, implementing search functionality, or organizing data hierarchically all represent presentation investments.</p>
+<h3 id="substantiality-of-investment">Substantiality of Investment </h3>
+<p>The question of what constitutes "substantial" investment is critically important and persistently contested. The Directive provides no definition, and the Court of Justice has offered limited guidance on the question, choosing instead to allow national courts to determine substantiality in context.</p>
+<p>The CJEU has distinguished between quantitatively and qualitatively substantial investments. Quantitatively substantial investments are measured in quantifiable resources such as time and money spent. Qualitatively substantial investments are measured in non-quantifiable resources such as energy, effort, and expertise. The Court has not established a bright-line threshold for either measure, leaving considerable discretion to national tribunals.</p>
+<p>The resulting situation creates both advantages and disadvantages. On one hand, flexibility allows assessment to reflect industry context and database type. On the other hand, the absence of certainty creates unpredictability for database makers and users. Generally, scholarly consensus suggests the substantiality threshold for <em>sui generis</em> protection is relatively low compared to originality standards for copyright. A moderate investment often suffices, and both large and small investments can be deemed substantial depending on context. This relatively low threshold means a significant proportion of databases obtain <em>sui generis</em> protection compared to copyright protection.</p>
+<p>The British Horseracing Board case illustrates the practical application. BHB organizes horse races, which requires substantial investment of approximately €4 million annually in registering owners, trainers, jockeys, and horses, deciding which horses enter each race based on weight and handicapping, and compiling race lists. The CJEU held that these investments, while substantial, constituted investments in creating data through the actual organization of races rather than investments in obtaining pre-existing data. Therefore, despite the substantial financial investment, the database failed to qualify for <em>sui generis</em> protection because the investment was in the wrong category.</p>
+<p>This distinction between creating and obtaining data prevents what scholars call "spin-off" databases from obtaining <em>sui generis</em> protection. Databases generated as by-products of other activities cannot claim protection based on the investment in creating the underlying activity. A TV program schedule generated by a TV station, a flight schedule generated by an airline, or a delivery route generated by a logistics company all constitute spin-offs. They are valuable databases, but they were not created through collecting pre-existing data; rather, they were created through the primary business activity. This limitation attempts to balance the rights of data creators against the risk that essential business data would become locked behind database protection.</p>
+<h3 id="scope-of-sui-generis-rights-article-7">Scope of <em>Sui Generis</em> Rights (Article 7) </h3>
+<p>The <em>sui generis</em> right holder enjoys two exclusive forms of protection. The first is the right to prevent extraction, which concerns the transfer of all or a substantial part of database contents from one medium to another. Extraction encompasses both physical copying and electronic transfer, as well as indirect extraction that occurs when contents are accessed through on-screen visual consultation and then transferred. The substantiality requirement for extraction is measured on both qualitative and quantitative bases—qualitatively by considering the scale of investment in the extracted materials, and quantitatively by assessing the volume of data removed.</p>
+<p>The second exclusive right is re-utilization, which prevents making available all or a substantial part of database contents to the public. Re-utilization covers numerous forms of public access, including distribution and sale of copies, lending arrangements, communication and display to the public, and performance or adaptation of the database contents. The Directive uses intentionally expansive language to capture "any new forms of making available" that might emerge as technology evolves.</p>
+<p>A particularly important provision addresses repeated and systematic extraction. Even if individual extractions are not substantial in themselves, the right extends to prevent this pattern when repeated and systematic extraction either conflicts with the normal commercial exploitation of the database or unreasonably prejudices the legitimate interests of the database maker. This provision creates significant uncertainty for AI and data mining applications. An algorithm that iteratively processes a protected database to identify patterns and extract training data may not extract a substantial portion in any single operation, yet the cumulative effect of many systematic extractions could theoretically violate the right. The legal status of algorithmic mining remains unresolved, creating a critical ambiguity for AI developers.</p>
+<h3 id="duration-of-protection-1">Duration of Protection </h3>
+<p>The <em>sui generis</em> right extends for an initial term of fifteen years, measured from 1 January of the year following the database's completion. This timing mechanism means a database completed on November 1, 2024 receives protection beginning January 1, 2025, while one completed on January 2, 2024 receives the same initial protection period, effectively meaning different temporal lengths depending on completion date.</p>
+<p>The most distinctive feature of <em>sui generis</em> protection is the rolling renewal mechanism. Any substantial change to the database contents requiring substantial new investment triggers a fresh fifteen-year protection period from the date of that change. A database that receives regular updates—additions of new records, deletions of outdated information, rearrangement of existing data, or verification of accuracy—can thus enjoy effectively perpetual protection. This open-ended term reflects policy recognition that database maintenance is itself an investment-generating activity, distinct from copyright's author-centric duration measures.</p>
+<h3 id="ownership-1">Ownership </h3>
+<p>The <em>sui generis</em> right vests in the "maker" of the database—defined as the person responsible for the substantial investment in obtaining, verifying, or presenting the contents. This differs fundamentally from copyright ownership, which vests in the author. The database maker can be either a natural person or a legal person, meaning corporations and other entities can own <em>sui generis</em> rights. The right does not extend to authors or creative contributors unless they are also responsible for the substantial investment in the database compilation itself. An author who contributes creative expression within an authored entry owns copyright in that entry, while a corporation that collected all such entries into a protected database owns the <em>sui generis</em> right in the compilation.</p>
+<ul>
+<li>Different from copyright, which vests in the author</li>
+</ul>
+<hr>
+<h2 id="machine-generated">Machine-Generated Databases </h2>
+<h3 id="definition-and-characteristics">Definition and Characteristics </h3>
+<p>Machine-generated databases are created, updated, and managed primarily through automated processes and machines, including Internet of Things (IoT) devices operating with minimal or no human intervention. These databases are fundamentally different from traditional databases in their operational characteristics and behavioral patterns.</p>
+<p>Machine-generated databases are distinctively dynamic, with data continuously or periodically collected, modified, and updated through automated systems. They exhibit high velocity, with data generation occurring in real-time or near-real-time. The structural organization of these databases may itself evolve automatically, adapting its format and organization as new types of data arrive or as processing requirements change. Furthermore, machine-generated databases typically operate at massive scale, involving extraordinarily large volumes of data that human operators could not feasibly manage or comprehend.</p>
+<p>Practical examples include sensor data aggregated from extensive IoT networks, real-time traffic or weather data continuously updated from distributed measurement systems, satellite imagery databases that receive new imagery on regular schedules, and transactional databases from e-commerce systems that record millions of transactions daily.</p>
+<h3 id="the-conceptual-problem">The Conceptual Problem </h3>
+<p>A fundamental difficulty arises when attempting to apply <em>sui generis</em> protection to machine-generated databases: the distinction between "creating" and "obtaining" data becomes profoundly blurred. The entire framework of <em>sui generis</em> rights depends on this distinction—investment in obtaining pre-existing data deserves protection, while investment in creating data does not. Yet in automated data generation contexts, machines actively produce data rather than passively collect it, rendering the distinction meaningless.</p>
+<p>Scholars diverge sharply on the appropriate response to this conceptual crisis. Gervais (2019) argues that "big data corpora are neither 'obtained' nor 'collected'; they are generated by the machine," contending that machines actively generate data rather than passively collecting it. This perspective, if accepted, would wholly undermine the obtaining-versus-creating distinction that forms the conceptual foundation of <em>sui generis</em> protection. Under this reading, machine-generated databases should not qualify for protection because the investment is in creation, not obtaining.</p>
+<p>An alternative scholarly view, articulated by Leistner, posits that infrastructure investment could justify <em>sui generis</em> protection for machine-generated databases. Under this theory, substantial investment in technological infrastructure—AI systems, data aggregation platforms, data cleaning processes—might constitute sufficient investment in the "presentation" of data to merit protection. The infrastructure investment in organizing and making data accessible, rather than the original collection, could be deemed substantial enough to warrant protection. This approach would extend <em>sui generis</em> rights to machine-generated databases where significant technological infrastructure was required to generate and manage the data.</p>
+<h3 id="observed-vs-generated-data">Observed vs. Generated Data </h3>
+<p>A potentially meaningful distinction can be drawn between two categories of machine-generated databases based on their epistemological character. Observed data refers to databases where machines record objectively appreciable occurrences that exist independently of the measurement system—for instance, satellite observations that detect naturally occurring phenomena. In these cases, one could argue the machines are "obtaining" data by recording objective facts, and the <em>sui generis</em> framework might extend protection to investment in the observation and recording infrastructure.</p>
+<p>In contrast, generated data refers to databases where machines produce data as a primary output with no independent objective reality—for instance, algorithmic outputs or computational results. Here, the data is genuinely "created" by the machine's operations rather than "obtained" from pre-existing sources. Algorithmic outputs would not exist without the machine's generation process, making them conceptually and factually distinct from observed data. This distinction, while theoretically elegant, remains difficult to apply consistently. Many databases combine observed and generated components, or sit in ambiguous territory where it is unclear whether the machine is observing or generating.</p>
+<h3 id="the-eu-data-act-exclusion">The EU Data Act Exclusion </h3>
+<p>Rather than resolve this conceptual uncertainty through case law development, EU legislators took a definitive policy stance. Article 35 of the EU Data Act explicitly excludes machine-generated data from <em>sui generis</em> protection by providing that "the <em>sui generis</em> right provided for in Article 7 of Directive 96/9/EC shall not apply when data is obtained from or generated by a product or related service falling within the scope of this Regulation."</p>
+<p>The legislative rationale, articulated in Recital 84, explains this choice as addressing a specific regulatory risk: "In order to eliminate the risk that holders of data in databases obtained or generated by means of physical components, such as sensors, of a connected product and a related service or other machine-generated data, claim the <em>sui generis</em> right under Article 7 of Directive 96/9/EC, and in so doing hinder in particular the effective exercise of the right of users to access and use data and the right to share data with third parties under this Regulation, it should be clarified that the <em>sui generis</em> right does not apply to such databases."</p>
+<p>This legislative choice produces a significant effect: databases of machine-generated data cannot benefit from <em>sui generis</em> protection, removing potential legal barriers to data access and reuse in IoT and connected device contexts. The underlying policy judgment reflects legislative intent that machine-generated databases should not become bottlenecks restricting data-driven innovation. While this resolves the immediate legal uncertainty, it represents a policy choice to facilitate data access over compensating those who invest in creating the infrastructure that generates data.</p>
+<hr>
+<h2 id="tdm-exceptions">Text and Data Mining (TDM) Under the DSM Directive </h2>
+<h3 id="overview-two-exceptions-for-two-purposes">Overview: Two Exceptions for Two Purposes </h3>
+<p>The <strong>Directive (EU) 2019/790 on copyright and related rights in the Digital Single Market (DSM Directive)</strong> introduced two mandatory text and data mining exceptions to copyright and the <em>sui generis</em> database right. These exceptions reflect different policy objectives:</p>
+<ul>
+<li><strong>Article 3:</strong> Secure scientific research through data mining (unwaivable exception)</li>
+<li><strong>Article 4:</strong> Foster commercial innovation through data mining (waivable exception)</li>
+</ul>
+<div class="mermaid">graph TB
+    A["TEXT AND DATA MINING&lt;br/&gt;DSM Directive"]
+    A --&gt; B["Article 3:&lt;br/&gt;Research Organizations &amp;&lt;br/&gt;Cultural Heritage Institutions"]
+    A --&gt; C["Article 4:&lt;br/&gt;Any Person with&lt;br/&gt;Lawful Access"]
+    B --&gt; B1["✓ Scientific Research Only"]
+    B --&gt; B2["✓ Long-term Storage"]
+    B --&gt; B3["✗ No Opt-Out"]
+    B --&gt; B4["= Unwaivable"]
+    C --&gt; C1["✓ Any Purpose"]
+    C --&gt; C2["✓ Commercial TDM"]
+    C --&gt; C3["✓ Opt-Out Available"]
+    C --&gt; C4["= Waivable by RH"]
+    style A fill:#003d99,color:#fff
+    style B fill:#0056b3,color:#fff
+    style C fill:#004899,color:#fff
+</div><h3 id="definition-text-and-data-mining-article-22">Definition: Text and Data Mining (Article 2(2)) </h3>
+<p>"Any automated analytical technique aimed at analysing text and data in digital form in order to <strong>generate information</strong> which includes but is not limited to <strong>patterns, trends and correlations</strong>."</p>
+<p><strong>Application to AI:</strong> This definition clearly encompasses machine learning processes:</p>
+<ul>
+<li>Training machine learning models on text/data is automated analytical technique</li>
+<li>The purpose is generating information (patterns, training signals, model weights)</li>
+<li>The process involves analyzing digital data to extract correlations</li>
+</ul>
+<p><strong>Conclusion:</strong> Text and data mining as defined in the DSM Directive includes AI training.</p>
+<h3 id="the-three-step-process-in-data-mining">The Three-Step Process in Data Mining </h3>
+<p>Data mining as a practical process unfolds through three distinct operational stages, each with separate IP implications. The process begins with preparation, which involves identifying, copying, and loading data into a dataset suitable for analysis. Preparation encompasses data collection from one or more sources, format conversion to machine-readable or analyzable formats, and data preprocessing or transformation to remove inconsistencies or prepare data for algorithmic processing. This stage triggers potential copyright reproduction rights and <em>sui generis</em> extraction rights, as data is being copied into a new medium or structure.</p>
+<p>The second stage is extraction, where algorithms are executed on the prepared dataset. This stage involves running analytical or learning algorithms, identifying correlations and patterns within the data, and processing information to extract meaningful insights. During extraction, the original data undergoes algorithmic transformation, potentially triggering continued copyright reproduction rights and <em>sui generis</em> extraction rights as the algorithm accesses and processes database contents.</p>
+<p>The final stage is recombination, where processed data is rearranged to visualize and present results to human audiences. This involves reorganizing the algorithmic outputs into human-interpretable format, generating output suitable for publication or further use, and storing or disseminating the results. The recombination stage may trigger <em>sui generis</em> re-utilization rights if the organized results are made available to the public, as well as potential copyright issues if the organized presentation constitutes a sufficiently original arrangement of information.</p>
+<h3 id="article-3-mandatory-exception-for-scientific-research">Article 3: Mandatory Exception for Scientific Research </h3>
+<h4 id="beneficiaries-qualified-organizations-and-institutions">Beneficiaries: Qualified Organizations and Institutions </h4>
+<p>Article 3 restricts the exception to two specific classes of organizations, reflecting policy choices to prioritize publicly-funded research over commercial research operations.</p>
+<p>Research organizations constitute the primary beneficiary class. Article 2(1) defines qualifying research organizations as entities whose primary goal is conducting scientific research, or whose primary goals encompass both educational activities and scientific research. These organizations must satisfy one of two operational criteria to qualify for protection. They either operate on a non-profit basis without generating surplus revenues, or they carry out a public interest mission formally recognized by their member state. The Directive indicates that public interest missions can be evidenced through public funding, public contracts explicitly specifying the mission, national law provisions establishing the mission, or organizational bylaws requiring that all profits be reinvested in scientific research. Additionally, research organizations must not fall under the decisive influence of commercial undertakings that would gain preferential access to research results. This control limitation prevents commercial entities from obtaining preferential benefits through shareholding or membership relationships that would grant them special access to research findings. Typical qualifying organizations include universities, public research institutes, government laboratories, and public hospitals.</p>
+<p>Cultural heritage institutions constitute the second beneficiary class, as specified in Article 2(3). These are publicly accessible libraries or museums, archives, or film and audio heritage institutions. The Directive requires these entities to be institutional organizations dedicated to cultural heritage preservation and access, not commercial providers of content.</p>
+<p>The restriction to these specific organizational types reflects a clear policy choice: only non-commercial organizations with public missions qualify for the mandatory exception. Commercial research organizations, private companies, and for-profit enterprises fall outside the scope, regardless of whether their research serves societal benefits.</p>
+<h4 id="scope-of-article-3">Scope of Article 3 </h4>
+<p>Qualifying research organizations and cultural heritage institutions receive two primary permissions under Article 3. First, they may make reproductions and extractions of lawfully accessible databases, whether protected by copyright or <em>sui generis</em> database rights. This permission removes the prohibition on copying and extraction that would normally apply to protected materials, allowing researchers to prepare datasets for analysis without seeking authorization.</p>
+<p>Second, these organizations may store reproductions and extractions for scientific research purposes. This storage right is particularly important for research integrity. Storage can be retained long-term with appropriate security measures and is recognized as necessary for verification of research results. Notably, the Directive places no temporal limitation on storage duration, meaning research organizations can maintain their datasets indefinitely for verification and archival purposes. This extended storage right reflects the reality that scientific research often requires long-term data retention to enable reproducibility checks and validation by other researchers.</p>
+<h4 id="conditions-and-requirements">Conditions and Requirements </h4>
+<p>Two principal conditions must be satisfied for Article 3 to protect research activities. First, the beneficiary organization must have lawful access to the database on which text and data mining will be performed. Recital 14 clarifies that "lawful access" encompasses access through contractual arrangements such as subscriptions or licenses, content freely available online without access restrictions, or access granted based on the rightholder's explicit or implicit consent. This requirement prevents the exception from becoming an avenue to access restricted materials. If an organization has no legitimate right to access a database, the exception does not extend to that organization.</p>
+<p>Second, the text and data mining must be conducted for purposes of scientific research. Recital 12 defines scientific research broadly to encompass both natural and human sciences, with the understanding that the research contributes to the existing state of science and applies scientific methods for the advancement of human knowledge. This purpose requirement excludes uses driven by commercial objectives or purposes unrelated to knowledge creation, even if the data mining process itself would otherwise qualify.</p>
+<h4 id="contractual-override-unwaivable-exception">Contractual Override: Unwaivable Exception </h4>
+<p>Article 7 of the DSM Directive provides that any contractual provision contradicting Article 3 is categorically unenforceable. Rightholder cannot restrict text and data mining by research organizations through terms of service, license agreements, or other contractual means. This unenforceability of restrictive contractual terms ensures that even if a database is provided subject to a license that prohibits reproduction and extraction, research organizations can nevertheless conduct text and data mining for scientific purposes.</p>
+<h4 id="limitations-of-article-3-non-commercial-restriction">Limitations of Article 3: Non-Commercial Restriction </h4>
+<p>Despite its strong language guaranteeing access for research, Article 3 contains a critical shortcoming that limits its practical scope for AI development. The exception extends exclusively to non-commercial research. This limitation creates significant barriers for companies, start-ups, and mixed public-private research initiatives that combine for-profit and non-profit objectives.</p>
+<p>Research organizations that participate in public-private partnerships face particular constraints. If a for-profit partner is involved, the research organization must exclude that partner from preferential access to research results. This requirement may actively deter partnerships between research organizations and commercial AI companies seeking to apply research findings. Start-ups and small and medium enterprises cannot benefit from the exception unless they partner with a qualifying research organization, and even then, they cannot exploit the research results for commercial purposes without obtaining separate authorization from rightholders.</p>
+<p>The practical effect is to create a clear division: innovative applications with commercial purposes, even if those applications serve important societal benefits, fall outside the scope of the mandatory exception. A research organization could use Article 3 to train models for fundamental research, but a company using identical technical processes for commercialization would lack protection. Recital 11 acknowledges that research organizations may use private sector technological tools through partnerships, provided the for-profit entity does not obtain preferential access to research results. However, arranging such partnerships to satisfy this requirement typically requires sophisticated contractual arrangements and creates significant administrative burden for small research teams.</p>
+<h3 id="article-4-general-exception-for-text-and-data-mining">Article 4: General Exception for Text and Data Mining </h3>
+<h4 id="beneficiaries-unlimited-and-inclusive">Beneficiaries: Unlimited and Inclusive </h4>
+<p>Article 4 removes the organizational restrictions present in Article 3 and extends protection to any person with lawful access to the database. This unlimited scope includes commercial entities seeking data mining for profit, small and medium enterprises developing new technologies, individual researchers and journalists gathering information, consumer associations analyzing business practices, and even competitors of the database holder seeking competitive intelligence through automated analysis. The expansive language emphasizes that Article 4 does not care about the applicant's commercial status, institutional affiliation, or end use.</p>
+<h4 id="scope-broader-acts-but-temporary-storage">Scope: Broader Acts but Temporary Storage </h4>
+<p>Article 4 permits both reproductions and extractions of lawfully accessible subject matter, whether protected by copyright or <em>sui generis</em> database rights. Users can copy the database and extract portions of its contents for text and data mining purposes.</p>
+<p>However, Article 4 imposes a critical temporal limitation that distinguishes it from Article 3's generous storage provisions. Reproductions and extractions may be retained only for the duration necessary for purposes of text and data mining. Once the mining process is complete and any results have been generated, continued retention is prohibited. This temporary storage requirement prevents users from maintaining long-term copies of databases for potential future use, unlike Article 3's allowance of indefinite retention for verification purposes. The practical implication is that commercial data miners must design their systems to delete copies after processing, while research organizations may maintain permanent archives.</p>
+<h4 id="purpose-any-imaginable-use">Purpose: Any Imaginable Use </h4>
+<p>Unlike Article 3's restriction to scientific research, Article 4 allows text and data mining for any purpose whatsoever. Recital 18 explicitly states that the exception covers "development of new applications or technologies," signaling that commercial innovation and profit-seeking enterprises receive protection. This broader purpose allows AI development to proceed without purpose-based restrictions, whether the application is research, commercial, or hybrid.</p>
+<h4 id="lawful-access-requirement">Lawful Access Requirement </h4>
+<p>Like Article 3, Article 4 requires that users have lawful access to the database before mining. Recital 14 clarifies that lawful access encompasses three situations: access based on contractual arrangements such as subscriptions or licenses; content freely available online without access barriers; and content made available with the explicit or implicit consent of the rights holder. This requirement prevents Article 4 from becoming a mechanism for circumventing access controls or obtaining unauthorized database access through automated means.</p>
+<h4 id="the-critical-opt-out-provision-rightholder-override">The Critical Opt-Out Provision: Rightholder Override </h4>
+<p>Article 4(3) permits rightholders to express a reservation restricting the exception through what the Directive terms "appropriate manner." For publicly available online content, machine-readable format is required. Recital 18 provides examples of appropriate machine-readable means, including metadata tags, robots.txt files, terms and conditions pages on websites or services, and standard technical protection measures. For non-publicly available content provided through restricted access, other means suffice, including contractual agreements and unilateral declarations.</p>
+<p>The opt-out provision fundamentally alters the practical utility of Article 4 for commercial data mining. Unlike the mandatory exception in Article 3 where contractual terms cannot override the exception, Article 4 allows rightholders to prevent text and data mining through multiple routes: including anti-scraping terms in website terms of service, adding robots.txt file prohibitions preventing automated access, adding metadata opt-out signals to digital files, or including contractual restrictions in license agreements. This waivable structure means the exception functions as a default rule subject to rightholder override rather than a guarantee of access.</p>
+<p>The practical effect is particularly significant for commercial data mining. Rightholders can effectively opt-out of the Article 4 exception for any publicly available content by adding appropriate signals. A data mining company scraping a website in violation of robots.txt files or terms of service violates Article 4, as the opt-out signals remove protection. This aspect creates substantial uncertainty for commercial ventures, as determining whether data sources have expressed opt-out reservations requires continuous monitoring of evolving terms, metadata, and technical signals.</p>
+<h4 id="permitted-security-measures">Permitted Security Measures </h4>
+<p>Article 3(3) permits organizations to implement security measures to protect networks and databases against abuse or unauthorized access. These security measures must be proportionate and limited to what is strictly necessary to protect system security and database integrity. Security measures cannot exceed the scope necessary to protect the systems from attack or misuse, nor can they be used for purposes unrelated to security or for pure commercial advantage. This provision recognizes that while users receive TDM permissions, those permissions do not extend to systems abuse, network disruption, or unauthorized access beyond the specified permitted uses.</p>
+<h3 id="comparison-article-3-vs-article-4">Comparison: Article 3 vs. Article 4 </h3>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Article 3 (Scientific Research)</th>
+<th>Article 4 (General TDM)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Beneficiaries</strong></td>
+<td>Research organizations, cultural heritage institutions</td>
+<td>Any person with lawful access</td>
+</tr>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Scientific research only</td>
+<td>Any purpose (including commercial)</td>
+</tr>
+<tr>
+<td><strong>Storage</strong></td>
+<td>Long-term retention permitted (for verification)</td>
+<td>Only as long as necessary for TDM</td>
+</tr>
+<tr>
+<td><strong>Contractual override</strong></td>
+<td>No opt-out allowed (unwaivable)</td>
+<td>Opt-out possible (waivable)</td>
+</tr>
+<tr>
+<td><strong>Practical utility</strong></td>
+<td>Strong protection for academic research</td>
+<td>Limited by opt-out possibilities</td>
+</tr>
+<tr>
+<td><strong>AI application</strong></td>
+<td>Academic AI research beneficial</td>
+<td>Commercial AI development less protected</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-mining-barriers-and-legal-framework">Data Mining Barriers and Legal Framework </h3>
+<p>Even with the DSM Directive's Article 3 and Article 4 exceptions, data miners face multiple legal barriers that can prevent or restrict data mining activities. Understanding these barriers requires recognizing the distinct legal risks present at each stage of the mining process.</p>
+<p>The first barrier involves copyright in the database structure itself. The Database Directive Article 5 protects the selection and arrangement of data by copyright when this arrangement constitutes the author's own intellectual creation. Protected databases cannot be reproduced without authorization, meaning that copying the entire database or a substantial portion for mining purposes infringes even if the underlying data elements are not themselves protected.</p>
+<p>The second barrier is the <em>sui generis</em> database right. Article 7 of the Database Directive grants database makers the exclusive right to prevent extraction or re-utilization of the whole or a substantial part of the database contents. The repeated and systematic extraction provision creates particularly acute uncertainty for algorithmic mining, where iterative access might accumulate to substantial taking without any single access being substantial.</p>
+<p>The third barrier involves trade secret protection. Databases may be protected as trade secrets under EU and national law, particularly when they provide competitive advantages and are subject to reasonable confidentiality measures. This protection prevents disclosure of the database's contents, structure, or organization, thereby preventing the data mining that requires knowing what data exists and how it is organized.</p>
+<p>The fourth barrier, and most practically significant for commercial purposes, involves contractual restrictions. Article 7(5) of the DSM Directive explicitly permits rightholders to opt-out of Article 4's general exception, and databases commonly come with terms of service or license agreements prohibiting automated access or data extraction. These contractual restrictions are enforceable against users, creating legal barriers even when copyright or database rights might permit the same conduct.</p>
+<h4 id="step-by-step-analysis-when-does-tdm-infringe">Step-by-Step Analysis: When Does TDM Infringe? </h4>
+<p><strong>Stage 1: Copying and Loading Data</strong></p>
+<p><em>Potential IP infringement:</em> Copyright reproduction right, <em>sui generis</em> extraction right</p>
+<p><strong>At preparation stage, if database is protected:</strong></p>
+<ul>
+<li>Copyright: Copying entire database or substantial parts = reproduction</li>
+<li><em>Sui generis:</em> Transferring substantial part to new system = extraction</li>
+<li><strong>Exception</strong>: Article 3/4 may permit if conditions met</li>
+</ul>
+<p><strong>Stage 2: Running Algorithm</strong></p>
+<p><em>Potential IP infringement:</em> Continued extraction/reproduction through iterative processing</p>
+<p><strong>At extraction stage:</strong></p>
+<ul>
+<li>Copyright: May involve further temporary copies in algorithm processing</li>
+<li><em>Sui generis:</em> Iterative data access may constitute repeated extractions</li>
+<li><strong>Complex issue</strong>: Does cumulative extraction of many insubstantial parts equal substantial extraction?</li>
+</ul>
+<p><strong>Stage 3: Publishing Results</strong></p>
+<p><em>Potential IP infringement:</em> Re-utilization right, communication to public</p>
+<p><strong>At recombination stage:</strong></p>
+<ul>
+<li>Copyright: Less likely to infringe (results typically don't reproduce database structure)</li>
+<li><em>Sui generis:</em> Re-publication of results unlikely to constitute re-utilization of original database</li>
+</ul>
+<h3 id="the-lawful-access-requirement">The "Lawful Access" Requirement </h3>
+<h4 id="the-cjeu-framework-for-lawful-access">The CJEU Framework for Lawful Access </h4>
+<p>Court of Justice case law from <em>ACI Adam</em> (C-435/12) and <em>Copydan</em> (C-463/12) establishes a two-part test for determining whether a user has lawful access to copyrighted material or protected databases. The first test examines source legitimacy: content made available with the rightholder's explicit or implicit consent constitutes lawful access, while content made available without rightholder's consent raises presumptions of unlawful access. This distinction operates regardless of whether the content is technically accessible online.</p>
+<p>The second test examines user knowledge and good faith: when content is available without rightholder's authorization, users who knew or should have known of this unauthorized availability are presumed to engage in unlawful use, while users acting in genuine good faith without actual or constructive knowledge may escape legal liability. The crucial implication is that the presumption operates differently for commercial and non-commercial users.</p>
+<p>Commercial entities mining data face a rebuttable but strong presumption of knowledge when the source is unauthorized. Courts presume that profit-making businesses either know or should know whether they are accessing databases with permission. This presumption reflects the rationale that commercial entities have incentives and resources to verify legitimacy. In contrast, non-commercial actors and academic users may more easily demonstrate good faith and lack of knowledge regarding the legitimacy of their access sources, creating a distinction in practical enforceability against commercial versus non-commercial mining.</p>
+<h4 id="application-to-online-databases">Application to Online Databases </h4>
+<p>The practical implication for databases made available online depends on whether they were made available with rightholder consent. Databases made available with such consent—including open access databases, licensed subscription services, and freely accessible websites—generally constitute lawful access for text and data mining. Users of these databases can safely conduct mining activities.</p>
+<p>However, databases available online without the database maker's consent present more complex legal terrain. These databases remain unlawful sources for most users, though exceptions exist for non-commercial good faith users who acted without knowledge of the unauthorized nature. Commercial users accessing such databases face strong presumptions of knowledge and face liability for unauthorized use, making commercial mining of unauthorized online databases risky.</p>
+<hr>
+<h2 id="contract-law">Contract Law as a Barrier to Data Mining </h2>
+<h3 id="the-critical-ryanair-judgment-cjeu-c-3014-2015">The Critical Ryanair Judgment (CJEU C-30/14, 2015) </h3>
+<h4 id="factual-background">Factual Background </h4>
+<p><strong>Ryanair</strong> operates low-cost airline services. Its website contains a database of:</p>
+<ul>
+<li>Flight schedules</li>
+<li>Routes</li>
+<li>Real-time pricing</li>
+</ul>
+<p><strong>PR Aviation</strong> operated a price-comparison website. It:</p>
+<ul>
+<li>Accessed Ryanair's website</li>
+<li>Used automated systems (screen scraping) to extract flight data</li>
+<li>Aggregated data from multiple airlines</li>
+<li>Allowed consumers to compare prices</li>
+</ul>
+<p><strong>Ryanair's terms of service stipulated:</strong></p>
+<ul>
+<li>"Use only for private, non-commercial purposes"</li>
+<li>"Screen scraping for commercial purposes prohibited unless written license obtained"</li>
+</ul>
+<h4 id="ryanairs-claims">Ryanair's Claims </h4>
+<p>Ryanair sued for:</p>
+<ol>
+<li>Copyright infringement in the database</li>
+<li><em>Sui generis</em> database right infringement</li>
+<li>Breach of contract</li>
+</ol>
+<h4 id="the-cjeu-ruling">The CJEU Ruling </h4>
+<p><strong>Key holdings:</strong></p>
+<ol>
+<li>
+<p><strong>Ryanair's database was NOT protected</strong> under the Database Directive</p>
+<ul>
+<li>Failed to meet AOIC originality standard (copyright)</li>
+<li>Failed to show substantial investment qualifying for <em>sui generis</em> right</li>
+</ul>
+</li>
+<li>
+<p><strong>Database Directive exceptions don't apply</strong> to unprotected databases</p>
+<ul>
+<li>Article 6 lawful user rights only apply to protected databases</li>
+<li>If database unprotected, no mandatory exceptions apply</li>
+</ul>
+</li>
+<li>
+<p><strong>Contractual restrictions are enforceable</strong></p>
+<ul>
+<li>Even though database is unprotected by IP law, rightholder may contractually restrict use</li>
+<li>Freedom of contract governs unprotected databases</li>
+<li>Website terms of service create binding contractual obligations</li>
+</ul>
+</li>
+</ol>
+<h4 id="the-profound-implications">The Profound Implications </h4>
+<p><strong>Recital 39-40 language:</strong></p>
+<blockquote>
+<p>"...it is clear from the purpose and structure of Directive 96/9 that Articles 6(1), 8 and 15 thereof, which establish mandatory rights for lawful users of databases, are not applicable to a database which is not protected either by copyright or by the <em>sui generis</em> right under that directive, so that it does not prevent the adoption of contractual clauses concerning the conditions of use of such a database."</p>
+</blockquote>
+<p><strong>Conclusion:</strong> Where Database Directive protection doesn't apply, contract law fills the gap. Righthholders can contractually prevent reuse even of unprotected databases.</p>
+<h3 id="contractual-restrictions-on-protected-databases">Contractual Restrictions on Protected Databases </h3>
+<h4 id="when-database-directive-protections-apply">When Database Directive Protections Apply </h4>
+<p><strong>Article 8 DB Directive:</strong> Contractual terms <strong>cannot</strong> override mandatory rights of lawful users of protected databases.</p>
+<p><strong>Effect:</strong> If database is protected by copyright or <em>sui generis</em> right, contractual terms claiming to restrict lawful user rights are <strong>unenforceable</strong>.</p>
+<p><strong>Implication:</strong> Rightholder cannot use contract to eliminate statutory rights.</p>
+<h4 id="when-contractual-terms-bind">When Contractual Terms Bind </h4>
+<p><strong>For optional exceptions</strong> (not mandatory):</p>
+<ul>
+<li>Copyright private copying exception</li>
+<li>Scientific research exception (optional under DB Directive, though Article 3 DSM makes mandatory)</li>
+<li>Public security exception</li>
+</ul>
+<p>Rightholder <strong>can</strong> contractually override these optional exceptions.</p>
+<p><strong>For unprotected databases</strong> (no IP protection):</p>
+<ul>
+<li>Full contractual freedom applies</li>
+<li>Rightholder can impose any contractual restrictions</li>
+<li>Terms of service are enforceable</li>
+</ul>
+<h3 id="private-legislation-and-the-public-domain-problem">"Private Legislation" and the Public Domain Problem </h3>
+<h4 id="the-ryanair-effect-privatizing-the-public-domain">The Ryanair Effect: Privatizing the Public Domain </h4>
+<p>The Ryanair judgment enables a paradoxical outcome:</p>
+<ol>
+<li>Database lacks protection under IP law (correctly so, as it doesn't meet statutory criteria)</li>
+<li>Therefore, it would normally remain in public domain (free to reuse)</li>
+<li>BUT rightholder can contractually restrict reuse</li>
+<li>Result: De facto private control over ostensibly public-domain data</li>
+</ol>
+<p>This has been criticized as creating "private legislation" that:</p>
+<ul>
+<li>Bypasses legislative intent (Database Directive protects only specific categories)</li>
+<li>Creates stronger protection contractually than IP law permits</li>
+<li>Fragments the public domain</li>
+<li>Varies enforcement across Member States (depending on contract law interpretation)</li>
+</ul>
+<h4 id="enforceability-variations">Enforceability Variations </h4>
+<p>Following Ryanair, national courts have reached <strong>opposite conclusions</strong> on enforceability:</p>
+<ul>
+<li><strong>Ireland:</strong> Contractual restrictions enforceable</li>
+<li><strong>Spain:</strong> Not enforceable</li>
+<li><strong>Germany:</strong> Not enforceable</li>
+</ul>
+<p>This variation undermines Digital Single Market objectives.</p>
+<h3 id="contract-as-a-compliance-tool">Contract as a Compliance Tool </h3>
+<p>Even where prohibited, contracts remain the <strong>practical compliance mechanism:</strong></p>
+<p><strong>Many organizations rely on:</strong></p>
+<ul>
+<li>Terms of service to define permitted uses</li>
+<li>License agreements to specify data mining restrictions</li>
+<li>User authentication to enforce access controls</li>
+<li>Technical measures combined with contractual terms</li>
+</ul>
+<p><strong>Effect:</strong> Contractual scaffolding often controls access to data regardless of underlying IP law.</p>
+<h3 id="interactions-with-dsm-directive-exceptions">Interactions with DSM Directive Exceptions </h3>
+<h4 id="article-3-scientific-research">Article 3 (Scientific Research) </h4>
+<p><strong>Exception is unwaivable</strong> – contract cannot override Article 3 exception</p>
+<p><strong>Implication:</strong> Restrictive license terms cannot prevent research organizations from TDM for scientific purposes</p>
+<h4 id="article-4-general-tdm">Article 4 (General TDM) </h4>
+<p><strong>Exception is waivable</strong> – rightholder can opt-out through machine-readable means</p>
+<p><strong>Practical result:</strong></p>
+<ul>
+<li>Website terms of service can prohibit commercial TDM</li>
+<li>Robots.txt can signal opt-out</li>
+<li>Metadata can restrict mining</li>
+<li>Contractual restrictions take precedence</li>
+</ul>
+<p><strong>Effect:</strong> Most commercial right holders have effectively prohibited Article 4 TDM through opt-outs.</p>
+<hr>
+<h2 id="ai-implications">Implications for AI and Data-Driven Innovation </h2>
+<h3 id="the-data-bottleneck-for-ai-development">The Data Bottleneck for AI Development </h3>
+<h4 id="why-data-access-matters-for-ai">Why Data Access Matters for AI </h4>
+<p><strong>Three fundamental requirements for effective AI:</strong></p>
+<ol>
+<li><strong>Volume:</strong> Large datasets required for statistical significance and pattern detection</li>
+<li><strong>Quality:</strong> Accurate, complete, representative data</li>
+<li><strong>Diversity:</strong> Data spanning multiple contexts, demographics, scenarios</li>
+</ol>
+<p><strong>Practical reality:</strong> AI systems trained on:</p>
+<ul>
+<li>Inadequate data = poor performance</li>
+<li>Biased data = biased results</li>
+<li>Limited data = narrow applicability</li>
+</ul>
+<h4 id="the-smestart-up-challenge">The SME/Start-up Challenge </h4>
+<p>Small and medium enterprises face critical barriers:</p>
+<p><strong>Resource constraints:</strong></p>
+<ul>
+<li>Cannot generate equivalent-scale proprietary data</li>
+<li>Cannot invest in large-scale data collection</li>
+<li>Cannot negotiate high-value licensing deals</li>
+</ul>
+<p><strong>Competitive disadvantage:</strong></p>
+<ul>
+<li>Large companies accumulate data advantages</li>
+<li>Network effects entrench dominance</li>
+<li>Market concentration increases</li>
+</ul>
+<p><strong>Innovation consequences:</strong></p>
+<ul>
+<li>Reduced competition in AI development</li>
+<li>Higher barriers to market entry</li>
+<li>Reduced diversity of AI applications</li>
+</ul>
+<h3 id="current-legal-framework-summary-of-barriers">Current Legal Framework: Summary of Barriers </h3>
+<h4 id="four-tier-barrier-system">Four-Tier Barrier System </h4>
+<div class="mermaid">graph TD
+    A["AI DEVELOPMENT&lt;br/&gt;DATA BARRIERS"] 
+    A --&gt; B["1. COPYRIGHT&lt;br/&gt;Database structure"]
+    A --&gt; C["2. SUI GENERIS RIGHT&lt;br/&gt;Database contents"]
+    A --&gt; D["3. TRADE SECRETS&lt;br/&gt;Confidentiality"]
+    A --&gt; E["4. CONTRACTS&lt;br/&gt;Terms of service"]
+    B --&gt; B1["AOIC Test:&lt;br/&gt;Difficult to meet&lt;br/&gt;BUT enforceable"]
+    C --&gt; C1["Substantial Investment:&lt;br/&gt;Often applicable&lt;br/&gt;15-year duration"]
+    D --&gt; D1["Must be kept secret&lt;br/&gt;Prevents mining"]
+    E --&gt; E1["Enforceable against&lt;br/&gt;authorized users&lt;br/&gt;AND general public"]
+    style A fill:#C62828,color:#fff
+</div><h4 id="specific-barriers-to-ai-training">Specific Barriers to AI Training </h4>
+<p><strong>Stage 1: Data acquisition</strong></p>
+<ul>
+<li>Copying databases may infringe copyright (reproduction right)</li>
+<li>Accessing protected databases may infringe <em>sui generis</em> (extraction)</li>
+<li>Contracts may prohibit collection</li>
+</ul>
+<p><strong>Stage 2: Data processing</strong></p>
+<ul>
+<li>Format conversion may constitute reproduction</li>
+<li>Algorithm training may involve repeated access</li>
+<li>Storage of training data may implicate <em>sui generis</em> rights</li>
+</ul>
+<p><strong>Stage 3: Model deployment</strong></p>
+<ul>
+<li>Re-utilizing insights from database may infringe <em>sui generis</em> right</li>
+<li>Publishing results may require licensing</li>
+</ul>
+<p><strong>Stage 4: Model updates</strong></p>
+<ul>
+<li>Retraining on new data</li>
+<li>Continuous mining for model improvement</li>
+</ul>
+<h3 id="the-dsm-directive-exceptions-incomplete-solutions">The DSM Directive Exceptions: Incomplete Solutions </h3>
+<h4 id="article-3-benefits-for-research-organizations">Article 3 Benefits for Research Organizations </h4>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li>Unwaivable protection for scientific research</li>
+<li>Permits long-term data storage</li>
+<li>Covers both copyright and <em>sui generis</em></li>
+</ul>
+<p><strong>Limitations for commercial AI:</strong></p>
+<ul>
+<li>Excludes for-profit entities</li>
+<li>Requires public interest mission</li>
+<li>Public-private partnerships complex</li>
+</ul>
+<p><strong>Result:</strong> Academic research benefits significantly, but commercial innovation partially excluded.</p>
+<h4 id="article-4-limitations-for-commercial-users">Article 4 Limitations for Commercial Users </h4>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li>Covers any purpose (including commercial AI)</li>
+<li>Unlimited beneficiaries</li>
+</ul>
+<p><strong>Critical weakness:</strong></p>
+<ul>
+<li>Waivable by rightholder opt-out</li>
+<li>Most publishers have opted-out</li>
+<li>Machine-readable restrictions easy to implement</li>
+<li>Commercial mining essentially prohibited for major databases</li>
+</ul>
+<p><strong>Result:</strong> Commercial TDM remains heavily restricted despite Article 4 exception.</p>
+<h3 id="unresolved-issues">Unresolved Issues </h3>
+<h4 id="the-machine-generated-data-question">The Machine-Generated Data Question </h4>
+<p><strong>Current status:</strong></p>
+<ul>
+<li>No <em>sui generis</em> protection for MGD (by Data Act Article 35)</li>
+<li>But copyright may still apply to structured databases</li>
+<li>Contract law may restrict access</li>
+</ul>
+<p><strong>For AI:</strong></p>
+<ul>
+<li>IoT and sensor data become more accessible (no <em>sui generis</em>)</li>
+<li>But copyright protection remains</li>
+<li>Contractual restrictions still apply</li>
+</ul>
+<h4 id="the-repeated-and-systematic-extraction-problem">The Repeated and Systematic Extraction Problem </h4>
+<p><strong>Article 7(5) <em>sui generis</em> provision unresolved:</strong></p>
+<ul>
+<li>Does iterative AI model training constitute prohibited extraction?</li>
+<li>Cumulative small extractions = substantial?</li>
+<li>Does "unreasonably prejudicing legitimate interests" apply?</li>
+</ul>
+<p><strong>Current uncertainty:</strong></p>
+<ul>
+<li>National courts may differ in interpretation</li>
+<li>Some may permit mining despite provision</li>
+<li>Others may prohibit based on cumulative extraction theory</li>
+</ul>
+<h4 id="the-originalityinvestment-thresholds">The Originality/Investment Thresholds </h4>
+<p><strong>Existing problems:</strong></p>
+<ul>
+<li>Databases easily obtain <em>sui generis</em> protection</li>
+<li>Rolling 15-year protection terms</li>
+<li>AOIC standard hard to meet but occasionally invoked</li>
+</ul>
+<p><strong>For AI impact:</strong></p>
+<ul>
+<li>Most crawled databases likely have <em>sui generis</em> protection</li>
+<li>Long-term protection creates durability of barriers</li>
+<li>Copyright protection supplementary</li>
+</ul>
+<h3 id="recommendations-toward-balanced-framework">Recommendations: Toward Balanced Framework </h3>
+<p>Based on comprehensive analysis, authorities and scholars propose:</p>
+<h4 id="option-1-extend-article-4-exception">Option 1: Extend Article 4 Exception </h4>
+<p><strong>Make Article 4 TDM exception mandatory</strong> (unwaivable like Article 3)</p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>Ensures consistent access for commercial innovation</li>
+<li>Aligns with DSM objective to foster innovation</li>
+<li>Simpler implementation</li>
+</ul>
+<p><strong>Challenges:</strong></p>
+<ul>
+<li>Conflicts with three-step test (TRIPS/Berne)</li>
+<li>May threaten publisher business models</li>
+<li>May not overcome contract law barriers to unprotected databases</li>
+</ul>
+<h4 id="option-2-reform-sui-generis-right">Option 2: Reform Sui Generis Right </h4>
+<p><strong>Possibilities:</strong></p>
+<p>a) <strong>Registration system:</strong> Require registration for <em>sui generis</em> protection</p>
+<ul>
+<li>Clearer identification of protected databases</li>
+<li>Time-limited renewals (not indefinite rolling protection)</li>
+<li>Higher transaction costs</li>
+</ul>
+<p>b) <strong>Reduced duration:</strong> Shorten initial term or renewal period</p>
+<ul>
+<li>Reduces long-term barriers</li>
+<li>Creates entry points for new data mining</li>
+</ul>
+<p>c) <strong>Abolition:</strong> Remove <em>sui generis</em> right entirely</p>
+<ul>
+<li>Aligns with evidence it hasn't increased database production</li>
+<li>Removes major barrier to data reuse</li>
+<li>BUT removes protection for legitimate database investment</li>
+</ul>
+<h4 id="option-3-data-user-rights">Option 3: Data User Rights </h4>
+<p><strong>Introduce unwaivable user rights:</strong></p>
+<p>a) <strong>Right to reuse non-personal data</strong> from publicly disclosed databases</p>
+<ul>
+<li>Unwaivable by contract</li>
+<li>Applies even to unprotected databases</li>
+<li>Reverses <em>Ryanair</em> effect</li>
+</ul>
+<p>b) <strong>Sector-specific access rights</strong></p>
+<ul>
+<li>Conditional access to essential databases</li>
+<li>Similar to FRAND licensing in patents</li>
+<li>Applied to strategic data holders</li>
+</ul>
+<p>c) <strong>Data access rights for public interest</strong></p>
+<ul>
+<li>Compulsory licensing for essential data</li>
+<li>Public health, climate, safety applications</li>
+<li>Proportionate compensation</li>
+</ul>
+<h4 id="option-4-hybrid-approach">Option 4: Hybrid Approach </h4>
+<p>Combine multiple measures:</p>
+<ul>
+<li>Make Article 4 unwaivable for commercial AI (balancing copyright interests)</li>
+<li>Introduce user rights for unprotected databases (reverse <em>Ryanair</em>)</li>
+<li>Reform <em>sui generis</em> for rolling protection (limit duration)</li>
+<li>Create sector-specific access rights for strategic data</li>
+</ul>
+<hr>
+<h2 id="conclusions">Key Takeaways and Recommendations </h2>
+<h3 id="the-fundamental-tension">The Fundamental Tension </h3>
+<p>EU database protection law reflects an unresolved tension between:</p>
+<ul>
+<li><strong>Rights holders:</strong> Deserve protection for investment</li>
+<li><strong>Data users:</strong> Require access for innovation</li>
+<li><strong>Public interest:</strong> Depends on both protection and access</li>
+</ul>
+<p>The current framework tilts toward rights holders, potentially at cost to innovation and public welfare.</p>
+<h3 id="essential-concepts">Essential Concepts </h3>
+<p><strong>1. Data ≠ Information</strong></p>
+<ul>
+<li>Individual data points are generally unprotected</li>
+<li>Collections (databases) can receive dual protection</li>
+<li>Information goods reflect human intellectual effort</li>
+</ul>
+<p><strong>2. Database Directive: Two Regimes</strong></p>
+<ul>
+<li><strong>Copyright:</strong> Protects original databases (selection/arrangement)
+<ul>
+<li>High threshold (AOIC), but long duration (life + 70 years)</li>
+</ul>
+</li>
+<li><strong>Sui generis:</strong> Protects database investment (obtaining/verifying/presenting)
+<ul>
+<li>Lower threshold (substantial investment), but medium duration (15 years)</li>
+<li>Both can apply to same database simultaneously</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. TDM Exceptions: Asymmetric Protection</strong></p>
+<ul>
+<li><strong>Article 3:</strong> Unwaivable exception for research organizations
+<ul>
+<li>Strong protection for academic research</li>
+<li>Does not include commercial entities</li>
+</ul>
+</li>
+<li><strong>Article 4:</strong> Waivable exception for anyone
+<ul>
+<li>Theoretically broad, but practically limited</li>
+<li>Right holders have effectively opted-out</li>
+</ul>
+</li>
+</ul>
+<p><strong>4. Contract Law: The Final Barrier</strong></p>
+<ul>
+<li>Unprotected databases can be contractually restricted (<em>Ryanair</em>)</li>
+<li>Creates de facto protection stronger than IP law permits</li>
+<li>Fragments Digital Single Market across national jurisdictions</li>
+</ul>
+<h3 id="practical-implications-for-ai-development">Practical Implications for AI Development </h3>
+<p><strong>For Academic Research:</strong></p>
+<ul>
+<li>Article 3 exception provides strong protection</li>
+<li>Can mine copyrighted and <em>sui generis</em> protected databases</li>
+<li>Long-term storage permitted for verification</li>
+<li>Non-commercial limitation significant but workable through partnerships</li>
+</ul>
+<p><strong>For Commercial Innovation (Start-ups/SMEs):</strong></p>
+<ul>
+<li>Article 4 exception available but largely waivable</li>
+<li>Most publisher databases opted-out</li>
+<li>Must negotiate individual licenses (high cost)</li>
+<li>Unprotected databases remain subject to contract law restrictions</li>
+<li>Significant competitive disadvantage vs. large data collectors</li>
+</ul>
+<p><strong>For Large Corporations:</strong></p>
+<ul>
+<li>Can afford licensing deals</li>
+<li>Can generate proprietary data at scale</li>
+<li>Article 4 restrictions less limiting</li>
+<li>Data monopolies potential</li>
+</ul>
+<h3 id="need-for-reform">Need for Reform </h3>
+<p><strong>Current evidence suggests:</strong></p>
+<ul>
+<li><em>Sui generis</em> protection hasn't increased database production (Commission evaluations)</li>
+<li>Rolling protection creates indefinite barriers</li>
+<li>Article 4 waivability undermines innovation goal</li>
+<li>Contract law <em>Ryanair</em> effect fragments public domain</li>
+</ul>
+<p><strong>Recommendation:</strong> Balanced reform combining:</p>
+<ol>
+<li>Mandatory Article 4 exception (unwaivable)</li>
+<li><em>Sui generis</em> reform (time limits or registration)</li>
+<li>User rights for unprotected databases</li>
+<li>Sector-specific access rights for strategic data</li>
+<li>Preserved protection for legitimate investment</li>
+</ol>
+<h3 id="strategic-note-on-ai-development">Strategic Note on AI Development </h3>
+<p>The DSM Directive represents an important but <strong>incomplete solution</strong> to AI data access challenges. Its provisions:</p>
+<p><strong>Do help with:</strong></p>
+<ul>
+<li>Academic research (Article 3)</li>
+<li>Use of open access materials</li>
+<li>Clear opt-out mechanisms enabling informed choice</li>
+</ul>
+<p><strong>Do not adequately address:</strong></p>
+<ul>
+<li>Commercial AI innovation (Article 4 waivable)</li>
+<li>Start-up/SME competitiveness</li>
+<li>Unprotected database access (<em>Ryanair</em> problem)</li>
+<li>Rolling <em>sui generis</em> protection indefinitely</li>
+</ul>
+<p><strong>Future policy</strong> should balance protection of investment with innovation imperative, recognizing that:</p>
+<ul>
+<li>Data drives 21st-century innovation</li>
+<li>AI development depends on data access</li>
+<li>Europe competes globally on innovation capacity</li>
+<li>Current framework may disadvantage EU innovation relative to US/China</li>
+</ul>
+<hr>
+<h2 id="references-and-further-reading">References and Further Reading </h2>
+<h3 id="primary-eu-legal-instruments">Primary EU Legal Instruments </h3>
+<ul>
+<li><strong>Directive 96/9/EC</strong> on the legal protection of databases (Database Directive)</li>
+<li><strong>Directive (EU) 2019/790</strong> on copyright and related rights in the Digital Single Market (DSM Directive)</li>
+<li><strong>Regulation (EU) 2018/1807</strong> on a framework for the free flow of non-personal data</li>
+<li><strong>Regulation (EU) 2016/679</strong> General Data Protection Regulation (GDPR)</li>
+<li><strong>Directive (EU) 2015/2366</strong> on Trade Secrets Protection</li>
+</ul>
+<h3 id="key-cjeu-cases">Key CJEU Cases </h3>
+<ul>
+<li><strong>C-203/02, BHB v William Hill</strong> (2004) – <em>Sui generis</em> protection criteria</li>
+<li><strong>C-30/14, Ryanair v PR Aviation</strong> (2015) – Contractual protection of unprotected databases</li>
+<li><strong>C-435/12, ACI Adam</strong> (2014) – Lawful access requirement</li>
+<li><strong>C-463/12, Copydan</strong> (2015) – Knowledge presumption for commercial users</li>
+</ul>
+<h3 id="recommended-academic-sources">Recommended Academic Sources </h3>
+<ul>
+<li><strong>Dr. Sunimal Mendis</strong> – MENDIS_IP &amp; Data Driven Innovation_Slides</li>
+<li><strong>Romain Meys</strong> – "Data Mining Under the Directive on Copyright and Related Rights"</li>
+<li><strong>Tatiana Synodinou</strong> – "Ryanair v PR Aviation: Contracts, Rights and Users"</li>
+<li><strong>Bernt Hugenholtz</strong> – "The New Copyright Directive: Text and Data Mining"</li>
+</ul>
+<hr>
+<p><strong>Last Updated:</strong> November 3, 2025<br>
+<strong>Repository:</strong> Innovation and Regulation (JBL110)<br>
+<strong>Status:</strong> Consolidated Summary Complete</p>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>
